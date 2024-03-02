@@ -1,0 +1,6 @@
+matplotlib==3.7.1
+numpy==1.26.4
+openai==1.13.3
+pyenchant==3.2.2
+python-dotenv==1.0.1
+tenacity==8.2.3
