@@ -155,3 +155,6 @@ test-1.ipynb
 \# older_scripts
 \#Archive/*
 flask/
+results_objective_3.json
+results_objective_4.json
+results_objective_5.json
