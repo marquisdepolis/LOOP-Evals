@@ -11,6 +11,10 @@ First it asks LLMs to create word grids with minimal constraints (starting word 
 
 The test is whether they can create them. It tries this over 50 attempts in the attached code, each attempt having 10 turns each, each turn using the previously generated word grid and asking it to think through and edit it such that they're valid.
 
+Add your openai api key to .env file, make any edits to info.json if you want to change anything and run wordgrid.py. By default its set to gpt-4, and runs 50 Attempts with 10 Runs each, feel free to test other groupings 
+
+Afterwards run charts.py to do the analysis and make a few pretty charts.
+
 # Results
 Run on gpt-4-turbo-preview
 ![Surprised? I was](charts/success_and_avg_false_count.png)
