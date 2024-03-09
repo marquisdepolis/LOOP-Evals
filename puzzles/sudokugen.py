@@ -27,33 +27,6 @@ def solve_sudoku(board):
             board[row][col] = 0  # Backtrack
     return False
 
-def solve_sudoku_with_explanation(board, depth=0):
-    '''
-    Backtracking type constraint solution to figure out how to solve a sudoku.Ca
-    '''
-    empty_cell = find_empty_location(board)
-    if not empty_cell:
-        print(f"Puzzle solved")
-        return True  # Puzzle solved
-    
-    row, col = empty_cell
-    print(f"Trying to fill cell at row {row+1}, column {col+1}")
-    
-    for num in range(1, 10):
-        if is_valid_move(board, row, col, num):
-            print(f"Placing {num} at row {row+1}, column {col+1} (valid move)")
-            board[row][col] = num
-            
-            if solve_sudoku_with_explanation(board, depth + 1):
-                return True
-            
-            # Backtrack
-            board[row][col] = 0
-            print(f"Backtracking from row {row+1}, column {col+1}, removing {num}")
-    
-    print(f"No valid number found for cell at row {row+1}, column {col+1}, backtracking...")
-    return False
-
 def find_empty_location(board):
     for i in range(9):
         for j in range(9):
