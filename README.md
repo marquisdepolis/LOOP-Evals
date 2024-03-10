@@ -6,14 +6,16 @@ LLMs are hard to ![evaluate](https://www.strangeloopcanon.com/p/evaluations-are-
 
 I started with the simplest version of it I could think of that satisfies the criteria: namely whether it can create wordgrids, successively in 3x3, 4x4 and 5x5 sizes. Why this? Because evaluations should be a) easy to create, AND b) easy to evaluate, while still being hard to do!
 
+The second is ... Sudoku! The pastime that was meant to be both fun and a cure for dementia, but seemingly once again surprisingly hard for LLMs to solve!
+
 # How
-First it asks LLMs to create word grids with minimal constraints (starting word starts with C and last word ends with N) in 3 sizes - 3x3, 4x4, and 5x5.
+Let's start with the wordgrids. First it asks LLMs to create word grids with minimal constraints (starting word starts with C and last word ends with N) in 3 sizes - 3x3, 4x4, and 5x5.
 
 The test is whether they can create them. It tries this over 50 attempts in the attached code, each attempt having 10 turns each, each turn using the previously generated word grid and asking it to think through and edit it such that they're valid.
 
 Add your openai api key to .env file, make any edits to info.json if you want to change anything and run wordgrid.py. By default its set to gpt-4, and runs 50 Attempts with 10 Runs each, feel free to test other groupings 
 
-Afterwards run charts.py to do the analysis and make a few pretty charts.
+Afterwards run analysis.py to do the necessary analysis and make a few pretty charts.
 
 # Results
 Run on gpt-4-turbo-preview
