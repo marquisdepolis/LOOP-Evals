@@ -78,4 +78,4 @@ for i in range(3,5):
     solved_board = solve_sudoku(sudoku, parse_response_to_int_list(response))
     print(solved_board)
     check_solution(sudoku)
-    solve_sudoku_with_explanation(solved_board)
+    # solve_sudoku_with_explanation(solved_board)
