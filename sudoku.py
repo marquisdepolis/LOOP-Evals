@@ -8,7 +8,7 @@ load_dotenv()
 from llms.gpt import llm_call
 from utils.retry import retry_except
 from puzzles.sudokugen import generate_sudoku, is_valid_move, find_empty_location
-from sudokusolve import encode_sudoku, decode_solution, transpose
+from sudokusolve import encode_sudoku, decode_solution, transpose, solve_sudoku_with_explanation
 from pysat.formula import CNF
 from pysat.solvers import Glucose3
 
@@ -78,3 +78,4 @@ for i in range(3,5):
     solved_board = solve_sudoku(sudoku, parse_response_to_int_list(response))
     print(solved_board)
     check_solution(sudoku)
+    solve_sudoku_with_explanation(solved_board)
