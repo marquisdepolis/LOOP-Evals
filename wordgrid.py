@@ -13,8 +13,8 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 with open('info.json', 'r') as file:
     data = json.load(file)
 
-instructions = data.get('instructions')
-small_change = data.get('small_change')
+instructions = data.get('instructions_wg')
+small_change = data.get('small_change_wg')
 GPT = data.get('GPT_4')
 ATTEMPTS = 50
 TURNS = 10
