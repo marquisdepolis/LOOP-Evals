@@ -9,7 +9,6 @@ def load_words(file_path):
 def colorize_guess(guess, target):
     result = ['_'] * 5  # Placeholder for coloring: '_' = not guessed, 'G' = green, 'Y' = yellow
     target_tmp = list(target)  # Temp copy to mark letters as used
-    print(f"Placeholder for coloring: '_' = not guessed, 'G' = green, 'Y' = yellow: {target_tmp}")
     # First pass for correct positions
     for i in range(5):
         if guess[i] == target[i]:
@@ -44,12 +43,13 @@ def check_word_validity(word):
 def play_wordle(file_path):
     words = load_words(file_path)
     target = random.choice(words)
-    attempts = 1
+    attempts = 0
+    max_attempts = 6
 
     print("Welcome to WORDLE (Python Edition). Guess the 5-letter word!")
     print("Type 'exit' to quit the game.")
 
-    while attempts < 5:
+    while attempts < max_attempts:
         guess = input(f"Enter your guess: Attempt number ({attempts}): ").strip().lower()
         if guess == 'exit':
             print("Game exited. Thanks for playing!")
