@@ -8,6 +8,8 @@ I started with the simplest version of it I could think of that satisfies the cr
 
 The second is ... Sudoku! The pastime that was meant to be both fun and a cure for dementia, but seemingly once again surprisingly hard for LLMs to solve!
 
+The third is ... Wordle. Same principle!
+
 # How
 Let's start with the wordgrids. First it asks LLMs to create word grids with minimal constraints (starting word starts with C and last word ends with N) in 3 sizes - 3x3, 4x4, and 5x5.
 
