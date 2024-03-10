@@ -1,6 +1,9 @@
 matplotlib==3.7.1
 numpy==1.26.4
 openai==1.13.3
+pandas==2.2.1
 pyenchant==3.2.2
 python-dotenv==1.0.1
+python_sat==1.8.dev3
+seaborn==0.13.2
 tenacity==8.2.3
