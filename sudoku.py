@@ -20,8 +20,8 @@ instructions = data.get('instructions_wg')
 objective = data.get('objective_s')
 small_change = data.get('small_change_wg')
 GPT = data.get('GPT_4')
-ATTEMPTS = 50
-TURNS = 10
+ATTEMPTS = 10
+THRESHOLD = 10
 
 def create_sudoku(sudoku, objective):
     """
@@ -33,6 +33,20 @@ def create_sudoku(sudoku, objective):
                         Number, Number, etc
                         ```
     """, GPT)
+    return response
+
+def create_sudoku_row(sudoku, objective):
+    """
+    Generate a sudoku matrix.
+    """
+    response = []
+    for row in sudoku:
+        response_row = llm_call(f"""{instructions}. Objective is: {objective}. Given the following sudoku matrix, please analyse and reply with the number that would satisfy the answer. Sudoku is here: {sudoku}. Solve this row: {row}. Answer in the following format.
+            ```
+            Number, Number, etc
+            ```
+        """, GPT)
+        response.append(response_row)
     return response
 
 def solve_sudoku(board, replacements):
@@ -69,13 +83,31 @@ def check_solution(sudoku):
     else:
         print("No solution found, sorry!")
 
-for i in range(3,5):
-    print(f"The first iteration with i:{i} number of cells removed. \n")
-    sudoku = generate_sudoku(i)
-    print(sudoku)
-    response = create_sudoku(sudoku,objective)
-    print(response)
-    solved_board = solve_sudoku(sudoku, parse_response_to_int_list(response))
-    print(solved_board)
-    check_solution(sudoku)
-    # solve_sudoku_with_explanation(solved_board)
+def solve_row_by_row(sudoku, objective):
+    final_solution = []
+    for row_index, row in enumerate(sudoku):
+        # Modify this prompt to ask for the solution of a single row, providing necessary context.
+        response = create_sudoku(row, objective)  # Adjust this call as needed.
+        row_solution = parse_response_to_int_list(response)
+        if len(row_solution) != len(row):
+            print(f"Error solving row {row_index + 1}: Response does not match row length.")
+            return None
+        final_solution.append(row_solution)
+    return final_solution
+
+def main():
+    for puzzle_number in range(10, ATTEMPTS + 1):
+        sudoku = generate_sudoku(puzzle_number)
+        if puzzle_number <= THRESHOLD:
+            pass
+        else:
+            # For puzzle numbers greater than 10, solve row by row.
+            print(f"\n--- Puzzle {puzzle_number} (Row by Row) ---\n")
+            response = create_sudoku_row(sudoku,objective)
+            solved_board = solve_sudoku(sudoku, parse_response_to_int_list(response))
+            for row in solved_board:
+                print(row)
+            check_solution(sudoku)
+
+if __name__ == "__main__":
+    main()
