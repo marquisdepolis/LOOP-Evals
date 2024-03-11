@@ -22,6 +22,18 @@ def load_words(file_path):
     return words
 
 def colorize_guess(guess, target):
+    """
+    Generate a formatted feedback message for each operation.
+
+    Parameters:
+    - position: The position being analyzed or modified.
+    - status: The status code or symbol (e.g., 'G' for correct, 'Y' for incorrect but close, etc.).
+    - description: A descriptive message explaining the status.
+
+    Returns:
+    A formatted string with the feedback.
+    """    
+    GYs = []
     result = ['_'] * 5  # Placeholder for coloring: '_' = not guessed, 'G' = green, 'Y' = yellow
     target_tmp = list(target)  # Temp copy to mark letters as used
     # First pass for correct positions
@@ -37,7 +49,30 @@ def colorize_guess(guess, target):
             target_tmp[target_tmp.index(guess[i])] = None  # Mark as used
     
     # Convert result to colored string or another representation for CLI
-    return ''.join(result)
+    GYs = ''.join(result)
+    feedback = []
+    target_tmp = list(target)  # Temporary copy to mark letters as used
+    
+    # First pass for correct positions
+    for i in range(5):
+        if guess[i] == target[i]:
+            feedback.append({'position': i+1, 'letter': guess[i], 'feedback': 'Correct position and letter (G)'})
+            target_tmp[i] = None  # Mark as used
+        else:
+            feedback.append({'position': i+1, 'letter': guess[i], 'feedback': None})  # Placeholder
+
+    # Second pass for correct letters in wrong positions
+    for i in range(5):
+        if feedback[i]['feedback'] is None:  # Only check letters not already marked as correct
+            if guess[i] in target_tmp:
+                feedback[i]['feedback'] = 'Correct letter, wrong position (Y)'
+                target_tmp[target_tmp.index(guess[i])] = None  # Mark as used
+            else:
+                feedback[i]['feedback'] = 'Letter not in the word (_)'
+
+    # Format the feedback for display or further processing
+    detailed_feedback = "\n".join([f"Position {item['position']}: {item['letter']} - {item['feedback']}" for item in feedback])
+    return GYs, detailed_feedback
 
 def check_word_validity(word):
     """
@@ -45,38 +80,6 @@ def check_word_validity(word):
     """
     d = enchant.Dict("en_US")  # or "en_GB" for British English
     return d.check(word)
-
-def play_wordle_user(file_path):
-    words = load_words(file_path)
-    target = random.choice(words)
-    attempts = 0
-    max_attempts = 6
-
-    print("Welcome to WORDLE (Python Edition). Guess the 5-letter word!")
-    print("Type 'exit' to quit the game.")
-
-    while attempts < max_attempts:
-        guess = input(f"Enter your guess: Attempt number ({attempts}): ").strip().lower()
-        if guess == 'exit':
-            print("Game exited. Thanks for playing!")
-            return
-        if len(guess) != 5 or not guess.isalpha():
-            print("Invalid input. Please enter a 5-letter word.")
-            continue
-        if guess not in words:
-            print("Word not in list. Try again.")
-            continue
-        
-        attempts += 1
-        colored_guess = colorize_guess(guess, target)
-        print("Feedback on your guess: ", colored_guess)
-        
-        if guess == target:
-            print("Congratulations! You've guessed the word correctly.")
-            return
-        elif attempts == 0:
-            print(f"Game over. The correct word was '{target}'.")
-            return
 
 def check_word_validity(word):
     """
@@ -141,7 +144,7 @@ def play_wordle(file_path, run_id, results):
             continue  # Continue to the next iteration of the loop
 
         attempts += 1
-        colored_guess = colorize_guess(guess, target)
+        GYs, colored_guess = colorize_guess(guess, target)
         print("Feedback on your guess: ", colored_guess)
 
         guess_history.append(f"Attempt {attempts}: {guess} - {colored_guess}")
@@ -151,8 +154,8 @@ def play_wordle(file_path, run_id, results):
             "Run #": attempts,
             "Target word": target,
             "Guessed word": guess,
-            "Number of 'G' in colorised results": colored_guess.count('G'),
-            "Number of 'Y' in colorised results": colored_guess.count('Y')
+            "Number of 'G' in colorised results": GYs.count('G'),
+            "Number of 'Y' in colorised results": GYs.count('Y')
         })
 
 def main():
