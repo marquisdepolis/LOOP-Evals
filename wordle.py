@@ -155,7 +155,6 @@ def play_wordle(file_path, run_id, results):
             "Number of 'Y' in colorised results": colored_guess.count('Y')
         })
 
-
 def main():
     runs = int(input("Enter the number of runs: "))
     results = []
