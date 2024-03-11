@@ -91,6 +91,8 @@ def check_word_validity(word):
     """
     Check if a word is a valid English word using pyenchant.
     """
+    if not word:  # Check if the word is empty
+        return False
     d = enchant.Dict("en_US")  # or "en_GB" for British English
     return d.check(word)
 
@@ -112,41 +114,39 @@ def play_wordle(file_path):
     target = random.choice(words)
     attempts = 0
     max_attempts = 6
+    guess_history = []  # Initialize empty list to store history of guesses and feedback
 
     print("Welcome to WORDLE (Python Edition). Guessing the 5-letter word!")
 
     while attempts < max_attempts:
-        guess = llm_call_json(f"""{instructions}. {objective}. Only return the word inside a docstring, like. Respond in json format. eg
-                              '''
-                              WORD
-                              '''
-                              """,GPT).strip().lower()
-        guess = extract_word(guess)
-        words_validity = check_word_validity(guess.lower())
+        # Construct input for llm_call_json with history
+        print(f"\n This is attempt number: {attempts}. \n")
+        history_str = " ".join(guess_history)  # Convert history to a string
+        input_str = f"{instructions}. {objective}. Based on previous attempts: {history_str}. Only return the word. Respond in json format."
+
+        guess_response = llm_call_json(input_str, GPT)
+        guess = extract_word(guess_response).strip().lower()
+        
+        # Check if the extracted word is valid
+        words_validity = check_word_validity(guess)
         print(f"The validity of the word is: {words_validity}")
-        if len(guess) != 5 or not guess.isalpha():
-            print("Invalid input. Please enter a 5-letter word.")
-            continue
-        if guess not in words:
-            print("Word not in list. Try again.")
+        if len(guess) != 5 or not guess.isalpha() or guess not in words:
+            print("Invalid input or word not in list. Try again.")
             continue
 
         attempts += 1
         colored_guess = colorize_guess(guess, target)
         print("Feedback on your guess: ", colored_guess)
-
-        guess = llm_call_json(f"""{instructions}. {objective}. You are given feedback on the positions according to {colored_guess}. G means the position is correct and letter is correct. Y means letter is correct but position is wrong. Your input guess was {guess}. Now think and write what the correct answer should be as one word. Only return the word inside a docstring. Respond in json format. like:
-                              '''
-                              WORD
-                              '''
-                              """,GPT).strip().lower()
+        
+        # Append current guess and feedback to history
+        guess_history.append(f"Attempt {attempts}: {guess} - {colored_guess}")
 
         if guess == target:
             print("Congratulations! You've guessed the word correctly.")
-            return
-        elif attempts == 0:
+            break
+        elif attempts == max_attempts:
             print(f"Game over. The correct word was '{target}'.")
-            return
-        
+            break
+
 if __name__ == '__main__':
     play_wordle('puzzles/wordle.txt')
