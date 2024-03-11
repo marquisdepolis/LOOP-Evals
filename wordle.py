@@ -128,10 +128,10 @@ def play_wordle(file_path, run_id, results):
     words = load_words(file_path)
     target = random.choice(words)
     attempts = 0
-    max_attempts = 6
+    max_attempts = 5
     guess_history = []  # Initialize empty list to store history of guesses and feedback
 
-    while attempts < max_attempts:
+    while attempts <= max_attempts:
         print(f"\n This is attempt number: {attempts}. \n")
         history_str = " ".join(guess_history)
         input_str = f"{instructions}. {objective}. Based on previous attempts: {history_str}. Only return the word. Respond in json format."
@@ -146,7 +146,7 @@ def play_wordle(file_path, run_id, results):
             attempts += 1  # Increment the attempt counter to reflect the attempt
             if attempts >= max_attempts:  # Check if the maximum attempts have been reached
                 print(f"Maximum attempts reached without guessing the word. The correct word was '{target}'.")
-                break  # Exit the loop if the maximum attempts are reached
+                break  # Exit the loop if the maximum attempts are reached break
             continue  # Continue to the next iteration of the loop
 
         attempts += 1
@@ -155,8 +155,6 @@ def play_wordle(file_path, run_id, results):
 
         guess_history.append(f"Attempt {attempts}: {guess} - {colored_guess}")
 
-        # if guess == target or attempts == max_attempts:
-        #     global_attempts = attempts if guess == target else -1  # -1 indicates failure to guess within max_attempts
         results.append({
             "Global attempt #": run_id,
             "Run #": attempts,
@@ -165,8 +163,7 @@ def play_wordle(file_path, run_id, results):
             "Number of 'G' in colorised results": colored_guess.count('G'),
             "Number of 'Y' in colorised results": colored_guess.count('Y')
         })
-        print(f"Results is: {results}")
-        break
+
 
 def main():
     runs = int(input("Enter the number of runs: "))
