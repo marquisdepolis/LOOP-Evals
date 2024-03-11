@@ -38,15 +38,6 @@ def colorize_guess(guess, target):
     
     # Convert result to colored string or another representation for CLI
     return ''.join(result)
-    colored_result = ''
-    for i in range(5):
-        if result[i] == 'G':
-            colored_result += f'\033[92m{guess[i]}\033[0m'  # Green
-        elif result[i] == 'Y':
-            colored_result += f'\033[93m{guess[i]}\033[0m'  # Yellow
-        else:
-            colored_result += guess[i]  # No color for incorrect letters
-    return colored_result
 
 def check_word_validity(word):
     """
