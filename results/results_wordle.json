@@ -1,1 +1,18 @@
-[]
+[
+    {
+        "Global attempt #": 1,
+        "Run #": 1,
+        "Target word": "pound",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 0
+    },
+    {
+        "Global attempt #": 2,
+        "Run #": 1,
+        "Target word": "candy",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 2
+    }
+]
