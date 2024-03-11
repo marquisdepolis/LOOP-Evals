@@ -1,14 +1,14 @@
 # LOOP-Evals
-Logical Operations On Puzzles: Simple Iterative Reasoning Tests for LLMs first through wordgrids
+Logical Operations On Problems: The idea is to test simple Iterative Reasoning tests for LLMs, through puzzles which are hard to solve and easy to evaluate.
 
 # Why?
 LLMs are hard to ![evaluate](https://www.strangeloopcanon.com/p/evaluations-are-all-we-need), as I've written multiple times, and their ability to reason is difficult to separate from what they're trained on. So I wanted to find a way to test its ability to iteratively reason and answer questions. 
 
 I started with the simplest version of it I could think of that satisfies the criteria: namely whether it can create wordgrids, successively in 3x3, 4x4 and 5x5 sizes. Why this? Because evaluations should be a) easy to create, AND b) easy to evaluate, while still being hard to do!
 
-The second is ... Sudoku! The pastime that was meant to be both fun and a cure for dementia, but seemingly once again surprisingly hard for LLMs to solve!
+The second is ... Wordle. Same principle!
 
-The third is ... Wordle. Same principle!
+The third is ... Sudoku! The pastime that was meant to be both fun and a cure for dementia, but seemingly once again surprisingly hard for LLMs to solve!
 
 # How
 Let's start with the wordgrids. First it asks LLMs to create word grids with minimal constraints (starting word starts with C and last word ends with N) in 3 sizes - 3x3, 4x4, and 5x5.
