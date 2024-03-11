@@ -100,7 +100,9 @@ def extract_word(response):
     Parses the response to extract the word.
     """
     print(f"\nRaw response: {response}")  # Add this line to debug
-    cleaned_response = response.replace('```', '').replace('\n', '').replace("'''", '').strip()
+    parsed_response = json.loads(response)
+    extracted_word = parsed_response["word"]
+    cleaned_response = extracted_word.replace('```', '').replace('\n', '').replace("'''", '').strip()
     
     print(f"\nCleaned response: {cleaned_response}")  # Debugging line to check the cleaned response
     return cleaned_response
@@ -114,8 +116,9 @@ def play_wordle(file_path):
     print("Welcome to WORDLE (Python Edition). Guessing the 5-letter word!")
 
     while attempts < max_attempts:
-        guess = llm_call_json(f"""{instructions}. {objective}. Only return the word inside a docstring, like:   
-                              '''WORD
+        guess = llm_call_json(f"""{instructions}. {objective}. Only return the word inside a docstring, like. Respond in json format. eg
+                              '''
+                              WORD
                               '''
                               """,GPT).strip().lower()
         guess = extract_word(guess)
@@ -132,7 +135,7 @@ def play_wordle(file_path):
         colored_guess = colorize_guess(guess, target)
         print("Feedback on your guess: ", colored_guess)
 
-        guess = llm_call_json(f"""{instructions}. {objective}. You are given feedback on the positions according to {colored_guess}. G means the position is correct and letter is correct. Y means letter is correct but position is wrong. Your input guess was {guess}. Now think and write what the correct answer should be as one word. Only return the word inside a docstring, like:
+        guess = llm_call_json(f"""{instructions}. {objective}. You are given feedback on the positions according to {colored_guess}. G means the position is correct and letter is correct. Y means letter is correct but position is wrong. Your input guess was {guess}. Now think and write what the correct answer should be as one word. Only return the word inside a docstring. Respond in json format. like:
                               '''
                               WORD
                               '''
