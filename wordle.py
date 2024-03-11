@@ -101,52 +101,88 @@ def extract_word(response):
     """
     Parses the response to extract the word.
     """
-    print(f"\nRaw response: {response}")  # Add this line to debug
-    parsed_response = json.loads(response)
-    extracted_word = parsed_response["word"]
-    cleaned_response = extracted_word.replace('```', '').replace('\n', '').replace("'''", '').strip()
-    
-    print(f"\nCleaned response: {cleaned_response}")  # Debugging line to check the cleaned response
-    return cleaned_response
+    print(f"\nRaw response: {response}")  # To debug
+    try:
+        parsed_response = json.loads(response)
+        # If parsed_response is a dictionary, get the value of the first key
+        if isinstance(parsed_response, dict):
+            for key, value in parsed_response.items():
+                # Assuming the value you are interested in is a string
+                if isinstance(value, str):
+                    cleaned_response = value.replace('```', '').replace('\n', '').replace("'''", '').strip()
+                    print(f"\nExtracted value: {cleaned_response}")  # Debugging: Print the extracted value
+                    return cleaned_response
+            raise ValueError("No suitable string value was found in the response.")
+        else:
+            raise ValueError("The JSON response did not contain a dictionary as expected.")
+    except json.JSONDecodeError as e:
+        print(f"Failed to decode JSON from response: {e}")
+        return ''
+    except ValueError as e:
+        print(f"ValueError: {e}")
+        return ''
 
-def play_wordle(file_path):
+    return ''  # Return an empty string if no word is extracted
+
+def play_wordle(file_path, run_id, results):
     words = load_words(file_path)
     target = random.choice(words)
     attempts = 0
     max_attempts = 6
     guess_history = []  # Initialize empty list to store history of guesses and feedback
 
-    print("Welcome to WORDLE (Python Edition). Guessing the 5-letter word!")
-
     while attempts < max_attempts:
-        # Construct input for llm_call_json with history
         print(f"\n This is attempt number: {attempts}. \n")
-        history_str = " ".join(guess_history)  # Convert history to a string
+        history_str = " ".join(guess_history)
         input_str = f"{instructions}. {objective}. Based on previous attempts: {history_str}. Only return the word. Respond in json format."
 
         guess_response = llm_call_json(input_str, GPT)
         guess = extract_word(guess_response).strip().lower()
         
-        # Check if the extracted word is valid
         words_validity = check_word_validity(guess)
         print(f"The validity of the word is: {words_validity}")
         if len(guess) != 5 or not guess.isalpha() or guess not in words:
             print("Invalid input or word not in list. Try again.")
-            continue
+            attempts += 1  # Increment the attempt counter to reflect the attempt
+            if attempts >= max_attempts:  # Check if the maximum attempts have been reached
+                print(f"Maximum attempts reached without guessing the word. The correct word was '{target}'.")
+                break  # Exit the loop if the maximum attempts are reached
+            continue  # Continue to the next iteration of the loop
 
         attempts += 1
         colored_guess = colorize_guess(guess, target)
         print("Feedback on your guess: ", colored_guess)
-        
-        # Append current guess and feedback to history
+
         guess_history.append(f"Attempt {attempts}: {guess} - {colored_guess}")
 
-        if guess == target:
-            print("Congratulations! You've guessed the word correctly.")
-            break
-        elif attempts == max_attempts:
-            print(f"Game over. The correct word was '{target}'.")
+        if guess == target or attempts == max_attempts:
+            global_attempts = attempts if guess == target else -1  # -1 indicates failure to guess within max_attempts
+            results.append({
+                "Global attempt #": global_attempts,
+                "Run #": run_id,
+                "Target word": target,
+                "Guessed word": guess,
+                "Number of 'G' in colorised results": colored_guess.count('G'),
+                "Number of 'Y' in colorised results": colored_guess.count('Y')
+            })
             break
 
+def main():
+    runs = int(input("Enter the number of runs: "))
+    results = []
+
+    for run_id in range(1, runs + 1):
+        print(f"Starting run #{run_id}")
+        play_wordle('puzzles/wordle.txt', run_id, results)
+
+    # Ensure the results directory exists
+    os.makedirs('results', exist_ok=True)
+
+    # Write results to file
+    with open('results/results_wordle.json', 'w') as f:
+        json.dump(results, f, indent=4)
+
+    print("All runs completed. Results stored in 'results/results_wordle.json'.")
+
 if __name__ == '__main__':
-    play_wordle('puzzles/wordle.txt')
+    main()
