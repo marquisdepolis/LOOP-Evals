@@ -17,11 +17,11 @@ The test is whether they can create them. It tries this over 50 attempts in the 
 
 Add your openai api key to .env file, make any edits to info.json if you want to change anything and run wordgrid.py. By default its set to gpt-4, and runs 50 Attempts with 10 Runs each, feel free to test other groupings 
 
-Afterwards run analysis.py to do the necessary analysis and make a few pretty charts.
+Afterwards run analysis_wg.py to do the necessary analysis and make a few pretty charts. Same again for analysis_wordle.py
 
 # Results
 From the wordgrid run on gpt-4-turbo-preview
-![Surprised? I was](charts/wg_success_and_avg_false_count.png)
+![Surprised? I really was](charts/wg_success_and_avg_false_count.png)
 
 Or from the wordle run on gpt-4-turbo as well
 ![It really doesn't like changing predictions a little by little](charts/wordle_avg_GY_trend.png)
