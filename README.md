@@ -20,11 +20,16 @@ Add your openai api key to .env file, make any edits to info.json if you want to
 Afterwards run analysis_wg.py to do the necessary analysis and make a few pretty charts. Same again for analysis_wordle.py
 
 # Results
-From the wordgrid run on gpt-4-turbo-preview
+From the wordgrid run on gpt-4-turbo-preview, we can see the results, which really aren't spectacular in favour of LLMs.
 ![Surprised? I really was](charts/wg_success_and_avg_false_count.png)
 
-Or from the wordle run on gpt-4-turbo as well
+Or
+![False counts by matrix size](charts/wg_distribution_of_false_counts.png)
+
+Similarly, from the wordle run on gpt-4-turbo we can see similar trends as well ...
 ![It really doesn't like changing predictions a little by little](charts/wordle_avg_GY_trend.png)
+
+![And the number of "good" guesses don't seem to go any higher than base guesswork](charts/wordle_GY_count.png)
 
 # Next steps
 There are many other such evaluations I want to create. Next up is likely sudokus and cipher puzzles, which also require iterative reasoning while also meeting our criteria.
