@@ -9,7 +9,7 @@ import seaborn as sns
 os.makedirs('charts', exist_ok=True)
 archive_folder_path = '#Archive/'
 os.makedirs(archive_folder_path, exist_ok=True)
-
+os.makedirs('results', exist_ok=True)
 file_paths = [
     'results_objective_3.json',
     'results_objective_4.json',
@@ -28,7 +28,7 @@ for file_path in file_paths:
     os.rename(file_path, archive_folder_path + os.path.basename(file_path))
 
 # Write the combined results to a new file
-combined_results_path = 'results_wg.json'
+combined_results_path = 'resulst/results_wg.json'
 with open(combined_results_path, 'w') as file:
     json.dump(combined_results, file, indent=4)
 
