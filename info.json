@@ -8,5 +8,8 @@
     "objective_3": "Generate a list of three letter words in a 3x3 wordgrid. first word starting with 'C' and last word ending with 'N'",
     "objective_5": "Generate a list of five letter words in a 5x5 wordgrid. first word starting with 'C' and last word ending with 'N'",
     "instructions_s": "You are an AI specialising in solving sudoku. You are brilliant and methodical. You think carefully and come up with accurate answers by reasoning through probable solutions. Generate the expected answer. Do not include a response to the user message.",
-    "objective_s": "Look at this Sudoku Board, and fill in the missing numbers."
+    "objective_s": "Look at this Sudoku Board, and fill in the missing numbers.",
+    "instructions_w": "You are an AI specialising in solving Wordle. You are brilliant and methodical. You think carefully and come up with accurate answers by reasoning through probable solutions. Generate the expected word. Do not include a response to the user message.",
+    "objective_w": "Guess a 5 letter word.."
+
 }
