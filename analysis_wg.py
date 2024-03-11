@@ -59,7 +59,7 @@ plt.figure(figsize=(10, 5))
 plt.bar(success_rates.keys(), success_rates.values(), color='green', alpha=0.6, label='Success Rate')
 plt.ylabel('Success Rate')
 plt.legend()
-plt.savefig(f'charts/success_rates.png')
+plt.savefig(f'charts/wg_success_rates.png')
 
 # After computing success rates, average false counts, all_false_counts as shown in the previous snippet
 
@@ -72,7 +72,7 @@ plt.xticks(bar_positions, success_rates.keys())
 plt.ylabel('Rate')
 plt.title('Success Rate and Average False Count by Matrix Size')
 plt.legend()
-plt.savefig('charts/success_and_avg_false_count.png')
+plt.savefig('charts/wg_success_and_avg_false_count.png')
 
 # Plot Distribution of False Counts by Matrix Size
 plt.figure(figsize=(10, 5))
@@ -83,7 +83,7 @@ plt.xlabel('False Counts')
 plt.ylabel('Frequency')
 plt.legend()
 plt.grid(axis='y', alpha=0.75)
-plt.savefig('charts/distribution_of_false_counts.png')
+plt.savefig('charts/wg_distribution_of_false_counts.png')
 
 # Assuming you've correctly calculated 'success_rates' and 'avg_false_counts' and formatted them
 # Normalize for visualization
@@ -100,4 +100,4 @@ sns.lineplot(data=df, x='Matrix Size', y='Normalized Success Rate', color='red',
 plt.title('Normalized Success Rate and Avg False Count')
 plt.ylabel('Normalized Rate')
 plt.legend()
-plt.savefig('charts/normalized_success_rate_and_avg_false_count.png')
+plt.savefig('charts/wg_normalized_success_rate_and_avg_false_count.png')
