@@ -2,65 +2,1089 @@
     {
         "Global attempt #": 1,
         "Run #": 1,
-        "Target word": "their",
-        "Guessed word": "table",
+        "Target word": "scope",
+        "Guessed word": "crane",
         "Number of 'G' in colorised results": 1,
         "Number of 'Y' in colorised results": 1
     },
     {
-        "Global attempt #": 1,
-        "Run #": 2,
-        "Target word": "their",
+        "Global attempt #": 2,
+        "Run #": 1,
+        "Target word": "piney",
         "Guessed word": "crane",
         "Number of 'G' in colorised results": 0,
         "Number of 'Y' in colorised results": 2
     },
     {
-        "Global attempt #": 1,
-        "Run #": 3,
-        "Target word": "their",
-        "Guessed word": "pride",
+        "Global attempt #": 2,
+        "Run #": 2,
+        "Target word": "piney",
+        "Guessed word": "brave",
         "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 3
+        "Number of 'Y' in colorised results": 1
     },
     {
-        "Global attempt #": 1,
-        "Run #": 4,
-        "Target word": "their",
-        "Guessed word": "quirk",
+        "Global attempt #": 3,
+        "Run #": 1,
+        "Target word": "champ",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 2,
+        "Number of 'Y' in colorised results": 0
+    },
+    {
+        "Global attempt #": 3,
+        "Run #": 3,
+        "Target word": "champ",
+        "Guessed word": "giddy",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 0
+    },
+    {
+        "Global attempt #": 3,
+        "Run #": 5,
+        "Target word": "champ",
+        "Guessed word": "gloom",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1
+    },
+    {
+        "Global attempt #": 3,
+        "Run #": 6,
+        "Target word": "champ",
+        "Guessed word": "gawky",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1
+    },
+    {
+        "Global attempt #": 4,
+        "Run #": 1,
+        "Target word": "shawl",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 0
+    },
+    {
+        "Global attempt #": 4,
+        "Run #": 2,
+        "Target word": "shawl",
+        "Guessed word": "light",
         "Number of 'G' in colorised results": 0,
         "Number of 'Y' in colorised results": 2
     },
     {
-        "Global attempt #": 2,
+        "Global attempt #": 4,
+        "Run #": 3,
+        "Target word": "shawl",
+        "Guessed word": "giddy",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 0
+    },
+    {
+        "Global attempt #": 4,
+        "Run #": 5,
+        "Target word": "shawl",
+        "Guessed word": "young",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 0
+    },
+    {
+        "Global attempt #": 4,
+        "Run #": 6,
+        "Target word": "shawl",
+        "Guessed word": "bulky",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1
+    },
+    {
+        "Global attempt #": 5,
         "Run #": 1,
-        "Target word": "pique",
+        "Target word": "grove",
         "Guessed word": "table",
         "Number of 'G' in colorised results": 1,
         "Number of 'Y' in colorised results": 0
     },
     {
-        "Global attempt #": 2,
+        "Global attempt #": 6,
+        "Run #": 1,
+        "Target word": "stink",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 0
+    },
+    {
+        "Global attempt #": 6,
         "Run #": 2,
-        "Target word": "pique",
-        "Guessed word": "fungi",
+        "Target word": "stink",
+        "Guessed word": "light",
         "Number of 'G' in colorised results": 0,
         "Number of 'Y' in colorised results": 2
     },
     {
-        "Global attempt #": 2,
+        "Global attempt #": 7,
+        "Run #": 1,
+        "Target word": "house",
+        "Guessed word": "table",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 0
+    },
+    {
+        "Global attempt #": 7,
+        "Run #": 2,
+        "Target word": "house",
+        "Guessed word": "fjord",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1
+    },
+    {
+        "Global attempt #": 7,
         "Run #": 4,
-        "Target word": "pique",
+        "Target word": "house",
+        "Guessed word": "young",
+        "Number of 'G' in colorised results": 2,
+        "Number of 'Y' in colorised results": 0
+    },
+    {
+        "Global attempt #": 7,
+        "Run #": 5,
+        "Target word": "house",
+        "Guessed word": "buggy",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1
+    },
+    {
+        "Global attempt #": 8,
+        "Run #": 1,
+        "Target word": "naval",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2
+    },
+    {
+        "Global attempt #": 8,
+        "Run #": 3,
+        "Target word": "naval",
+        "Guessed word": "pride",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 0
+    },
+    {
+        "Global attempt #": 9,
+        "Run #": 1,
+        "Target word": "cause",
+        "Guessed word": "table",
+        "Number of 'G' in colorised results": 2,
+        "Number of 'Y' in colorised results": 0
+    },
+    {
+        "Global attempt #": 9,
+        "Run #": 2,
+        "Target word": "cause",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 2,
+        "Number of 'Y' in colorised results": 1
+    },
+    {
+        "Global attempt #": 9,
+        "Run #": 4,
+        "Target word": "cause",
+        "Guessed word": "angry",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1
+    },
+    {
+        "Global attempt #": 9,
+        "Run #": 5,
+        "Target word": "cause",
+        "Guessed word": "candy",
+        "Number of 'G' in colorised results": 2,
+        "Number of 'Y' in colorised results": 0
+    },
+    {
+        "Global attempt #": 10,
+        "Run #": 1,
+        "Target word": "bagel",
+        "Guessed word": "slate",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 3
+    },
+    {
+        "Global attempt #": 10,
+        "Run #": 2,
+        "Target word": "bagel",
+        "Guessed word": "beady",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 2
+    },
+    {
+        "Global attempt #": 10,
+        "Run #": 3,
+        "Target word": "bagel",
+        "Guessed word": "heady",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2
+    },
+    {
+        "Global attempt #": 11,
+        "Run #": 1,
+        "Target word": "strap",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2
+    },
+    {
+        "Global attempt #": 11,
+        "Run #": 2,
+        "Target word": "strap",
+        "Guessed word": "glory",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1
+    },
+    {
+        "Global attempt #": 11,
+        "Run #": 4,
+        "Target word": "strap",
+        "Guessed word": "proxy",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2
+    },
+    {
+        "Global attempt #": 12,
+        "Run #": 1,
+        "Target word": "teary",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 2
+    },
+    {
+        "Global attempt #": 12,
+        "Run #": 3,
+        "Target word": "teary",
+        "Guessed word": "foggy",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 0
+    },
+    {
+        "Global attempt #": 13,
+        "Run #": 1,
+        "Target word": "glory",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1
+    },
+    {
+        "Global attempt #": 13,
+        "Run #": 2,
+        "Target word": "glory",
+        "Guessed word": "spicy",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 0
+    },
+    {
+        "Global attempt #": 13,
+        "Run #": 3,
+        "Target word": "glory",
+        "Guessed word": "foggy",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 2
+    },
+    {
+        "Global attempt #": 13,
+        "Run #": 5,
+        "Target word": "glory",
+        "Guessed word": "giddy",
+        "Number of 'G' in colorised results": 2,
+        "Number of 'Y' in colorised results": 0
+    },
+    {
+        "Global attempt #": 14,
+        "Run #": 1,
+        "Target word": "viola",
+        "Guessed word": "table",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 1
+    },
+    {
+        "Global attempt #": 14,
+        "Run #": 2,
+        "Target word": "viola",
+        "Guessed word": "young",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1
+    },
+    {
+        "Global attempt #": 15,
+        "Run #": 1,
+        "Target word": "house",
+        "Guessed word": "table",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 0
+    },
+    {
+        "Global attempt #": 15,
+        "Run #": 4,
+        "Target word": "house",
+        "Guessed word": "fjord",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1
+    },
+    {
+        "Global attempt #": 15,
+        "Run #": 5,
+        "Target word": "house",
+        "Guessed word": "young",
+        "Number of 'G' in colorised results": 2,
+        "Number of 'Y' in colorised results": 0
+    },
+    {
+        "Global attempt #": 16,
+        "Run #": 1,
+        "Target word": "frame",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 3,
+        "Number of 'Y' in colorised results": 0
+    },
+    {
+        "Global attempt #": 17,
+        "Run #": 1,
+        "Target word": "smelt",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1
+    },
+    {
+        "Global attempt #": 17,
+        "Run #": 2,
+        "Target word": "smelt",
+        "Guessed word": "soggy",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 0
+    },
+    {
+        "Global attempt #": 17,
+        "Run #": 4,
+        "Target word": "smelt",
+        "Guessed word": "guppy",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 0
+    },
+    {
+        "Global attempt #": 17,
+        "Run #": 5,
+        "Target word": "smelt",
+        "Guessed word": "glyph",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1
+    },
+    {
+        "Global attempt #": 17,
+        "Run #": 6,
+        "Target word": "smelt",
+        "Guessed word": "gawky",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 0
+    },
+    {
+        "Global attempt #": 18,
+        "Run #": 1,
+        "Target word": "carry",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 2
+    },
+    {
+        "Global attempt #": 19,
+        "Run #": 1,
+        "Target word": "under",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 3
+    },
+    {
+        "Global attempt #": 19,
+        "Run #": 2,
+        "Target word": "under",
+        "Guessed word": "brave",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2
+    },
+    {
+        "Global attempt #": 20,
+        "Run #": 1,
+        "Target word": "anger",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 4
+    },
+    {
+        "Global attempt #": 20,
+        "Run #": 2,
+        "Target word": "anger",
+        "Guessed word": "brave",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 3
+    },
+    {
+        "Global attempt #": 20,
+        "Run #": 4,
+        "Target word": "anger",
+        "Guessed word": "grace",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 4
+    },
+    {
+        "Global attempt #": 21,
+        "Run #": 1,
+        "Target word": "first",
+        "Guessed word": "table",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1
+    },
+    {
+        "Global attempt #": 21,
+        "Run #": 2,
+        "Target word": "first",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1
+    },
+    {
+        "Global attempt #": 21,
+        "Run #": 3,
+        "Target word": "first",
+        "Guessed word": "brave",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1
+    },
+    {
+        "Global attempt #": 21,
+        "Run #": 4,
+        "Target word": "first",
+        "Guessed word": "fjord",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 1
+    },
+    {
+        "Global attempt #": 21,
+        "Run #": 5,
+        "Target word": "first",
+        "Guessed word": "fjord",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 1
+    },
+    {
+        "Global attempt #": 21,
+        "Run #": 6,
+        "Target word": "first",
+        "Guessed word": "fjord",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 1
+    },
+    {
+        "Global attempt #": 22,
+        "Run #": 1,
+        "Target word": "mount",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 0
+    },
+    {
+        "Global attempt #": 22,
+        "Run #": 3,
+        "Target word": "mount",
+        "Guessed word": "light",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 0
+    },
+    {
+        "Global attempt #": 23,
+        "Run #": 1,
+        "Target word": "liner",
+        "Guessed word": "table",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2
+    },
+    {
+        "Global attempt #": 23,
+        "Run #": 2,
+        "Target word": "liner",
+        "Guessed word": "maybe",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1
+    },
+    {
+        "Global attempt #": 24,
+        "Run #": 1,
+        "Target word": "brash",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 2,
+        "Number of 'Y' in colorised results": 0
+    },
+    {
+        "Global attempt #": 24,
+        "Run #": 2,
+        "Target word": "brash",
+        "Guessed word": "gloom",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 0
+    },
+    {
+        "Global attempt #": 24,
+        "Run #": 4,
+        "Target word": "brash",
+        "Guessed word": "brave",
+        "Number of 'G' in colorised results": 3,
+        "Number of 'Y' in colorised results": 0
+    },
+    {
+        "Global attempt #": 25,
+        "Run #": 1,
+        "Target word": "basic",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2
+    },
+    {
+        "Global attempt #": 25,
+        "Run #": 2,
+        "Target word": "basic",
+        "Guessed word": "pride",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1
+    },
+    {
+        "Global attempt #": 26,
+        "Run #": 1,
+        "Target word": "larva",
+        "Guessed word": "table",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 1
+    },
+    {
+        "Global attempt #": 26,
+        "Run #": 3,
+        "Target word": "larva",
         "Guessed word": "foggy",
         "Number of 'G' in colorised results": 0,
         "Number of 'Y' in colorised results": 0
     },
     {
-        "Global attempt #": 2,
+        "Global attempt #": 26,
         "Run #": 5,
-        "Target word": "pique",
-        "Guessed word": "picky",
+        "Target word": "larva",
+        "Guessed word": "quirk",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1
+    },
+    {
+        "Global attempt #": 27,
+        "Run #": 1,
+        "Target word": "shift",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 0
+    },
+    {
+        "Global attempt #": 27,
+        "Run #": 2,
+        "Target word": "shift",
+        "Guessed word": "blush",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2
+    },
+    {
+        "Global attempt #": 28,
+        "Run #": 1,
+        "Target word": "robot",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1
+    },
+    {
+        "Global attempt #": 28,
+        "Run #": 2,
+        "Target word": "robot",
+        "Guessed word": "spicy",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 0
+    },
+    {
+        "Global attempt #": 29,
+        "Run #": 1,
+        "Target word": "foray",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2
+    },
+    {
+        "Global attempt #": 29,
+        "Run #": 2,
+        "Target word": "foray",
+        "Guessed word": "party",
+        "Number of 'G' in colorised results": 2,
+        "Number of 'Y' in colorised results": 1
+    },
+    {
+        "Global attempt #": 29,
+        "Run #": 4,
+        "Target word": "foray",
+        "Guessed word": "graph",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2
+    },
+    {
+        "Global attempt #": 30,
+        "Run #": 1,
+        "Target word": "leery",
+        "Guessed word": "quirk",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 0
+    },
+    {
+        "Global attempt #": 30,
+        "Run #": 2,
+        "Target word": "leery",
+        "Guessed word": "foggy",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 0
+    },
+    {
+        "Global attempt #": 30,
+        "Run #": 4,
+        "Target word": "leery",
+        "Guessed word": "light",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 0
+    },
+    {
+        "Global attempt #": 31,
+        "Run #": 1,
+        "Target word": "scour",
+        "Guessed word": "crate",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2
+    },
+    {
+        "Global attempt #": 31,
+        "Run #": 2,
+        "Target word": "scour",
+        "Guessed word": "brave",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1
+    },
+    {
+        "Global attempt #": 32,
+        "Run #": 1,
+        "Target word": "labor",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2
+    },
+    {
+        "Global attempt #": 32,
+        "Run #": 3,
+        "Target word": "labor",
+        "Guessed word": "brave",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 3
+    },
+    {
+        "Global attempt #": 33,
+        "Run #": 1,
+        "Target word": "usher",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2
+    },
+    {
+        "Global attempt #": 33,
+        "Run #": 2,
+        "Target word": "usher",
+        "Guessed word": "blush",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 3
+    },
+    {
+        "Global attempt #": 33,
+        "Run #": 3,
+        "Target word": "usher",
+        "Guessed word": "bulky",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1
+    },
+    {
+        "Global attempt #": 33,
+        "Run #": 4,
+        "Target word": "usher",
+        "Guessed word": "lucky",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1
+    },
+    {
+        "Global attempt #": 34,
+        "Run #": 1,
+        "Target word": "duvet",
+        "Guessed word": "table",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2
+    },
+    {
+        "Global attempt #": 34,
+        "Run #": 2,
+        "Target word": "duvet",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1
+    },
+    {
+        "Global attempt #": 34,
+        "Run #": 3,
+        "Target word": "duvet",
+        "Guessed word": "liner",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 0
+    },
+    {
+        "Global attempt #": 34,
+        "Run #": 4,
+        "Target word": "duvet",
+        "Guessed word": "finer",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 0
+    },
+    {
+        "Global attempt #": 35,
+        "Run #": 1,
+        "Target word": "shorn",
+        "Guessed word": "table",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 0
+    },
+    {
+        "Global attempt #": 35,
+        "Run #": 2,
+        "Target word": "shorn",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2
+    },
+    {
+        "Global attempt #": 36,
+        "Run #": 1,
+        "Target word": "chant",
+        "Guessed word": "train",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 2
+    },
+    {
+        "Global attempt #": 36,
+        "Run #": 2,
+        "Target word": "chant",
+        "Guessed word": "clown",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 1
+    },
+    {
+        "Global attempt #": 36,
+        "Run #": 3,
+        "Target word": "chant",
+        "Guessed word": "frock",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1
+    },
+    {
+        "Global attempt #": 37,
+        "Run #": 1,
+        "Target word": "carol",
+        "Guessed word": "slate",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2
+    },
+    {
+        "Global attempt #": 37,
+        "Run #": 2,
+        "Target word": "carol",
+        "Guessed word": "meant",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1
+    },
+    {
+        "Global attempt #": 38,
+        "Run #": 1,
+        "Target word": "froth",
+        "Guessed word": "table",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1
+    },
+    {
+        "Global attempt #": 38,
+        "Run #": 2,
+        "Target word": "froth",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 0
+    },
+    {
+        "Global attempt #": 39,
+        "Run #": 1,
+        "Target word": "smear",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 3
+    },
+    {
+        "Global attempt #": 39,
+        "Run #": 2,
+        "Target word": "smear",
+        "Guessed word": "brake",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 3
+    },
+    {
+        "Global attempt #": 40,
+        "Run #": 1,
+        "Target word": "chart",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 2,
+        "Number of 'Y' in colorised results": 1
+    },
+    {
+        "Global attempt #": 41,
+        "Run #": 1,
+        "Target word": "noble",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 1
+    },
+    {
+        "Global attempt #": 41,
+        "Run #": 2,
+        "Target word": "noble",
+        "Guessed word": "flock",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2
+    },
+    {
+        "Global attempt #": 41,
+        "Run #": 5,
+        "Target word": "noble",
+        "Guessed word": "gloom",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2
+    },
+    {
+        "Global attempt #": 41,
+        "Run #": 6,
+        "Target word": "noble",
+        "Guessed word": "gloom",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2
+    },
+    {
+        "Global attempt #": 42,
+        "Run #": 1,
+        "Target word": "droll",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 0
+    },
+    {
+        "Global attempt #": 42,
+        "Run #": 2,
+        "Target word": "droll",
+        "Guessed word": "stock",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 0
+    },
+    {
+        "Global attempt #": 42,
+        "Run #": 3,
+        "Target word": "droll",
+        "Guessed word": "light",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1
+    },
+    {
+        "Global attempt #": 42,
+        "Run #": 4,
+        "Target word": "droll",
+        "Guessed word": "flick",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1
+    },
+    {
+        "Global attempt #": 43,
+        "Run #": 1,
+        "Target word": "clerk",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 2
+    },
+    {
+        "Global attempt #": 43,
+        "Run #": 2,
+        "Target word": "clerk",
+        "Guessed word": "pride",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2
+    },
+    {
+        "Global attempt #": 43,
+        "Run #": 3,
+        "Target word": "clerk",
+        "Guessed word": "flick",
+        "Number of 'G' in colorised results": 2,
+        "Number of 'Y' in colorised results": 1
+    },
+    {
+        "Global attempt #": 43,
+        "Run #": 5,
+        "Target word": "clerk",
+        "Guessed word": "click",
+        "Number of 'G' in colorised results": 3,
+        "Number of 'Y' in colorised results": 0
+    },
+    {
+        "Global attempt #": 44,
+        "Run #": 1,
+        "Target word": "feign",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2
+    },
+    {
+        "Global attempt #": 44,
+        "Run #": 2,
+        "Target word": "feign",
+        "Guessed word": "brave",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1
+    },
+    {
+        "Global attempt #": 44,
+        "Run #": 3,
+        "Target word": "feign",
+        "Guessed word": "fjord",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 0
+    },
+    {
+        "Global attempt #": 44,
+        "Run #": 4,
+        "Target word": "feign",
+        "Guessed word": "flood",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 0
+    },
+    {
+        "Global attempt #": 45,
+        "Run #": 1,
+        "Target word": "antic",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 3
+    },
+    {
+        "Global attempt #": 45,
+        "Run #": 2,
+        "Target word": "antic",
+        "Guessed word": "brave",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1
+    },
+    {
+        "Global attempt #": 46,
+        "Run #": 1,
+        "Target word": "drive",
+        "Guessed word": "table",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 0
+    },
+    {
+        "Global attempt #": 46,
+        "Run #": 2,
+        "Target word": "drive",
+        "Guessed word": "light",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1
+    },
+    {
+        "Global attempt #": 47,
+        "Run #": 1,
+        "Target word": "shire",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 1
+    },
+    {
+        "Global attempt #": 48,
+        "Run #": 1,
+        "Target word": "brush",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 0
+    },
+    {
+        "Global attempt #": 48,
+        "Run #": 3,
+        "Target word": "brush",
+        "Guessed word": "sight",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2
+    },
+    {
+        "Global attempt #": 48,
+        "Run #": 4,
+        "Target word": "brush",
+        "Guessed word": "light",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1
+    },
+    {
+        "Global attempt #": 48,
+        "Run #": 5,
+        "Target word": "brush",
+        "Guessed word": "giddy",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 0
+    },
+    {
+        "Global attempt #": 49,
+        "Run #": 1,
+        "Target word": "wrung",
+        "Guessed word": "crane",
         "Number of 'G' in colorised results": 2,
         "Number of 'Y' in colorised results": 0
+    },
+    {
+        "Global attempt #": 49,
+        "Run #": 3,
+        "Target word": "wrung",
+        "Guessed word": "light",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1
+    },
+    {
+        "Global attempt #": 49,
+        "Run #": 5,
+        "Target word": "wrung",
+        "Guessed word": "sight",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1
+    },
+    {
+        "Global attempt #": 50,
+        "Run #": 1,
+        "Target word": "acute",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 2
+    },
+    {
+        "Global attempt #": 50,
+        "Run #": 3,
+        "Target word": "acute",
+        "Guessed word": "brave",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 1
     }
 ]

@@ -67,3 +67,21 @@ plt.xticks(rotation=45)
 plt.legend()
 plt.grid(True)
 plt.savefig('charts/wordle_avg_GY_trend.png')
+
+# Heatmap of 'G+Y' counts across all attempts and runs
+df['Total G+Y'] = df["Number of 'G' in colorised results"] + df["Number of 'Y' in colorised results"]
+heatmap_data = df.pivot_table(index='Run #', columns='Global attempt #', values='Total G+Y', aggfunc='mean', fill_value=0)
+
+plt.figure(figsize=(12, 7))
+sns.heatmap(heatmap_data, annot=True, fmt=".1f", linewidths=.5, cmap='YlGnBu')
+plt.title("Heatmap of 'G+Y' Counts per Attempt Across All Runs")
+plt.xlabel("Attempt Number")
+plt.ylabel("Run Number")
+plt.savefig('charts/wordle_heatmap avg.png')
+
+# Box Plot of 'G' and 'Y' Counts
+plt.figure(figsize=(14, 7))
+sns.boxplot(data=df[['Number of \'G\' in colorised results', 'Number of \'Y\' in colorised results']])
+plt.title("Box Plot of 'G' and 'Y' Counts Across All Attempts")
+plt.ylabel("Count")
+plt.savefig('charts/wordle_GY_count.png')
