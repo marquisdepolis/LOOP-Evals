@@ -101,7 +101,7 @@ def extract_word(response):
     """
     Parses the response to extract the word.
     """
-    print(f"\nRaw response: {response}")  # To debug
+    # print(f"\nRaw response: {response}")  # To debug
     try:
         parsed_response = json.loads(response)
         # If parsed_response is a dictionary, get the value of the first key
@@ -155,24 +155,25 @@ def play_wordle(file_path, run_id, results):
 
         guess_history.append(f"Attempt {attempts}: {guess} - {colored_guess}")
 
-        if guess == target or attempts == max_attempts:
-            global_attempts = attempts if guess == target else -1  # -1 indicates failure to guess within max_attempts
-            results.append({
-                "Global attempt #": global_attempts,
-                "Run #": run_id,
-                "Target word": target,
-                "Guessed word": guess,
-                "Number of 'G' in colorised results": colored_guess.count('G'),
-                "Number of 'Y' in colorised results": colored_guess.count('Y')
-            })
-            break
+        # if guess == target or attempts == max_attempts:
+        #     global_attempts = attempts if guess == target else -1  # -1 indicates failure to guess within max_attempts
+        results.append({
+            "Global attempt #": run_id,
+            "Run #": attempts,
+            "Target word": target,
+            "Guessed word": guess,
+            "Number of 'G' in colorised results": colored_guess.count('G'),
+            "Number of 'Y' in colorised results": colored_guess.count('Y')
+        })
+        print(f"Results is: {results}")
+        break
 
 def main():
     runs = int(input("Enter the number of runs: "))
     results = []
 
     for run_id in range(1, runs + 1):
-        print(f"Starting run #{run_id}")
+        print(f"\n\n Starting run #{run_id}")
         play_wordle('puzzles/wordle.txt', run_id, results)
 
     # Ensure the results directory exists
