@@ -37,7 +37,7 @@ def llm_call_json(input, GPT):
     )
     return response.choices[0].message.content
 
-@retry(stop=stop_after_attempt(3), wait=wait_fixed(2))
+# @retry(stop=stop_after_attempt(3), wait=wait_fixed(2))
 @retry_except(exceptions_to_catch=(IndexError, ZeroDivisionError), tries=3, delay=2)
 def llm_call_claude(input, LLM):
     client = Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY"))
@@ -45,8 +45,9 @@ def llm_call_claude(input, LLM):
     response = client.messages.create(
         model=LLM,
         messages=[
-            {"role": "system", "content": """You are an AI designed to solve word puzzles. You are brilliant and clever."""},
             {"role": "user", "content": f"{input}"}
-        ]
+        ],
+        system="You are an AI designed to solve word puzzles. You are brilliant and clever.",
+        max_tokens=4096,
     )
     return response.content[0].text
