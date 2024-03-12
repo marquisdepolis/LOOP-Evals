@@ -4,6 +4,7 @@
     "small_change_wg": "You are an AI specialising in solving crossword puzzles. You are able to think of appropriate changes to the given words to satisfy the solution criteria. You are brilliant at this. Generate the expected answer. Do not include a response to the user message.",
     "GPT_MODEL": "gpt-3.5-turbo-1106",
     "GPT_4": "gpt-4-turbo-preview",
+    "CLAUDE": "claude-3-opus-20240229",
     "objective_4": "Generate a list of four letter words in a 4x4 wordgrid. first word starting with 'C' and last word ending with 'N'",
     "objective_3": "Generate a list of three letter words in a 3x3 wordgrid. first word starting with 'C' and last word ending with 'N'",
     "objective_5": "Generate a list of five letter words in a 5x5 wordgrid. first word starting with 'C' and last word ending with 'N'",
