@@ -6,7 +6,7 @@ import openai
 import enchant
 from dotenv import load_dotenv
 load_dotenv()
-from llms.gpt import llm_call
+from llms.gpt import llm_call, llm_call_claude
 from utils.retry import retry_except
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
@@ -18,15 +18,22 @@ small_change = data.get('small_change_wg')
 GPT = data.get('GPT_4')
 ATTEMPTS = 50
 TURNS = 10
+CLAUDE = data.get('CLAUDE')
+
+def get_llm_response(input_str, llm_type='openai'):
+    if llm_type == 'openai':
+        return llm_call(input_str, GPT)
+    elif llm_type == 'claude':
+        return llm_call_claude(input_str, CLAUDE)
 
 def create_word_matrix(objective):
     """Generate a matrix of words, starting with 'C' and ending with 'N'."""
-    response = llm_call(f"""
+    response = get_llm_response(f"""
                         {instructions}. Objective is: {objective}. The words have to be valid English words when read across the rows and also when read down the columns. This is very important, think quietly first. Reply with only the list of words, as follows
                         ```
                         Word, Word, Word etc
                         ```
-    """, GPT)
+    """, llm_type='openai')
     return response
 
 def check_word_validity(word):
@@ -107,7 +114,7 @@ def regenerate_invalid_words(invalid_words, original_matrix, objective):
     Word, Word, Word etc.
     ```
     """
-    response = llm_call(regeneration_prompt, GPT)
+    response = get_llm_response(regeneration_prompt, llm_type='openai')
     return response
 
 @retry_except(exceptions_to_catch=(IndexError, ZeroDivisionError), tries=3, delay=2)

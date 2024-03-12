@@ -5,7 +5,7 @@ import enchant
 import random
 from dotenv import load_dotenv
 load_dotenv()
-from llms.gpt import llm_call_json
+from llms.gpt import llm_call_json, llm_call_claude
 from utils.retry import retry_except
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
@@ -15,6 +15,13 @@ with open('info.json', 'r') as file:
 instructions = data.get('instructions_w')
 objective = data.get('objective_w')
 GPT = data.get('GPT_4')
+CLAUDE = data.get('CLAUDE')
+
+def get_llm_response(input_str, llm_type='openai'):
+    if llm_type == 'openai':
+        return llm_call_json(input_str, GPT)
+    elif llm_type == 'claude':
+        return llm_call_claude(input_str, CLAUDE)
 
 def load_words(file_path):
     with open(file_path, 'r') as file:
@@ -128,9 +135,9 @@ def play_wordle(file_path, run_id, results):
     while attempts <= max_attempts:
         print(f"\n This is attempt number: {attempts}. \n")
         history_str = " ".join(guess_history)
-        input_str = f"{instructions}. {objective}. Based on previous attempts: {history_str}. Only return the word. Respond in json format."
+        input_str = f"{instructions}. {objective}. Based on previous attempts: {history_str}. Only return the word."
 
-        guess_response = llm_call_json(input_str, GPT)
+        guess_response = get_llm_response(input_str, llm_type='openai')
         guess = extract_word(guess_response).strip().lower()
         
         words_validity = check_word_validity(guess)

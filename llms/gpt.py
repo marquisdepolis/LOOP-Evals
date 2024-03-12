@@ -31,7 +31,7 @@ def llm_call_json(input, GPT):
         model=GPT,
         messages=[
             {"role": "system", "content": """You are an AI designed to solve word puzzles. You are brilliant and clever."""},
-            {"role": "user", "content": f"{input}"}
+            {"role": "user", "content": f"Respond in JSON. {input}"}
         ],
         response_format={ "type": "json_object" }
     )
