@@ -5,7 +5,7 @@ import enchant
 import random
 from dotenv import load_dotenv
 load_dotenv()
-from llms.gpt import llm_call_json, llm_call_claude
+from llms.llms import llm_call_json, llm_call_claude
 from utils.retry import retry_except
 
 openai.api_key = os.getenv("OPENAI_API_KEY")

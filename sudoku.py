@@ -5,7 +5,7 @@ import openai
 import enchant
 from dotenv import load_dotenv
 load_dotenv()
-from llms.gpt import llm_call
+from llms.llms import llm_call
 from utils.retry import retry_except
 from puzzles.sudokugen import generate_sudoku, is_valid_move, find_empty_location
 from sudokusolve import encode_sudoku, decode_solution, transpose, solve_sudoku_with_explanation
