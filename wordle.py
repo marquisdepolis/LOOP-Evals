@@ -85,13 +85,6 @@ def check_word_validity(word):
     """
     Check if a word is a valid English word using pyenchant.
     """
-    d = enchant.Dict("en_US")  # or "en_GB" for British English
-    return d.check(word)
-
-def check_word_validity(word):
-    """
-    Check if a word is a valid English word using pyenchant.
-    """
     if not word:  # Check if the word is empty
         return False
     d = enchant.Dict("en_US")  # or "en_GB" for British English
