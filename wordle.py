@@ -46,42 +46,48 @@ def colorize_guess(guess, target):
     GYs = []
     result = ['_'] * 5  # Placeholder for coloring: '_' = not guessed, 'G' = green, 'Y' = yellow
     target_tmp = list(target)  # Temp copy to mark letters as used
+    feedback = []  # This will now hold dictionaries with position, letter, and feedback
+
     # First pass for correct positions
     for i in range(5):
         if guess[i] == target[i]:
             result[i] = 'G'
             target_tmp[i] = None  # Mark as used
+            feedback.append({'position': i, 'letter': guess[i], 'color': 'G'})  # Record the 'G' feedback with position
+        else:
+            feedback.append({'position': i, 'letter': guess[i], 'color': '_'})  # Placeholder
     
     # Second pass for correct letters in wrong positions
     for i in range(5):
         if guess[i] != target[i] and guess[i] in target_tmp:
             result[i] = 'Y'
             target_tmp[target_tmp.index(guess[i])] = None  # Mark as used
+            feedback[i]['color'] = 'Y'  # Update the placeholder to 'Y'
     
     # Convert result to colored string or another representation for CLI
     GYs = ''.join(result)
-    feedback = []
-    target_tmp = list(target)  # Temporary copy to mark letters as used
+    detailed_feedback = "\n".join([f"Position {item['position']+1}: {item['letter']} - {item['color']}" for item in feedback])
+    # target_tmp = list(target)  # Temporary copy to mark letters as used
     
-    # First pass for correct positions
-    for i in range(5):
-        if guess[i] == target[i]:
-            feedback.append({'position': i+1, 'letter': guess[i], 'feedback': 'Correct position and letter (G)'})
-            target_tmp[i] = None  # Mark as used
-        else:
-            feedback.append({'position': i+1, 'letter': guess[i], 'feedback': None})  # Placeholder
+    # # First pass for correct positions
+    # for i in range(5):
+    #     if guess[i] == target[i]:
+    #         feedback.append({'position': i+1, 'letter': guess[i], 'feedback': 'Correct position and letter (G)'})
+    #         target_tmp[i] = None  # Mark as used
+    #     else:
+    #         feedback.append({'position': i+1, 'letter': guess[i], 'feedback': None})  # Placeholder
 
-    # Second pass for correct letters in wrong positions
-    for i in range(5):
-        if feedback[i]['feedback'] is None:  # Only check letters not already marked as correct
-            if guess[i] in target_tmp:
-                feedback[i]['feedback'] = 'Correct letter, wrong position (Y)'
-                target_tmp[target_tmp.index(guess[i])] = None  # Mark as used
-            else:
-                feedback[i]['feedback'] = 'Letter not in the word (_)'
+    # # Second pass for correct letters in wrong positions
+    # for i in range(5):
+    #     if feedback[i]['feedback'] is None:  # Only check letters not already marked as correct
+    #         if guess[i] in target_tmp:
+    #             feedback[i]['feedback'] = 'Correct letter, wrong position (Y)'
+    #             target_tmp[target_tmp.index(guess[i])] = None  # Mark as used
+    #         else:
+    #             feedback[i]['feedback'] = 'Letter not in the word (_)'
 
-    # Format the feedback for display or further processing
-    detailed_feedback = "\n".join([f"Position {item['position']}: {item['letter']} - {item['feedback']}" for item in feedback])
+    # # Format the feedback for display or further processing
+    # feedback_details = "\n".join([f"Position {item['position']}: {item['letter']} - {item['feedback']}" for item in feedback])
     return GYs, detailed_feedback
 
 def check_word_validity(word):
@@ -147,10 +153,10 @@ def play_wordle(file_path, run_id, results):
             continue  # Continue to the next iteration of the loop
 
         attempts += 1
-        GYs, colored_guess = colorize_guess(guess, target)
-        print("Feedback on your guess: ", colored_guess)
+        GYs, feedback_details = colorize_guess(guess, target)
+        print("Feedback on your guess: ", feedback_details)
 
-        guess_history.append(f"Attempt {attempts}: {guess} - {colored_guess}")
+        guess_history.append(f"Attempt {attempts}: {guess} - {feedback_details}")
 
         results.append({
             "Global attempt #": run_id,
@@ -158,7 +164,8 @@ def play_wordle(file_path, run_id, results):
             "Target word": target,
             "Guessed word": guess,
             "Number of 'G' in colorised results": GYs.count('G'),
-            "Number of 'Y' in colorised results": GYs.count('Y')
+            "Number of 'Y' in colorised results": GYs.count('Y'),
+            "Feedback": feedback_details
         })
 
 def main():
