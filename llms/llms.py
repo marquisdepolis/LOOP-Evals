@@ -56,10 +56,10 @@ def llm_call_claude(input, LLM):
 
 # @retry(stop=stop_after_attempt(3), wait=wait_fixed(2))
 @retry_except(exceptions_to_catch=(IndexError, ZeroDivisionError), tries=3, delay=2)
-def llm_call_ollama(prompt):
+def llm_call_ollama(prompt, LLM = "mistral"):
     r = requests.post('http://0.0.0.0:11434/api/generate',
                       json={
-                          'model': "mistral", #llama2:7b
+                          'model': LLM, #llama2:7b
                           'prompt': prompt,
                       },
                       stream=False)

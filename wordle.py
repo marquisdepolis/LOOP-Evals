@@ -16,12 +16,15 @@ instructions = data.get('instructions_w')
 objective = data.get('objective_w')
 GPT = data.get('GPT_4')
 CLAUDE = data.get('CLAUDE')
+OLLAMA = data.get('OLLAMA')
 
-def get_llm_response(input_str, llm_type='openai'):
+def get_llm_response(input_str, llm_type='ollama'):
     if llm_type == 'openai':
         return llm_call_json(input_str, GPT)
     elif llm_type == 'claude':
         return llm_call_claude(input_str, CLAUDE)
+    elif llm_type == 'ollama':
+        return llm_call_ollama(input_str, OLLAMA)
 
 def load_words(file_path):
     with open(file_path, 'r') as file:
