@@ -1,6 +1,8 @@
 from openai import OpenAI
 from anthropic import Anthropic
 import os
+import json
+import requests
 from dotenv import load_dotenv
 load_dotenv()
 from utils.retry import retry_except
@@ -51,3 +53,24 @@ def llm_call_claude(input, LLM):
         max_tokens=4096,
     )
     return response.content[0].text
+
+# @retry(stop=stop_after_attempt(3), wait=wait_fixed(2))
+@retry_except(exceptions_to_catch=(IndexError, ZeroDivisionError), tries=3, delay=2)
+def llm_call_ollama(prompt):
+    r = requests.post('http://0.0.0.0:11434/api/generate',
+                      json={
+                          'model': "mistral", #llama2:7b
+                          'prompt': prompt,
+                      },
+                      stream=False)
+    full_response = ""    
+    for line in r.iter_lines():
+        if line:
+            decoded_line = line.decode('utf-8')
+            json_line = json.loads(decoded_line)
+            full_response += json_line.get("response", "")
+            if json_line.get("done"):
+                break
+
+    # print(full_response)
+    return full_response
