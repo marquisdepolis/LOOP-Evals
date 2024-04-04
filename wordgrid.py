@@ -19,6 +19,7 @@ GPT = data.get('GPT_4')
 ATTEMPTS = 50
 TURNS = 10
 CLAUDE = data.get('CLAUDE')
+OLLAMA = data.get('OLLAMA')
 
 def get_llm_response(input_str, llm_type='ollama'):
     if llm_type == 'openai':
