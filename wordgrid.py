@@ -20,12 +20,14 @@ ATTEMPTS = 50
 TURNS = 10
 CLAUDE = data.get('CLAUDE')
 
-def get_llm_response(input_str, llm_type='openai'):
+def get_llm_response(input_str, llm_type='ollama'):
     if llm_type == 'openai':
-        return llm_call(input_str, GPT)
+        return llm_call_json(input_str, GPT)
     elif llm_type == 'claude':
         return llm_call_claude(input_str, CLAUDE)
-
+    elif llm_type == 'ollama':
+        return llm_call_ollama(input_str, OLLAMA)
+    
 def create_word_matrix(objective):
     """Generate a matrix of words, starting with 'C' and ending with 'N'."""
     response = get_llm_response(f"""
