@@ -16,7 +16,7 @@ with open('info.json', 'r') as file:
 instructions = data.get('instructions_wg')
 small_change = data.get('small_change_wg')
 GPT = data.get('GPT_4')
-ATTEMPTS = 50
+ATTEMPTS = 100
 TURNS = 10
 CLAUDE = data.get('CLAUDE')
 OLLAMA = data.get('OLLAMA')
