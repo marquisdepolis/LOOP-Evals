@@ -60,11 +60,11 @@ def llm_call_ollama(prompt, LLM = "mistral"):
     r = requests.post('http://0.0.0.0:11434/api/generate',
                       json={
                           'model': LLM, #llama2:7b
-                          'prompt': f"{prompt}."# Return this as JSON.",
-                        #   'format': 'json',
+                          'prompt': f"{prompt}. Return this as JSON.",
+                          'format': 'json',
                       },
                       stream=False)
-    full_response = ""    
+    full_response = ""
     for line in r.iter_lines():
         if line:
             decoded_line = line.decode('utf-8')
@@ -73,5 +73,5 @@ def llm_call_ollama(prompt, LLM = "mistral"):
             if json_line.get("done"):
                 break
 
-    # print(full_response)
+    print(full_response)
     return full_response

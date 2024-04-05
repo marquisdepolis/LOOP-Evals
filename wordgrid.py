@@ -6,7 +6,7 @@ import openai
 import enchant
 from dotenv import load_dotenv
 load_dotenv()
-from llms.llms import llm_call, llm_call_claude
+from llms.llms import llm_call_claude, llm_call_json, llm_call_ollama
 from utils.retry import retry_except
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
@@ -16,7 +16,7 @@ with open('info.json', 'r') as file:
 instructions = data.get('instructions_wg')
 small_change = data.get('small_change_wg')
 GPT = data.get('GPT_4')
-ATTEMPTS = 100
+ATTEMPTS = 10
 TURNS = 10
 CLAUDE = data.get('CLAUDE')
 OLLAMA = data.get('OLLAMA')
@@ -36,7 +36,7 @@ def create_word_matrix(objective):
                         ```
                         Word, Word, Word etc
                         ```
-    """, llm_type='openai')
+    """)
     return response
 
 def check_word_validity(word):
@@ -49,36 +49,54 @@ def check_word_validity(word):
 @retry_except(exceptions_to_catch=(IndexError, ZeroDivisionError, ValueError), tries=3, delay=2)
 def extract_words_from_matrix(response):
     """
-    Parses the response to extract and create a list of words,
+    Parses the response to extract and create a list of words. The response can vary in format,
+    containing either a direct list of comma-separated words or a nested structure.
+    
+    Args:
+        response (str): The JSON response string.
+    
+    Returns:
+        list: A list of extracted words, or an empty list if parsing fails.
     """
-    print(f"\nRaw response: {response}")  # Add this line to debug
-    cleaned_response = response.replace('```', '').replace('\n', '').replace("'''", '').strip()
-    
-    print(f"\nCleaned response: {cleaned_response}")  # Debugging line to check the cleaned response
-    words_list = [word.strip() for word in cleaned_response.split(",")]
+    print(f"Raw response is: {response}")
+        
     try:
-        # Ensure all words have the same length
-        word_lengths = [len(word) for word in words_list]
-        if len(set(word_lengths)) > 1:
-            print("Words have varying lengths, which is not allowed for a valid matrix.")
+        response_json = json.loads(response)
+        # Identify the correct key in the JSON response (can be 'WordGrid', 'words', or 'response')
+        word_grid_key = None
+        for key in ['WordGrid', 'words', 'response']:
+            if key in response_json:
+                word_grid_key = key
+                break
+        
+        if not word_grid_key:
+            print("Expected key ('WordGrid', 'words', 'response') not found in the response.")
+            return []
+        
+        word_grid = response_json[word_grid_key]
+        
+        # Handle both string and list formats of the word grid
+        if isinstance(word_grid, list):
+            # Flatten the list in case it's nested and join if it's a list of strings
+            word_grid = [item for sublist in word_grid for item in (sublist.split(", ") if isinstance(sublist, str) else [sublist])]
+        elif isinstance(word_grid, str):
+            # Split by comma for string type
+            word_grid = word_grid.split(", ")
+        else:
+            print("Unsupported format for 'WordGrid'.")
+            return []
+        
+        # Clean up words
+        words_list = [word.strip() for word in word_grid]
+        
+        return words_list
 
-        matrix = [list(word) for word in words_list]
-        row_words = words_list
-        num_rows = len(matrix)
-        num_cols = len(matrix[0]) if num_rows > 0 else 0
-
-        # Generate column words based on the actual size of the matrix
-        column_words = [''.join(matrix[row][col] for row in range(num_rows)) for col in range(num_cols)]
-    
-    except IndexError:
-        # Handle the error or skip
-        print("An IndexError occurred. Skipping problematic operation.")
-        column_words = []  # Set to an empty list or another default value
-
-    all_words = row_words + column_words
-    print(f"\n\n All words are {all_words}")
-    # print(f"Total number of words are {sum(all_words)}")
-    return all_words
+    except json.JSONDecodeError as e:
+        print(f"Failed to decode JSON from response: {e}. Check the response format.")
+        return []
+    except Exception as e:
+        print(f"An unexpected error occurred: {e}")
+        return []
 
 @retry_except(exceptions_to_catch=(IndexError, ZeroDivisionError), tries=3, delay=2)
 def check_words_validity(words):
@@ -117,7 +135,7 @@ def regenerate_invalid_words(invalid_words, original_matrix, objective):
     Word, Word, Word etc.
     ```
     """
-    response = get_llm_response(regeneration_prompt, llm_type='openai')
+    response = get_llm_response(regeneration_prompt)
     return response
 
 @retry_except(exceptions_to_catch=(IndexError, ZeroDivisionError), tries=3, delay=2)
