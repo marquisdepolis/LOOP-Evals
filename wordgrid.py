@@ -33,9 +33,9 @@ def create_word_matrix(objective):
     """Generate a matrix of words, starting with 'C' and ending with 'N'."""
     response = get_llm_response(f"""
                         {instructions}. Objective is: {objective}. The words have to be valid English words when read across the rows and also when read down the columns. This is very important, think quietly first. Reply with only the list of words, as follows
-                        ```
+                        '''
                         Word, Word, Word etc
-                        ```
+                        '''
     """)
     return response
 
@@ -46,50 +46,50 @@ def check_word_validity(word):
     d = enchant.Dict("en_US")  # or "en_GB" for British English
     return d.check(word)
 
+def preprocess_json_string(response):
+    """
+    Preprocesses the response string to fix common JSON formatting issues.
+    This can include removing extra commas, fixing array formatting, etc.
+    """
+    # Example fix: Remove trailing commas before closing brackets or braces
+    response = re.sub(r',(?=\s*[}\]])', '', response)
+    return response
+
 @retry_except(exceptions_to_catch=(IndexError, ZeroDivisionError, ValueError), tries=3, delay=2)
 def extract_words_from_matrix(response):
     """
-    Parses the response to extract and create a list of words. The response can vary in format,
-    containing either a direct list of comma-separated words or a nested structure.
-    
-    Args:
-        response (str): The JSON response string.
-    
-    Returns:
-        list: A list of extracted words, or an empty list if parsing fails.
+    Enhanced parsing function to extract words from a JSON response that may contain
+    various structures or formatting issues.
     """
     print(f"Raw response is: {response}")
-        
+    response = preprocess_json_string(response)  # Preprocess the response string
+    
     try:
         response_json = json.loads(response)
-        # Identify the correct key in the JSON response (can be 'WordGrid', 'words', or 'response')
-        word_grid_key = None
-        for key in ['WordGrid', 'words', 'response']:
-            if key in response_json:
-                word_grid_key = key
+        
+        # Dynamically identify and extract the word list from the JSON, handling various cases
+        word_list = None
+        for value in response_json.values():
+            if isinstance(value, list):
+                word_list = value  # Direct list of words or lists
+                break
+            elif isinstance(value, str):
+                word_list = value.split(", ")  # Single string of comma-separated words
                 break
         
-        if not word_grid_key:
-            print("Expected key ('WordGrid', 'words', 'response') not found in the response.")
+        if not word_list:
+            print("No suitable word list found in the response.")
             return []
-        
-        word_grid = response_json[word_grid_key]
-        
-        # Handle both string and list formats of the word grid
-        if isinstance(word_grid, list):
-            # Flatten the list in case it's nested and join if it's a list of strings
-            word_grid = [item for sublist in word_grid for item in (sublist.split(", ") if isinstance(sublist, str) else [sublist])]
-        elif isinstance(word_grid, str):
-            # Split by comma for string type
-            word_grid = word_grid.split(", ")
+
+        # If the word list is a list of lists (nested), flatten it
+        if any(isinstance(i, list) for i in word_list):
+            words = [word for sublist in word_list for word in sublist]
         else:
-            print("Unsupported format for 'WordGrid'.")
-            return []
-        
-        # Clean up words
-        words_list = [word.strip() for word in word_grid]
-        
-        return words_list
+            words = word_list
+
+        # Clean and validate the words
+        words = [word.strip().replace('"', '').replace("'", "") for word in words]  # Strip and remove quotes
+        return words
 
     except json.JSONDecodeError as e:
         print(f"Failed to decode JSON from response: {e}. Check the response format.")
@@ -97,7 +97,7 @@ def extract_words_from_matrix(response):
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
         return []
-
+    
 @retry_except(exceptions_to_catch=(IndexError, ZeroDivisionError), tries=3, delay=2)
 def check_words_validity(words):
     """
@@ -130,10 +130,10 @@ def regenerate_invalid_words(invalid_words, original_matrix, objective):
     regeneration_prompt = f"""
     {small_change}. You had generated an original matrix of words:
     {original_matrix}. But this contained invalid words {invalid_words} when read across rows and columns. Let's fix this.
-    Objective is: {objective}. The words have to be valid English words when read across the rows and also when read down the columns. This is very important, think quietly first. Ensure to maintain the matrix's integrity. Reply with only the list of words, as follows
-    ```
+    Objective is: {objective}. The words have to be valid English words when read across the rows and also when read down the columns. This is very important. Think quietly first. Ensure to maintain the matrix's integrity. Reply with only the final list of words, as follows:
+    '''
     Word, Word, Word etc.
-    ```
+    '''
     """
     response = get_llm_response(regeneration_prompt)
     return response
