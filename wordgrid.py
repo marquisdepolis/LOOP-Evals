@@ -32,7 +32,7 @@ def get_llm_response(input_str, llm_type='ollama'):
 def create_word_matrix(objective):
     """Generate a matrix of words, starting with 'C' and ending with 'N'."""
     response = get_llm_response(f"""
-                        {instructions}. Objective is: {objective}. The words have to be valid English words when read across the rows and also when read down the columns. This is very important, think quietly first. Reply with only the list of words, as follows
+                        {instructions}. Objective is: {objective}. The words have to be valid English words when read across the rows and also when read down the columns. This is very important, think quietly first. Reply with only the list of words, as follows. Ensure you reply with the correct number of words and in the correct order. For example:
                         '''
                         Word, Word, Word etc
                         '''
@@ -130,7 +130,7 @@ def regenerate_invalid_words(invalid_words, original_matrix, objective):
     regeneration_prompt = f"""
     {small_change}. You had generated an original matrix of words:
     {original_matrix}. But this contained invalid words {invalid_words} when read across rows and columns. Let's fix this.
-    Objective is: {objective}. The words have to be valid English words when read across the rows and also when read down the columns. This is very important. Think quietly first. Ensure to maintain the matrix's integrity. Reply with only the final list of words, as follows:
+    Objective is: {objective}. The words have to be valid English words when read across the rows and also when read down the columns. This is very important. Think quietly first. Ensure to maintain the matrix's integrity. Ensure you reply with the correct number of words and in the correct order. Reply with only the final list of words, as follows:
     '''
     Word, Word, Word etc.
     '''
