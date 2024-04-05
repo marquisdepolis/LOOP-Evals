@@ -10,7 +10,7 @@ from tenacity import retry, stop_after_attempt, wait_fixed
 
 @retry(stop=stop_after_attempt(3), wait=wait_fixed(2))
 @retry_except(exceptions_to_catch=(IndexError, ZeroDivisionError), tries=3, delay=2)
-def llm_call(input, GPT):
+def llm_call_gpt(input, GPT):
     client = OpenAI()
     client.api_key = os.getenv('OPENAI_API_KEY')
 
@@ -60,7 +60,8 @@ def llm_call_ollama(prompt, LLM = "mistral"):
     r = requests.post('http://0.0.0.0:11434/api/generate',
                       json={
                           'model': LLM, #llama2:7b
-                          'prompt': prompt,
+                          'prompt': f"{prompt}."# Return this as JSON.",
+                        #   'format': 'json',
                       },
                       stream=False)
     full_response = ""    
