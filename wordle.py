@@ -20,11 +20,11 @@ OLLAMA = data.get('OLLAMA')
 
 def get_llm_response(input_str, llm_type='ollama'):
     if llm_type == 'openai':
-        return llm_call_json(input_str, GPT)
+        return llm_call_gpt_json(input_str, GPT)
     elif llm_type == 'claude':
         return llm_call_claude(input_str, CLAUDE)
     elif llm_type == 'ollama':
-        return llm_call_ollama(input_str, OLLAMA)
+        return llm_call_ollama_json(input_str, OLLAMA)
 
 def load_words(file_path):
     with open(file_path, 'r') as file:
