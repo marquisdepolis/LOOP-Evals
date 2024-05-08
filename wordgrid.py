@@ -6,7 +6,7 @@ import openai
 import enchant
 from dotenv import load_dotenv
 load_dotenv()
-from llms.llms import llm_call_claude, llm_call_json, llm_call_ollama
+from llms.llms import llm_call_gpt_json, llm_call_claude, llm_call_ollama_json
 from utils.retry import retry_except
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
@@ -16,7 +16,7 @@ with open('info.json', 'r') as file:
 instructions = data.get('instructions_wg')
 small_change = data.get('small_change_wg')
 GPT = data.get('GPT_4')
-ATTEMPTS = 10
+ATTEMPTS = 50
 TURNS = 10
 CLAUDE = data.get('CLAUDE')
 OLLAMA = data.get('OLLAMA')

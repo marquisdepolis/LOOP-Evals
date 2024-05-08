@@ -2,421 +2,493 @@
     {
         "Global attempt #": 1,
         "Run #": 1,
-        "Target word": "ascot",
+        "Target word": "infer",
         "Guessed word": "crane",
         "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: c - Y\nPosition 2: r - _\nPosition 3: a - Y\nPosition 4: n - _\nPosition 5: e - _"
+        "Number of 'Y' in colorised results": 3,
+        "Feedback": "Position 1: c - _\nPosition 2: r - Y\nPosition 3: a - _\nPosition 4: n - Y\nPosition 5: e - Y"
     },
     {
         "Global attempt #": 1,
         "Run #": 2,
-        "Target word": "ascot",
-        "Guessed word": "champ",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: c - Y\nPosition 2: h - _\nPosition 3: a - Y\nPosition 4: m - _\nPosition 5: p - _"
-    },
-    {
-        "Global attempt #": 1,
-        "Run #": 3,
-        "Target word": "ascot",
-        "Guessed word": "carat",
+        "Target word": "infer",
+        "Guessed word": "irony",
         "Number of 'G' in colorised results": 1,
         "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: c - Y\nPosition 2: a - Y\nPosition 3: r - _\nPosition 4: a - _\nPosition 5: t - G"
-    },
-    {
-        "Global attempt #": 1,
-        "Run #": 4,
-        "Target word": "ascot",
-        "Guessed word": "catch",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 3,
-        "Feedback": "Position 1: c - Y\nPosition 2: a - Y\nPosition 3: t - Y\nPosition 4: c - _\nPosition 5: h - _"
+        "Feedback": "Position 1: i - G\nPosition 2: r - Y\nPosition 3: o - _\nPosition 4: n - Y\nPosition 5: y - _"
     },
     {
         "Global attempt #": 2,
         "Run #": 1,
-        "Target word": "mossy",
+        "Target word": "scarf",
         "Guessed word": "crane",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: c - Y\nPosition 2: r - Y\nPosition 3: a - G\nPosition 4: n - _\nPosition 5: e - _"
     },
     {
         "Global attempt #": 2,
         "Run #": 2,
-        "Target word": "mossy",
-        "Guessed word": "clerk",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: c - _\nPosition 2: l - _\nPosition 3: e - _\nPosition 4: r - _\nPosition 5: k - _"
+        "Target word": "scarf",
+        "Guessed word": "charm",
+        "Number of 'G' in colorised results": 2,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: c - Y\nPosition 2: h - _\nPosition 3: a - G\nPosition 4: r - G\nPosition 5: m - _"
     },
     {
         "Global attempt #": 2,
-        "Run #": 4,
-        "Target word": "mossy",
-        "Guessed word": "click",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: c - _\nPosition 2: l - _\nPosition 3: i - _\nPosition 4: c - _\nPosition 5: k - _"
-    },
-    {
-        "Global attempt #": 2,
-        "Run #": 5,
-        "Target word": "mossy",
-        "Guessed word": "civic",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: c - _\nPosition 2: i - _\nPosition 3: v - _\nPosition 4: i - _\nPosition 5: c - _"
-    },
-    {
-        "Global attempt #": 2,
-        "Run #": 6,
-        "Target word": "mossy",
-        "Guessed word": "civic",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: c - _\nPosition 2: i - _\nPosition 3: v - _\nPosition 4: i - _\nPosition 5: c - _"
-    },
-    {
-        "Global attempt #": 3,
-        "Run #": 1,
-        "Target word": "blurt",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: c - _\nPosition 2: r - Y\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
-    },
-    {
-        "Global attempt #": 3,
         "Run #": 3,
-        "Target word": "blurt",
-        "Guessed word": "pride",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: p - _\nPosition 2: r - Y\nPosition 3: i - _\nPosition 4: d - _\nPosition 5: e - _"
-    },
-    {
-        "Global attempt #": 4,
-        "Run #": 1,
-        "Target word": "brake",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 3,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: c - _\nPosition 2: r - G\nPosition 3: a - G\nPosition 4: n - _\nPosition 5: e - G"
-    },
-    {
-        "Global attempt #": 4,
-        "Run #": 2,
-        "Target word": "brake",
-        "Guessed word": "grace",
-        "Number of 'G' in colorised results": 3,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: g - _\nPosition 2: r - G\nPosition 3: a - G\nPosition 4: c - _\nPosition 5: e - G"
-    },
-    {
-        "Global attempt #": 5,
-        "Run #": 1,
-        "Target word": "unfed",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - Y\nPosition 5: e - Y"
-    },
-    {
-        "Global attempt #": 5,
-        "Run #": 2,
-        "Target word": "unfed",
-        "Guessed word": "funny",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 3,
-        "Feedback": "Position 1: f - Y\nPosition 2: u - Y\nPosition 3: n - Y\nPosition 4: n - _\nPosition 5: y - _"
-    },
-    {
-        "Global attempt #": 5,
-        "Run #": 3,
-        "Target word": "unfed",
-        "Guessed word": "funny",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 3,
-        "Feedback": "Position 1: f - Y\nPosition 2: u - Y\nPosition 3: n - Y\nPosition 4: n - _\nPosition 5: y - _"
-    },
-    {
-        "Global attempt #": 5,
-        "Run #": 4,
-        "Target word": "unfed",
-        "Guessed word": "fungi",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 3,
-        "Feedback": "Position 1: f - Y\nPosition 2: u - Y\nPosition 3: n - Y\nPosition 4: g - _\nPosition 5: i - _"
-    },
-    {
-        "Global attempt #": 6,
-        "Run #": 1,
-        "Target word": "alive",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - Y\nPosition 4: n - _\nPosition 5: e - G"
-    },
-    {
-        "Global attempt #": 6,
-        "Run #": 4,
-        "Target word": "alive",
-        "Guessed word": "table",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: t - _\nPosition 2: a - Y\nPosition 3: b - _\nPosition 4: l - Y\nPosition 5: e - G"
-    },
-    {
-        "Global attempt #": 7,
-        "Run #": 1,
-        "Target word": "gorge",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: c - _\nPosition 2: r - Y\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - G"
-    },
-    {
-        "Global attempt #": 7,
-        "Run #": 3,
-        "Target word": "gorge",
-        "Guessed word": "broke",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: b - _\nPosition 2: r - Y\nPosition 3: o - Y\nPosition 4: k - _\nPosition 5: e - G"
-    },
-    {
-        "Global attempt #": 8,
-        "Run #": 1,
-        "Target word": "liver",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: c - _\nPosition 2: r - Y\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - Y"
-    },
-    {
-        "Global attempt #": 8,
-        "Run #": 2,
-        "Target word": "liver",
+        "Target word": "scarf",
         "Guessed word": "crave",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 3,
-        "Feedback": "Position 1: c - _\nPosition 2: r - Y\nPosition 3: a - _\nPosition 4: v - Y\nPosition 5: e - Y"
-    },
-    {
-        "Global attempt #": 9,
-        "Run #": 1,
-        "Target word": "rebus",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 0,
+        "Number of 'G' in colorised results": 1,
         "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: c - _\nPosition 2: r - Y\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - Y"
+        "Feedback": "Position 1: c - Y\nPosition 2: r - Y\nPosition 3: a - G\nPosition 4: v - _\nPosition 5: e - _"
     },
     {
-        "Global attempt #": 9,
-        "Run #": 2,
-        "Target word": "rebus",
-        "Guessed word": "retry",
-        "Number of 'G' in colorised results": 2,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: r - G\nPosition 2: e - G\nPosition 3: t - _\nPosition 4: r - _\nPosition 5: y - _"
-    },
-    {
-        "Global attempt #": 9,
-        "Run #": 3,
-        "Target word": "rebus",
-        "Guessed word": "rebus",
-        "Number of 'G' in colorised results": 5,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: r - G\nPosition 2: e - G\nPosition 3: b - G\nPosition 4: u - G\nPosition 5: s - G"
-    },
-    {
-        "Global attempt #": 9,
-        "Run #": 4,
-        "Target word": "rebus",
-        "Guessed word": "rebus",
-        "Number of 'G' in colorised results": 5,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: r - G\nPosition 2: e - G\nPosition 3: b - G\nPosition 4: u - G\nPosition 5: s - G"
-    },
-    {
-        "Global attempt #": 9,
-        "Run #": 5,
-        "Target word": "rebus",
-        "Guessed word": "rebus",
-        "Number of 'G' in colorised results": 5,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: r - G\nPosition 2: e - G\nPosition 3: b - G\nPosition 4: u - G\nPosition 5: s - G"
-    },
-    {
-        "Global attempt #": 9,
-        "Run #": 6,
-        "Target word": "rebus",
-        "Guessed word": "rebus",
-        "Number of 'G' in colorised results": 5,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: r - G\nPosition 2: e - G\nPosition 3: b - G\nPosition 4: u - G\nPosition 5: s - G"
-    },
-    {
-        "Global attempt #": 10,
+        "Global attempt #": 3,
         "Run #": 1,
-        "Target word": "buggy",
+        "Target word": "hobby",
         "Guessed word": "crane",
         "Number of 'G' in colorised results": 0,
         "Number of 'Y' in colorised results": 0,
         "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
     },
     {
-        "Global attempt #": 10,
-        "Run #": 2,
-        "Target word": "buggy",
-        "Guessed word": "chart",
+        "Global attempt #": 3,
+        "Run #": 3,
+        "Target word": "hobby",
+        "Guessed word": "crane",
         "Number of 'G' in colorised results": 0,
         "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: c - _\nPosition 2: h - _\nPosition 3: a - _\nPosition 4: r - _\nPosition 5: t - _"
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
     },
     {
-        "Global attempt #": 11,
-        "Run #": 1,
-        "Target word": "noise",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - Y\nPosition 5: e - G"
-    },
-    {
-        "Global attempt #": 12,
-        "Run #": 1,
-        "Target word": "koala",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - G\nPosition 4: n - _\nPosition 5: e - _"
-    },
-    {
-        "Global attempt #": 12,
-        "Run #": 3,
-        "Target word": "koala",
-        "Guessed word": "chart",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: c - _\nPosition 2: h - _\nPosition 3: a - G\nPosition 4: r - _\nPosition 5: t - _"
-    },
-    {
-        "Global attempt #": 13,
-        "Run #": 1,
-        "Target word": "hinge",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - Y\nPosition 5: e - G"
-    },
-    {
-        "Global attempt #": 14,
-        "Run #": 1,
-        "Target word": "crumb",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 2,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: c - G\nPosition 2: r - G\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
-    },
-    {
-        "Global attempt #": 14,
-        "Run #": 3,
-        "Target word": "crumb",
-        "Guessed word": "crazy",
-        "Number of 'G' in colorised results": 2,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: c - G\nPosition 2: r - G\nPosition 3: a - _\nPosition 4: z - _\nPosition 5: y - _"
-    },
-    {
-        "Global attempt #": 15,
-        "Run #": 1,
-        "Target word": "salsa",
+        "Global attempt #": 3,
+        "Run #": 4,
+        "Target word": "hobby",
         "Guessed word": "crane",
         "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - Y\nPosition 4: n - _\nPosition 5: e - _"
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
     },
     {
-        "Global attempt #": 15,
+        "Global attempt #": 3,
         "Run #": 5,
-        "Target word": "salsa",
-        "Guessed word": "pasta",
-        "Number of 'G' in colorised results": 2,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: p - _\nPosition 2: a - G\nPosition 3: s - Y\nPosition 4: t - _\nPosition 5: a - G"
+        "Target word": "hobby",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
     },
     {
-        "Global attempt #": 16,
+        "Global attempt #": 4,
         "Run #": 1,
-        "Target word": "disco",
+        "Target word": "vouch",
         "Guessed word": "crane",
         "Number of 'G' in colorised results": 0,
         "Number of 'Y' in colorised results": 1,
         "Feedback": "Position 1: c - Y\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
     },
     {
-        "Global attempt #": 16,
-        "Run #": 3,
-        "Target word": "disco",
-        "Guessed word": "candy",
+        "Global attempt #": 4,
+        "Run #": 2,
+        "Target word": "vouch",
+        "Guessed word": "champ",
         "Number of 'G' in colorised results": 0,
         "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: c - Y\nPosition 2: a - _\nPosition 3: n - _\nPosition 4: d - Y\nPosition 5: y - _"
+        "Feedback": "Position 1: c - Y\nPosition 2: h - Y\nPosition 3: a - _\nPosition 4: m - _\nPosition 5: p - _"
     },
     {
-        "Global attempt #": 16,
+        "Global attempt #": 4,
         "Run #": 4,
-        "Target word": "disco",
+        "Target word": "vouch",
+        "Guessed word": "choke",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 3,
+        "Feedback": "Position 1: c - Y\nPosition 2: h - Y\nPosition 3: o - Y\nPosition 4: k - _\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 4,
+        "Run #": 5,
+        "Target word": "vouch",
+        "Guessed word": "choir",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 3,
+        "Feedback": "Position 1: c - Y\nPosition 2: h - Y\nPosition 3: o - Y\nPosition 4: i - _\nPosition 5: r - _"
+    },
+    {
+        "Global attempt #": 5,
+        "Run #": 1,
+        "Target word": "hater",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 3,
+        "Feedback": "Position 1: c - _\nPosition 2: r - Y\nPosition 3: a - Y\nPosition 4: n - _\nPosition 5: e - Y"
+    },
+    {
+        "Global attempt #": 5,
+        "Run #": 3,
+        "Target word": "hater",
+        "Guessed word": "crave",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 3,
+        "Feedback": "Position 1: c - _\nPosition 2: r - Y\nPosition 3: a - Y\nPosition 4: v - _\nPosition 5: e - Y"
+    },
+    {
+        "Global attempt #": 6,
+        "Run #": 1,
+        "Target word": "bully",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 6,
+        "Run #": 2,
+        "Target word": "bully",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 6,
+        "Run #": 4,
+        "Target word": "bully",
+        "Guessed word": "charm",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - _\nPosition 2: h - _\nPosition 3: a - _\nPosition 4: r - _\nPosition 5: m - _"
+    },
+    {
+        "Global attempt #": 7,
+        "Run #": 1,
+        "Target word": "peace",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 2,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: c - Y\nPosition 2: r - _\nPosition 3: a - G\nPosition 4: n - _\nPosition 5: e - G"
+    },
+    {
+        "Global attempt #": 7,
+        "Run #": 2,
+        "Target word": "peace",
+        "Guessed word": "cache",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: c - Y\nPosition 2: a - Y\nPosition 3: c - _\nPosition 4: h - _\nPosition 5: e - G"
+    },
+    {
+        "Global attempt #": 7,
+        "Run #": 4,
+        "Target word": "peace",
+        "Guessed word": "cable",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: c - Y\nPosition 2: a - Y\nPosition 3: b - _\nPosition 4: l - _\nPosition 5: e - G"
+    },
+    {
+        "Global attempt #": 8,
+        "Run #": 1,
+        "Target word": "tibia",
+        "Guessed word": "table",
+        "Number of 'G' in colorised results": 2,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: t - G\nPosition 2: a - Y\nPosition 3: b - G\nPosition 4: l - _\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 9,
+        "Run #": 1,
+        "Target word": "state",
+        "Guessed word": "crate",
+        "Number of 'G' in colorised results": 3,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - G\nPosition 4: t - G\nPosition 5: e - G"
+    },
+    {
+        "Global attempt #": 9,
+        "Run #": 2,
+        "Target word": "state",
+        "Guessed word": "agate",
+        "Number of 'G' in colorised results": 3,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: a - _\nPosition 2: g - _\nPosition 3: a - G\nPosition 4: t - G\nPosition 5: e - G"
+    },
+    {
+        "Global attempt #": 9,
+        "Run #": 3,
+        "Target word": "state",
+        "Guessed word": "stage",
+        "Number of 'G' in colorised results": 4,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: s - G\nPosition 2: t - G\nPosition 3: a - G\nPosition 4: g - _\nPosition 5: e - G"
+    },
+    {
+        "Global attempt #": 10,
+        "Run #": 1,
+        "Target word": "clock",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - G\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 10,
+        "Run #": 2,
+        "Target word": "clock",
+        "Guessed word": "champ",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - G\nPosition 2: h - _\nPosition 3: a - _\nPosition 4: m - _\nPosition 5: p - _"
+    },
+    {
+        "Global attempt #": 10,
+        "Run #": 4,
+        "Target word": "clock",
+        "Guessed word": "catch",
+        "Number of 'G' in colorised results": 2,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - G\nPosition 2: a - _\nPosition 3: t - _\nPosition 4: c - G\nPosition 5: h - _"
+    },
+    {
+        "Global attempt #": 10,
+        "Run #": 5,
+        "Target word": "clock",
         "Guessed word": "civic",
         "Number of 'G' in colorised results": 1,
         "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: c - Y\nPosition 2: i - G\nPosition 3: v - _\nPosition 4: i - _\nPosition 5: c - _"
+        "Feedback": "Position 1: c - G\nPosition 2: i - _\nPosition 3: v - _\nPosition 4: i - _\nPosition 5: c - Y"
+    },
+    {
+        "Global attempt #": 10,
+        "Run #": 6,
+        "Target word": "clock",
+        "Guessed word": "click",
+        "Number of 'G' in colorised results": 4,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - G\nPosition 2: l - G\nPosition 3: i - _\nPosition 4: c - G\nPosition 5: k - G"
+    },
+    {
+        "Global attempt #": 11,
+        "Run #": 1,
+        "Target word": "spray",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: c - _\nPosition 2: r - Y\nPosition 3: a - Y\nPosition 4: n - _\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 12,
+        "Run #": 1,
+        "Target word": "piney",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - Y\nPosition 5: e - Y"
+    },
+    {
+        "Global attempt #": 12,
+        "Run #": 2,
+        "Target word": "piney",
+        "Guessed word": "funny",
+        "Number of 'G' in colorised results": 2,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: f - _\nPosition 2: u - _\nPosition 3: n - G\nPosition 4: n - _\nPosition 5: y - G"
+    },
+    {
+        "Global attempt #": 12,
+        "Run #": 4,
+        "Target word": "piney",
+        "Guessed word": "nanny",
+        "Number of 'G' in colorised results": 2,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: n - _\nPosition 2: a - _\nPosition 3: n - G\nPosition 4: n - _\nPosition 5: y - G"
+    },
+    {
+        "Global attempt #": 12,
+        "Run #": 5,
+        "Target word": "piney",
+        "Guessed word": "knock",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: k - _\nPosition 2: n - Y\nPosition 3: o - _\nPosition 4: c - _\nPosition 5: k - _"
+    },
+    {
+        "Global attempt #": 13,
+        "Run #": 1,
+        "Target word": "fifty",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 13,
+        "Run #": 3,
+        "Target word": "fifty",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 13,
+        "Run #": 4,
+        "Target word": "fifty",
+        "Guessed word": "charm",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - _\nPosition 2: h - _\nPosition 3: a - _\nPosition 4: r - _\nPosition 5: m - _"
+    },
+    {
+        "Global attempt #": 14,
+        "Run #": 1,
+        "Target word": "skimp",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 14,
+        "Run #": 2,
+        "Target word": "skimp",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 14,
+        "Run #": 3,
+        "Target word": "skimp",
+        "Guessed word": "blush",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: b - _\nPosition 2: l - _\nPosition 3: u - _\nPosition 4: s - Y\nPosition 5: h - _"
+    },
+    {
+        "Global attempt #": 14,
+        "Run #": 4,
+        "Target word": "skimp",
+        "Guessed word": "floss",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: f - _\nPosition 2: l - _\nPosition 3: o - _\nPosition 4: s - Y\nPosition 5: s - _"
+    },
+    {
+        "Global attempt #": 15,
+        "Run #": 1,
+        "Target word": "tonic",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: c - Y\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - Y\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 15,
+        "Run #": 2,
+        "Target word": "tonic",
+        "Guessed word": "canny",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: c - Y\nPosition 2: a - _\nPosition 3: n - G\nPosition 4: n - _\nPosition 5: y - _"
+    },
+    {
+        "Global attempt #": 15,
+        "Run #": 3,
+        "Target word": "tonic",
+        "Guessed word": "clown",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 3,
+        "Feedback": "Position 1: c - Y\nPosition 2: l - _\nPosition 3: o - Y\nPosition 4: w - _\nPosition 5: n - Y"
+    },
+    {
+        "Global attempt #": 15,
+        "Run #": 4,
+        "Target word": "tonic",
+        "Guessed word": "condo",
+        "Number of 'G' in colorised results": 2,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: c - Y\nPosition 2: o - G\nPosition 3: n - G\nPosition 4: d - _\nPosition 5: o - _"
+    },
+    {
+        "Global attempt #": 15,
+        "Run #": 5,
+        "Target word": "tonic",
+        "Guessed word": "colon",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: c - Y\nPosition 2: o - G\nPosition 3: l - _\nPosition 4: o - _\nPosition 5: n - Y"
+    },
+    {
+        "Global attempt #": 15,
+        "Run #": 6,
+        "Target word": "tonic",
+        "Guessed word": "conic",
+        "Number of 'G' in colorised results": 4,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - _\nPosition 2: o - G\nPosition 3: n - G\nPosition 4: i - G\nPosition 5: c - G"
     },
     {
         "Global attempt #": 16,
-        "Run #": 5,
-        "Target word": "disco",
-        "Guessed word": "child",
+        "Run #": 1,
+        "Target word": "sound",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - G\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 16,
+        "Run #": 2,
+        "Target word": "sound",
+        "Guessed word": "cling",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - _\nPosition 2: l - _\nPosition 3: i - _\nPosition 4: n - G\nPosition 5: g - _"
+    },
+    {
+        "Global attempt #": 16,
+        "Run #": 3,
+        "Target word": "sound",
+        "Guessed word": "angry",
         "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 3,
-        "Feedback": "Position 1: c - Y\nPosition 2: h - _\nPosition 3: i - Y\nPosition 4: l - _\nPosition 5: d - Y"
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: a - _\nPosition 2: n - Y\nPosition 3: g - _\nPosition 4: r - _\nPosition 5: y - _"
     },
     {
         "Global attempt #": 17,
         "Run #": 1,
-        "Target word": "diner",
-        "Guessed word": "crane",
+        "Target word": "droop",
+        "Guessed word": "slate",
         "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 3,
-        "Feedback": "Position 1: c - _\nPosition 2: r - Y\nPosition 3: a - _\nPosition 4: n - Y\nPosition 5: e - Y"
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: s - _\nPosition 2: l - _\nPosition 3: a - _\nPosition 4: t - _\nPosition 5: e - _"
     },
     {
         "Global attempt #": 17,
-        "Run #": 4,
-        "Target word": "diner",
-        "Guessed word": "crane",
+        "Run #": 2,
+        "Target word": "droop",
+        "Guessed word": "spike",
         "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 3,
-        "Feedback": "Position 1: c - _\nPosition 2: r - Y\nPosition 3: a - _\nPosition 4: n - Y\nPosition 5: e - Y"
-    },
-    {
-        "Global attempt #": 17,
-        "Run #": 5,
-        "Target word": "diner",
-        "Guessed word": "renew",
-        "Number of 'G' in colorised results": 2,
         "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: r - Y\nPosition 2: e - _\nPosition 3: n - G\nPosition 4: e - G\nPosition 5: w - _"
+        "Feedback": "Position 1: s - _\nPosition 2: p - Y\nPosition 3: i - _\nPosition 4: k - _\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 17,
+        "Run #": 3,
+        "Target word": "droop",
+        "Guessed word": "spend",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: s - _\nPosition 2: p - Y\nPosition 3: e - _\nPosition 4: n - _\nPosition 5: d - Y"
     },
     {
         "Global attempt #": 18,
         "Run #": 1,
-        "Target word": "until",
+        "Target word": "ninth",
         "Guessed word": "crane",
         "Number of 'G' in colorised results": 0,
         "Number of 'Y' in colorised results": 1,
@@ -424,564 +496,807 @@
     },
     {
         "Global attempt #": 18,
-        "Run #": 4,
-        "Target word": "until",
-        "Guessed word": "clown",
+        "Run #": 3,
+        "Target word": "ninth",
+        "Guessed word": "corny",
         "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: c - _\nPosition 2: l - Y\nPosition 3: o - _\nPosition 4: w - _\nPosition 5: n - Y"
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: c - _\nPosition 2: o - _\nPosition 3: r - _\nPosition 4: n - Y\nPosition 5: y - _"
     },
     {
         "Global attempt #": 18,
-        "Run #": 5,
-        "Target word": "until",
-        "Guessed word": "blond",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: b - _\nPosition 2: l - Y\nPosition 3: o - _\nPosition 4: n - Y\nPosition 5: d - _"
+        "Run #": 4,
+        "Target word": "ninth",
+        "Guessed word": "funny",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: f - _\nPosition 2: u - _\nPosition 3: n - G\nPosition 4: n - Y\nPosition 5: y - _"
     },
     {
         "Global attempt #": 19,
         "Run #": 1,
-        "Target word": "vigor",
+        "Target word": "unite",
         "Guessed word": "crane",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: c - _\nPosition 2: r - Y\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
-    },
-    {
-        "Global attempt #": 19,
-        "Run #": 2,
-        "Target word": "vigor",
-        "Guessed word": "broom",
         "Number of 'G' in colorised results": 1,
         "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: b - _\nPosition 2: r - Y\nPosition 3: o - _\nPosition 4: o - G\nPosition 5: m - _"
-    },
-    {
-        "Global attempt #": 19,
-        "Run #": 3,
-        "Target word": "vigor",
-        "Guessed word": "robin",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 3,
-        "Feedback": "Position 1: r - Y\nPosition 2: o - Y\nPosition 3: b - _\nPosition 4: i - Y\nPosition 5: n - _"
-    },
-    {
-        "Global attempt #": 19,
-        "Run #": 4,
-        "Target word": "vigor",
-        "Guessed word": "radio",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 3,
-        "Feedback": "Position 1: r - Y\nPosition 2: a - _\nPosition 3: d - _\nPosition 4: i - Y\nPosition 5: o - Y"
-    },
-    {
-        "Global attempt #": 19,
-        "Run #": 5,
-        "Target word": "vigor",
-        "Guessed word": "robin",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 3,
-        "Feedback": "Position 1: r - Y\nPosition 2: o - Y\nPosition 3: b - _\nPosition 4: i - Y\nPosition 5: n - _"
-    },
-    {
-        "Global attempt #": 19,
-        "Run #": 6,
-        "Target word": "vigor",
-        "Guessed word": "ratio",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 3,
-        "Feedback": "Position 1: r - Y\nPosition 2: a - _\nPosition 3: t - _\nPosition 4: i - Y\nPosition 5: o - Y"
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - Y\nPosition 5: e - G"
     },
     {
         "Global attempt #": 20,
         "Run #": 1,
-        "Target word": "robot",
-        "Guessed word": "table",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: t - Y\nPosition 2: a - _\nPosition 3: b - G\nPosition 4: l - _\nPosition 5: e - _"
-    },
-    {
-        "Global attempt #": 21,
-        "Run #": 2,
-        "Target word": "snack",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: c - Y\nPosition 2: r - _\nPosition 3: a - G\nPosition 4: n - Y\nPosition 5: e - _"
-    },
-    {
-        "Global attempt #": 22,
-        "Run #": 1,
-        "Target word": "amiss",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - Y\nPosition 4: n - _\nPosition 5: e - _"
-    },
-    {
-        "Global attempt #": 22,
-        "Run #": 3,
-        "Target word": "amiss",
-        "Guessed word": "pasta",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: p - _\nPosition 2: a - Y\nPosition 3: s - Y\nPosition 4: t - _\nPosition 5: a - _"
-    },
-    {
-        "Global attempt #": 23,
-        "Run #": 1,
-        "Target word": "charm",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 2,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: c - G\nPosition 2: r - Y\nPosition 3: a - G\nPosition 4: n - _\nPosition 5: e - _"
-    },
-    {
-        "Global attempt #": 23,
-        "Run #": 2,
-        "Target word": "charm",
-        "Guessed word": "chart",
-        "Number of 'G' in colorised results": 4,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: c - G\nPosition 2: h - G\nPosition 3: a - G\nPosition 4: r - G\nPosition 5: t - _"
-    },
-    {
-        "Global attempt #": 23,
-        "Run #": 3,
-        "Target word": "charm",
-        "Guessed word": "charm",
-        "Number of 'G' in colorised results": 5,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: c - G\nPosition 2: h - G\nPosition 3: a - G\nPosition 4: r - G\nPosition 5: m - G"
-    },
-    {
-        "Global attempt #": 23,
-        "Run #": 4,
-        "Target word": "charm",
-        "Guessed word": "charm",
-        "Number of 'G' in colorised results": 5,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: c - G\nPosition 2: h - G\nPosition 3: a - G\nPosition 4: r - G\nPosition 5: m - G"
-    },
-    {
-        "Global attempt #": 23,
-        "Run #": 5,
-        "Target word": "charm",
-        "Guessed word": "charm",
-        "Number of 'G' in colorised results": 5,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: c - G\nPosition 2: h - G\nPosition 3: a - G\nPosition 4: r - G\nPosition 5: m - G"
-    },
-    {
-        "Global attempt #": 23,
-        "Run #": 6,
-        "Target word": "charm",
-        "Guessed word": "charm",
-        "Number of 'G' in colorised results": 5,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: c - G\nPosition 2: h - G\nPosition 3: a - G\nPosition 4: r - G\nPosition 5: m - G"
-    },
-    {
-        "Global attempt #": 24,
-        "Run #": 1,
-        "Target word": "gamer",
-        "Guessed word": "table",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: t - _\nPosition 2: a - G\nPosition 3: b - _\nPosition 4: l - _\nPosition 5: e - Y"
-    },
-    {
-        "Global attempt #": 24,
-        "Run #": 2,
-        "Target word": "gamer",
-        "Guessed word": "tease",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: t - _\nPosition 2: e - Y\nPosition 3: a - Y\nPosition 4: s - _\nPosition 5: e - _"
-    },
-    {
-        "Global attempt #": 25,
-        "Run #": 1,
-        "Target word": "heady",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - G\nPosition 4: n - _\nPosition 5: e - Y"
-    },
-    {
-        "Global attempt #": 25,
-        "Run #": 5,
-        "Target word": "heady",
-        "Guessed word": "gloat",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: g - _\nPosition 2: l - _\nPosition 3: o - _\nPosition 4: a - Y\nPosition 5: t - _"
-    },
-    {
-        "Global attempt #": 25,
-        "Run #": 6,
-        "Target word": "heady",
-        "Guessed word": "pasta",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: p - _\nPosition 2: a - Y\nPosition 3: s - _\nPosition 4: t - _\nPosition 5: a - _"
-    },
-    {
-        "Global attempt #": 26,
-        "Run #": 1,
-        "Target word": "staff",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - G\nPosition 4: n - _\nPosition 5: e - _"
-    },
-    {
-        "Global attempt #": 26,
-        "Run #": 2,
-        "Target word": "staff",
-        "Guessed word": "gloat",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: g - _\nPosition 2: l - _\nPosition 3: o - _\nPosition 4: a - Y\nPosition 5: t - Y"
-    },
-    {
-        "Global attempt #": 26,
-        "Run #": 3,
-        "Target word": "staff",
-        "Guessed word": "agate",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: a - _\nPosition 2: g - _\nPosition 3: a - G\nPosition 4: t - Y\nPosition 5: e - _"
-    },
-    {
-        "Global attempt #": 26,
-        "Run #": 4,
-        "Target word": "staff",
-        "Guessed word": "pasta",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 3,
-        "Feedback": "Position 1: p - _\nPosition 2: a - Y\nPosition 3: s - Y\nPosition 4: t - Y\nPosition 5: a - _"
-    },
-    {
-        "Global attempt #": 27,
-        "Run #": 1,
-        "Target word": "equal",
+        "Target word": "delta",
         "Guessed word": "crane",
         "Number of 'G' in colorised results": 0,
         "Number of 'Y' in colorised results": 2,
         "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - Y\nPosition 4: n - _\nPosition 5: e - Y"
     },
     {
-        "Global attempt #": 27,
-        "Run #": 2,
-        "Target word": "equal",
+        "Global attempt #": 20,
+        "Run #": 3,
+        "Target word": "delta",
         "Guessed word": "cable",
         "Number of 'G' in colorised results": 0,
         "Number of 'Y' in colorised results": 3,
         "Feedback": "Position 1: c - _\nPosition 2: a - Y\nPosition 3: b - _\nPosition 4: l - Y\nPosition 5: e - Y"
     },
     {
-        "Global attempt #": 27,
-        "Run #": 3,
-        "Target word": "equal",
-        "Guessed word": "maple",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 3,
-        "Feedback": "Position 1: m - _\nPosition 2: a - Y\nPosition 3: p - _\nPosition 4: l - Y\nPosition 5: e - Y"
-    },
-    {
-        "Global attempt #": 27,
+        "Global attempt #": 20,
         "Run #": 4,
-        "Target word": "equal",
+        "Target word": "delta",
         "Guessed word": "table",
         "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 3,
-        "Feedback": "Position 1: t - _\nPosition 2: a - Y\nPosition 3: b - _\nPosition 4: l - Y\nPosition 5: e - Y"
+        "Number of 'Y' in colorised results": 4,
+        "Feedback": "Position 1: t - Y\nPosition 2: a - Y\nPosition 3: b - _\nPosition 4: l - Y\nPosition 5: e - Y"
     },
     {
-        "Global attempt #": 28,
+        "Global attempt #": 21,
         "Run #": 1,
-        "Target word": "shyly",
+        "Target word": "flair",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: c - _\nPosition 2: r - Y\nPosition 3: a - G\nPosition 4: n - _\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 22,
+        "Run #": 1,
+        "Target word": "moist",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 22,
+        "Run #": 2,
+        "Target word": "moist",
+        "Guessed word": "champ",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: c - _\nPosition 2: h - _\nPosition 3: a - _\nPosition 4: m - Y\nPosition 5: p - _"
+    },
+    {
+        "Global attempt #": 23,
+        "Run #": 1,
+        "Target word": "carat",
         "Guessed word": "table",
         "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: t - _\nPosition 2: a - _\nPosition 3: b - _\nPosition 4: l - G\nPosition 5: e - _"
-    },
-    {
-        "Global attempt #": 28,
-        "Run #": 2,
-        "Target word": "shyly",
-        "Guessed word": "light",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: l - Y\nPosition 2: i - _\nPosition 3: g - _\nPosition 4: h - Y\nPosition 5: t - _"
-    },
-    {
-        "Global attempt #": 28,
-        "Run #": 3,
-        "Target word": "shyly",
-        "Guessed word": "chill",
-        "Number of 'G' in colorised results": 2,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: c - _\nPosition 2: h - G\nPosition 3: i - _\nPosition 4: l - G\nPosition 5: l - _"
-    },
-    {
-        "Global attempt #": 28,
-        "Run #": 4,
-        "Target word": "shyly",
-        "Guessed word": "whale",
-        "Number of 'G' in colorised results": 2,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: w - _\nPosition 2: h - G\nPosition 3: a - _\nPosition 4: l - G\nPosition 5: e - _"
-    },
-    {
-        "Global attempt #": 28,
-        "Run #": 5,
-        "Target word": "shyly",
-        "Guessed word": "shyly",
-        "Number of 'G' in colorised results": 5,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: s - G\nPosition 2: h - G\nPosition 3: y - G\nPosition 4: l - G\nPosition 5: y - G"
-    },
-    {
-        "Global attempt #": 28,
-        "Run #": 6,
-        "Target word": "shyly",
-        "Guessed word": "shyly",
-        "Number of 'G' in colorised results": 5,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: s - G\nPosition 2: h - G\nPosition 3: y - G\nPosition 4: l - G\nPosition 5: y - G"
-    },
-    {
-        "Global attempt #": 29,
-        "Run #": 1,
-        "Target word": "rebus",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: c - _\nPosition 2: r - Y\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - Y"
-    },
-    {
-        "Global attempt #": 29,
-        "Run #": 2,
-        "Target word": "rebus",
-        "Guessed word": "crave",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: c - _\nPosition 2: r - Y\nPosition 3: a - _\nPosition 4: v - _\nPosition 5: e - Y"
-    },
-    {
-        "Global attempt #": 30,
-        "Run #": 1,
-        "Target word": "adult",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 0,
         "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - Y\nPosition 4: n - _\nPosition 5: e - _"
+        "Feedback": "Position 1: t - Y\nPosition 2: a - G\nPosition 3: b - _\nPosition 4: l - _\nPosition 5: e - _"
     },
     {
-        "Global attempt #": 30,
-        "Run #": 4,
-        "Target word": "adult",
-        "Guessed word": "charm",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: c - _\nPosition 2: h - _\nPosition 3: a - Y\nPosition 4: r - _\nPosition 5: m - _"
-    },
-    {
-        "Global attempt #": 30,
-        "Run #": 5,
-        "Target word": "adult",
-        "Guessed word": "plaza",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: p - _\nPosition 2: l - Y\nPosition 3: a - Y\nPosition 4: z - _\nPosition 5: a - _"
-    },
-    {
-        "Global attempt #": 31,
-        "Run #": 1,
-        "Target word": "irony",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 2,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: c - _\nPosition 2: r - G\nPosition 3: a - _\nPosition 4: n - G\nPosition 5: e - _"
-    },
-    {
-        "Global attempt #": 31,
-        "Run #": 5,
-        "Target word": "irony",
-        "Guessed word": "brink",
-        "Number of 'G' in colorised results": 2,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: b - _\nPosition 2: r - G\nPosition 3: i - Y\nPosition 4: n - G\nPosition 5: k - _"
-    },
-    {
-        "Global attempt #": 32,
+        "Global attempt #": 23,
         "Run #": 2,
-        "Target word": "lunar",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 3,
-        "Feedback": "Position 1: c - _\nPosition 2: r - Y\nPosition 3: a - Y\nPosition 4: n - Y\nPosition 5: e - _"
-    },
-    {
-        "Global attempt #": 32,
-        "Run #": 4,
-        "Target word": "lunar",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 3,
-        "Feedback": "Position 1: c - _\nPosition 2: r - Y\nPosition 3: a - Y\nPosition 4: n - Y\nPosition 5: e - _"
-    },
-    {
-        "Global attempt #": 32,
-        "Run #": 5,
-        "Target word": "lunar",
-        "Guessed word": "rainy",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 3,
-        "Feedback": "Position 1: r - Y\nPosition 2: a - Y\nPosition 3: i - _\nPosition 4: n - Y\nPosition 5: y - _"
-    },
-    {
-        "Global attempt #": 33,
-        "Run #": 1,
-        "Target word": "react",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 3,
-        "Feedback": "Position 1: c - Y\nPosition 2: r - Y\nPosition 3: a - G\nPosition 4: n - _\nPosition 5: e - Y"
-    },
-    {
-        "Global attempt #": 33,
-        "Run #": 5,
-        "Target word": "react",
+        "Target word": "carat",
         "Guessed word": "trace",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 4,
+        "Feedback": "Position 1: t - Y\nPosition 2: r - Y\nPosition 3: a - Y\nPosition 4: c - Y\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 23,
+        "Run #": 4,
+        "Target word": "carat",
+        "Guessed word": "trace",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 4,
+        "Feedback": "Position 1: t - Y\nPosition 2: r - Y\nPosition 3: a - Y\nPosition 4: c - Y\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 24,
+        "Run #": 1,
+        "Target word": "found",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - G\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 24,
+        "Run #": 2,
+        "Target word": "found",
+        "Guessed word": "cling",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - _\nPosition 2: l - _\nPosition 3: i - _\nPosition 4: n - G\nPosition 5: g - _"
+    },
+    {
+        "Global attempt #": 25,
+        "Run #": 1,
+        "Target word": "sweet",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - Y"
+    },
+    {
+        "Global attempt #": 25,
+        "Run #": 4,
+        "Target word": "sweet",
+        "Guessed word": "brine",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: b - _\nPosition 2: r - _\nPosition 3: i - _\nPosition 4: n - _\nPosition 5: e - Y"
+    },
+    {
+        "Global attempt #": 26,
+        "Run #": 1,
+        "Target word": "totem",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - Y"
+    },
+    {
+        "Global attempt #": 27,
+        "Run #": 1,
+        "Target word": "ledge",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - G"
+    },
+    {
+        "Global attempt #": 27,
+        "Run #": 3,
+        "Target word": "ledge",
+        "Guessed word": "cigar",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: c - _\nPosition 2: i - _\nPosition 3: g - Y\nPosition 4: a - _\nPosition 5: r - _"
+    },
+    {
+        "Global attempt #": 27,
+        "Run #": 5,
+        "Target word": "ledge",
+        "Guessed word": "cling",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: c - _\nPosition 2: l - Y\nPosition 3: i - _\nPosition 4: n - _\nPosition 5: g - Y"
+    },
+    {
+        "Global attempt #": 27,
+        "Run #": 6,
+        "Target word": "ledge",
+        "Guessed word": "light",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: l - G\nPosition 2: i - _\nPosition 3: g - Y\nPosition 4: h - _\nPosition 5: t - _"
+    },
+    {
+        "Global attempt #": 28,
+        "Run #": 1,
+        "Target word": "smash",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - G\nPosition 4: n - _\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 28,
+        "Run #": 2,
+        "Target word": "smash",
+        "Guessed word": "cargo",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: c - _\nPosition 2: a - Y\nPosition 3: r - _\nPosition 4: g - _\nPosition 5: o - _"
+    },
+    {
+        "Global attempt #": 29,
+        "Run #": 1,
+        "Target word": "nasty",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - Y\nPosition 4: n - Y\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 29,
+        "Run #": 2,
+        "Target word": "nasty",
+        "Guessed word": "canny",
+        "Number of 'G' in colorised results": 2,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: c - _\nPosition 2: a - G\nPosition 3: n - Y\nPosition 4: n - _\nPosition 5: y - G"
+    },
+    {
+        "Global attempt #": 29,
+        "Run #": 3,
+        "Target word": "nasty",
+        "Guessed word": "angry",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: a - Y\nPosition 2: n - Y\nPosition 3: g - _\nPosition 4: r - _\nPosition 5: y - G"
+    },
+    {
+        "Global attempt #": 29,
+        "Run #": 4,
+        "Target word": "nasty",
+        "Guessed word": "nanny",
+        "Number of 'G' in colorised results": 3,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: n - G\nPosition 2: a - G\nPosition 3: n - _\nPosition 4: n - _\nPosition 5: y - G"
+    },
+    {
+        "Global attempt #": 29,
+        "Run #": 5,
+        "Target word": "nasty",
+        "Guessed word": "nasty",
+        "Number of 'G' in colorised results": 5,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: n - G\nPosition 2: a - G\nPosition 3: s - G\nPosition 4: t - G\nPosition 5: y - G"
+    },
+    {
+        "Global attempt #": 29,
+        "Run #": 6,
+        "Target word": "nasty",
+        "Guessed word": "nasty",
+        "Number of 'G' in colorised results": 5,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: n - G\nPosition 2: a - G\nPosition 3: s - G\nPosition 4: t - G\nPosition 5: y - G"
+    },
+    {
+        "Global attempt #": 30,
+        "Run #": 1,
+        "Target word": "pleat",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - Y\nPosition 4: n - _\nPosition 5: e - Y"
+    },
+    {
+        "Global attempt #": 30,
+        "Run #": 2,
+        "Target word": "pleat",
+        "Guessed word": "layer",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 3,
+        "Feedback": "Position 1: l - Y\nPosition 2: a - Y\nPosition 3: y - _\nPosition 4: e - Y\nPosition 5: r - _"
+    },
+    {
+        "Global attempt #": 30,
+        "Run #": 3,
+        "Target word": "pleat",
+        "Guessed word": "lapse",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 4,
+        "Feedback": "Position 1: l - Y\nPosition 2: a - Y\nPosition 3: p - Y\nPosition 4: s - _\nPosition 5: e - Y"
+    },
+    {
+        "Global attempt #": 30,
+        "Run #": 4,
+        "Target word": "pleat",
+        "Guessed word": "lapel",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 4,
+        "Feedback": "Position 1: l - Y\nPosition 2: a - Y\nPosition 3: p - Y\nPosition 4: e - Y\nPosition 5: l - _"
+    },
+    {
+        "Global attempt #": 30,
+        "Run #": 5,
+        "Target word": "pleat",
+        "Guessed word": "plate",
         "Number of 'G' in colorised results": 2,
         "Number of 'Y' in colorised results": 3,
-        "Feedback": "Position 1: t - Y\nPosition 2: r - Y\nPosition 3: a - G\nPosition 4: c - G\nPosition 5: e - Y"
+        "Feedback": "Position 1: p - G\nPosition 2: l - G\nPosition 3: a - Y\nPosition 4: t - Y\nPosition 5: e - Y"
+    },
+    {
+        "Global attempt #": 30,
+        "Run #": 6,
+        "Target word": "pleat",
+        "Guessed word": "plate",
+        "Number of 'G' in colorised results": 2,
+        "Number of 'Y' in colorised results": 3,
+        "Feedback": "Position 1: p - G\nPosition 2: l - G\nPosition 3: a - Y\nPosition 4: t - Y\nPosition 5: e - Y"
+    },
+    {
+        "Global attempt #": 31,
+        "Run #": 1,
+        "Target word": "shall",
+        "Guessed word": "apple",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: a - Y\nPosition 2: p - _\nPosition 3: p - _\nPosition 4: l - G\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 31,
+        "Run #": 2,
+        "Target word": "shall",
+        "Guessed word": "aback",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: a - _\nPosition 2: b - _\nPosition 3: a - G\nPosition 4: c - _\nPosition 5: k - _"
+    },
+    {
+        "Global attempt #": 32,
+        "Run #": 1,
+        "Target word": "libel",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - Y"
+    },
+    {
+        "Global attempt #": 33,
+        "Run #": 1,
+        "Target word": "aback",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: c - Y\nPosition 2: r - _\nPosition 3: a - G\nPosition 4: n - _\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 33,
+        "Run #": 4,
+        "Target word": "aback",
+        "Guessed word": "champ",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: c - Y\nPosition 2: h - _\nPosition 3: a - G\nPosition 4: m - _\nPosition 5: p - _"
     },
     {
         "Global attempt #": 34,
         "Run #": 1,
-        "Target word": "perky",
+        "Target word": "thump",
         "Guessed word": "crane",
         "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: c - _\nPosition 2: r - Y\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - Y"
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
     },
     {
         "Global attempt #": 34,
         "Run #": 2,
-        "Target word": "perky",
-        "Guessed word": "retry",
+        "Target word": "thump",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 34,
+        "Run #": 5,
+        "Target word": "thump",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 34,
+        "Run #": 6,
+        "Target word": "thump",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 35,
+        "Run #": 1,
+        "Target word": "trawl",
+        "Guessed word": "crane",
         "Number of 'G' in colorised results": 2,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: r - Y\nPosition 2: e - G\nPosition 3: t - _\nPosition 4: r - _\nPosition 5: y - G"
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - _\nPosition 2: r - G\nPosition 3: a - G\nPosition 4: n - _\nPosition 5: e - _"
     },
     {
         "Global attempt #": 35,
         "Run #": 2,
-        "Target word": "shame",
-        "Guessed word": "table",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: t - _\nPosition 2: a - Y\nPosition 3: b - _\nPosition 4: l - _\nPosition 5: e - G"
-    },
-    {
-        "Global attempt #": 36,
-        "Run #": 1,
-        "Target word": "urban",
-        "Guessed word": "table",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: t - _\nPosition 2: a - Y\nPosition 3: b - G\nPosition 4: l - _\nPosition 5: e - _"
+        "Target word": "trawl",
+        "Guessed word": "crave",
+        "Number of 'G' in colorised results": 2,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - _\nPosition 2: r - G\nPosition 3: a - G\nPosition 4: v - _\nPosition 5: e - _"
     },
     {
         "Global attempt #": 36,
         "Run #": 2,
-        "Target word": "urban",
-        "Guessed word": "abbey",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: a - Y\nPosition 2: b - _\nPosition 3: b - G\nPosition 4: e - _\nPosition 5: y - _"
+        "Target word": "other",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: c - _\nPosition 2: r - Y\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - Y"
     },
     {
         "Global attempt #": 36,
         "Run #": 3,
-        "Target word": "urban",
-        "Guessed word": "abbey",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: a - Y\nPosition 2: b - _\nPosition 3: b - G\nPosition 4: e - _\nPosition 5: y - _"
+        "Target word": "other",
+        "Guessed word": "retry",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 3,
+        "Feedback": "Position 1: r - Y\nPosition 2: e - Y\nPosition 3: t - Y\nPosition 4: r - _\nPosition 5: y - _"
     },
     {
         "Global attempt #": 36,
         "Run #": 4,
-        "Target word": "urban",
-        "Guessed word": "abbey",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: a - Y\nPosition 2: b - _\nPosition 3: b - G\nPosition 4: e - _\nPosition 5: y - _"
+        "Target word": "other",
+        "Guessed word": "retry",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 3,
+        "Feedback": "Position 1: r - Y\nPosition 2: e - Y\nPosition 3: t - Y\nPosition 4: r - _\nPosition 5: y - _"
+    },
+    {
+        "Global attempt #": 36,
+        "Run #": 5,
+        "Target word": "other",
+        "Guessed word": "retry",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 3,
+        "Feedback": "Position 1: r - Y\nPosition 2: e - Y\nPosition 3: t - Y\nPosition 4: r - _\nPosition 5: y - _"
+    },
+    {
+        "Global attempt #": 36,
+        "Run #": 6,
+        "Target word": "other",
+        "Guessed word": "rebut",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 3,
+        "Feedback": "Position 1: r - Y\nPosition 2: e - Y\nPosition 3: b - _\nPosition 4: u - _\nPosition 5: t - Y"
     },
     {
         "Global attempt #": 37,
         "Run #": 1,
-        "Target word": "early",
+        "Target word": "fresh",
         "Guessed word": "crane",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 3,
-        "Feedback": "Position 1: c - _\nPosition 2: r - Y\nPosition 3: a - Y\nPosition 4: n - _\nPosition 5: e - Y"
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: c - _\nPosition 2: r - G\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - Y"
     },
     {
         "Global attempt #": 37,
-        "Run #": 2,
-        "Target word": "early",
-        "Guessed word": "crave",
+        "Run #": 5,
+        "Target word": "fresh",
+        "Guessed word": "trend",
+        "Number of 'G' in colorised results": 2,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: t - _\nPosition 2: r - G\nPosition 3: e - G\nPosition 4: n - _\nPosition 5: d - _"
+    },
+    {
+        "Global attempt #": 37,
+        "Run #": 6,
+        "Target word": "fresh",
+        "Guessed word": "rebus",
         "Number of 'G' in colorised results": 0,
         "Number of 'Y' in colorised results": 3,
-        "Feedback": "Position 1: c - _\nPosition 2: r - Y\nPosition 3: a - Y\nPosition 4: v - _\nPosition 5: e - Y"
+        "Feedback": "Position 1: r - Y\nPosition 2: e - Y\nPosition 3: b - _\nPosition 4: u - _\nPosition 5: s - Y"
     },
     {
         "Global attempt #": 38,
         "Run #": 1,
-        "Target word": "train",
+        "Target word": "adapt",
         "Guessed word": "crane",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - G\nPosition 4: n - _\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 38,
+        "Run #": 2,
+        "Target word": "adapt",
+        "Guessed word": "gloat",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: g - _\nPosition 2: l - _\nPosition 3: o - _\nPosition 4: a - Y\nPosition 5: t - G"
+    },
+    {
+        "Global attempt #": 38,
+        "Run #": 3,
+        "Target word": "adapt",
+        "Guessed word": "stage",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: s - _\nPosition 2: t - Y\nPosition 3: a - G\nPosition 4: g - _\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 38,
+        "Run #": 4,
+        "Target word": "adapt",
+        "Guessed word": "plant",
         "Number of 'G' in colorised results": 2,
         "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: c - _\nPosition 2: r - G\nPosition 3: a - G\nPosition 4: n - Y\nPosition 5: e - _"
+        "Feedback": "Position 1: p - Y\nPosition 2: l - _\nPosition 3: a - G\nPosition 4: n - _\nPosition 5: t - G"
+    },
+    {
+        "Global attempt #": 38,
+        "Run #": 5,
+        "Target word": "adapt",
+        "Guessed word": "apart",
+        "Number of 'G' in colorised results": 3,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: a - G\nPosition 2: p - Y\nPosition 3: a - G\nPosition 4: r - _\nPosition 5: t - G"
+    },
+    {
+        "Global attempt #": 38,
+        "Run #": 6,
+        "Target word": "adapt",
+        "Guessed word": "tract",
+        "Number of 'G' in colorised results": 2,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: t - _\nPosition 2: r - _\nPosition 3: a - G\nPosition 4: c - _\nPosition 5: t - G"
     },
     {
         "Global attempt #": 39,
         "Run #": 1,
-        "Target word": "epoch",
+        "Target word": "rainy",
         "Guessed word": "crane",
-        "Number of 'G' in colorised results": 0,
+        "Number of 'G' in colorised results": 1,
         "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: c - Y\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - Y"
+        "Feedback": "Position 1: c - _\nPosition 2: r - Y\nPosition 3: a - Y\nPosition 4: n - G\nPosition 5: e - _"
     },
     {
         "Global attempt #": 39,
         "Run #": 2,
-        "Target word": "epoch",
-        "Guessed word": "cheek",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 3,
-        "Feedback": "Position 1: c - Y\nPosition 2: h - Y\nPosition 3: e - Y\nPosition 4: e - _\nPosition 5: k - _"
+        "Target word": "rainy",
+        "Guessed word": "crank",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: c - _\nPosition 2: r - Y\nPosition 3: a - Y\nPosition 4: n - G\nPosition 5: k - _"
     },
     {
         "Global attempt #": 39,
         "Run #": 3,
-        "Target word": "epoch",
-        "Guessed word": "cheer",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 3,
-        "Feedback": "Position 1: c - Y\nPosition 2: h - Y\nPosition 3: e - Y\nPosition 4: e - _\nPosition 5: r - _"
+        "Target word": "rainy",
+        "Guessed word": "rainy",
+        "Number of 'G' in colorised results": 5,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: r - G\nPosition 2: a - G\nPosition 3: i - G\nPosition 4: n - G\nPosition 5: y - G"
+    },
+    {
+        "Global attempt #": 39,
+        "Run #": 4,
+        "Target word": "rainy",
+        "Guessed word": "rainy",
+        "Number of 'G' in colorised results": 5,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: r - G\nPosition 2: a - G\nPosition 3: i - G\nPosition 4: n - G\nPosition 5: y - G"
+    },
+    {
+        "Global attempt #": 39,
+        "Run #": 5,
+        "Target word": "rainy",
+        "Guessed word": "rainy",
+        "Number of 'G' in colorised results": 5,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: r - G\nPosition 2: a - G\nPosition 3: i - G\nPosition 4: n - G\nPosition 5: y - G"
+    },
+    {
+        "Global attempt #": 39,
+        "Run #": 6,
+        "Target word": "rainy",
+        "Guessed word": "rainy",
+        "Number of 'G' in colorised results": 5,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: r - G\nPosition 2: a - G\nPosition 3: i - G\nPosition 4: n - G\nPosition 5: y - G"
     },
     {
         "Global attempt #": 40,
+        "Run #": 1,
+        "Target word": "blame",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 2,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - G\nPosition 4: n - _\nPosition 5: e - G"
+    },
+    {
+        "Global attempt #": 40,
+        "Run #": 2,
+        "Target word": "blame",
+        "Guessed word": "agate",
+        "Number of 'G' in colorised results": 2,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: a - _\nPosition 2: g - _\nPosition 3: a - G\nPosition 4: t - _\nPosition 5: e - G"
+    },
+    {
+        "Global attempt #": 40,
+        "Run #": 3,
+        "Target word": "blame",
+        "Guessed word": "badge",
+        "Number of 'G' in colorised results": 2,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: b - G\nPosition 2: a - Y\nPosition 3: d - _\nPosition 4: g - _\nPosition 5: e - G"
+    },
+    {
+        "Global attempt #": 41,
+        "Run #": 1,
+        "Target word": "kebab",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - Y\nPosition 4: n - _\nPosition 5: e - Y"
+    },
+    {
+        "Global attempt #": 41,
+        "Run #": 2,
+        "Target word": "kebab",
+        "Guessed word": "table",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: t - _\nPosition 2: a - Y\nPosition 3: b - G\nPosition 4: l - _\nPosition 5: e - Y"
+    },
+    {
+        "Global attempt #": 41,
+        "Run #": 3,
+        "Target word": "kebab",
+        "Guessed word": "cable",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: c - _\nPosition 2: a - Y\nPosition 3: b - G\nPosition 4: l - _\nPosition 5: e - Y"
+    },
+    {
+        "Global attempt #": 41,
+        "Run #": 4,
+        "Target word": "kebab",
+        "Guessed word": "abase",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 3,
+        "Feedback": "Position 1: a - Y\nPosition 2: b - Y\nPosition 3: a - _\nPosition 4: s - _\nPosition 5: e - Y"
+    },
+    {
+        "Global attempt #": 41,
+        "Run #": 5,
+        "Target word": "kebab",
+        "Guessed word": "abbey",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 3,
+        "Feedback": "Position 1: a - Y\nPosition 2: b - Y\nPosition 3: b - G\nPosition 4: e - Y\nPosition 5: y - _"
+    },
+    {
+        "Global attempt #": 42,
+        "Run #": 1,
+        "Target word": "beach",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: c - Y\nPosition 2: r - _\nPosition 3: a - G\nPosition 4: n - _\nPosition 5: e - Y"
+    },
+    {
+        "Global attempt #": 42,
+        "Run #": 2,
+        "Target word": "beach",
+        "Guessed word": "cache",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 4,
+        "Feedback": "Position 1: c - Y\nPosition 2: a - Y\nPosition 3: c - _\nPosition 4: h - Y\nPosition 5: e - Y"
+    },
+    {
+        "Global attempt #": 43,
+        "Run #": 1,
+        "Target word": "quest",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - Y"
+    },
+    {
+        "Global attempt #": 43,
+        "Run #": 2,
+        "Target word": "quest",
+        "Guessed word": "weary",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: w - _\nPosition 2: e - Y\nPosition 3: a - _\nPosition 4: r - _\nPosition 5: y - _"
+    },
+    {
+        "Global attempt #": 44,
+        "Run #": 1,
+        "Target word": "candy",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: c - G\nPosition 2: r - _\nPosition 3: a - Y\nPosition 4: n - Y\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 44,
+        "Run #": 2,
+        "Target word": "candy",
+        "Guessed word": "canny",
+        "Number of 'G' in colorised results": 4,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - G\nPosition 2: a - G\nPosition 3: n - G\nPosition 4: n - _\nPosition 5: y - G"
+    },
+    {
+        "Global attempt #": 44,
+        "Run #": 3,
+        "Target word": "candy",
+        "Guessed word": "canny",
+        "Number of 'G' in colorised results": 4,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - G\nPosition 2: a - G\nPosition 3: n - G\nPosition 4: n - _\nPosition 5: y - G"
+    },
+    {
+        "Global attempt #": 44,
+        "Run #": 4,
+        "Target word": "candy",
+        "Guessed word": "candy",
+        "Number of 'G' in colorised results": 5,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - G\nPosition 2: a - G\nPosition 3: n - G\nPosition 4: d - G\nPosition 5: y - G"
+    },
+    {
+        "Global attempt #": 44,
+        "Run #": 5,
+        "Target word": "candy",
+        "Guessed word": "candy",
+        "Number of 'G' in colorised results": 5,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - G\nPosition 2: a - G\nPosition 3: n - G\nPosition 4: d - G\nPosition 5: y - G"
+    },
+    {
+        "Global attempt #": 44,
+        "Run #": 6,
+        "Target word": "candy",
+        "Guessed word": "candy",
+        "Number of 'G' in colorised results": 5,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - G\nPosition 2: a - G\nPosition 3: n - G\nPosition 4: d - G\nPosition 5: y - G"
+    },
+    {
+        "Global attempt #": 45,
+        "Run #": 1,
+        "Target word": "onset",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - Y\nPosition 5: e - Y"
+    },
+    {
+        "Global attempt #": 45,
+        "Run #": 2,
+        "Target word": "onset",
+        "Guessed word": "funny",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: f - _\nPosition 2: u - _\nPosition 3: n - Y\nPosition 4: n - _\nPosition 5: y - _"
+    },
+    {
+        "Global attempt #": 45,
+        "Run #": 3,
+        "Target word": "onset",
+        "Guessed word": "inane",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: i - _\nPosition 2: n - G\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - Y"
+    },
+    {
+        "Global attempt #": 46,
+        "Run #": 1,
+        "Target word": "light",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 46,
+        "Run #": 2,
+        "Target word": "light",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 47,
         "Run #": 1,
         "Target word": "sleep",
         "Guessed word": "crane",
@@ -990,1168 +1305,52 @@
         "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - Y"
     },
     {
-        "Global attempt #": 41,
-        "Run #": 1,
-        "Target word": "joker",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: c - _\nPosition 2: r - Y\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - Y"
-    },
-    {
-        "Global attempt #": 41,
-        "Run #": 2,
-        "Target word": "joker",
-        "Guessed word": "retry",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: r - Y\nPosition 2: e - Y\nPosition 3: t - _\nPosition 4: r - _\nPosition 5: y - _"
-    },
-    {
-        "Global attempt #": 41,
+        "Global attempt #": 47,
         "Run #": 4,
-        "Target word": "joker",
-        "Guessed word": "rebus",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: r - Y\nPosition 2: e - Y\nPosition 3: b - _\nPosition 4: u - _\nPosition 5: s - _"
-    },
-    {
-        "Global attempt #": 42,
-        "Run #": 1,
-        "Target word": "tryst",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: c - _\nPosition 2: r - G\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
-    },
-    {
-        "Global attempt #": 42,
-        "Run #": 2,
-        "Target word": "tryst",
-        "Guessed word": "robin",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: r - Y\nPosition 2: o - _\nPosition 3: b - _\nPosition 4: i - _\nPosition 5: n - _"
-    },
-    {
-        "Global attempt #": 42,
-        "Run #": 3,
-        "Target word": "tryst",
-        "Guessed word": "crust",
-        "Number of 'G' in colorised results": 3,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: c - _\nPosition 2: r - G\nPosition 3: u - _\nPosition 4: s - G\nPosition 5: t - G"
-    },
-    {
-        "Global attempt #": 42,
-        "Run #": 4,
-        "Target word": "tryst",
-        "Guessed word": "frost",
-        "Number of 'G' in colorised results": 3,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: f - _\nPosition 2: r - G\nPosition 3: o - _\nPosition 4: s - G\nPosition 5: t - G"
-    },
-    {
-        "Global attempt #": 43,
-        "Run #": 1,
-        "Target word": "wedge",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - G"
-    },
-    {
-        "Global attempt #": 44,
-        "Run #": 1,
-        "Target word": "exist",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - Y"
-    },
-    {
-        "Global attempt #": 44,
-        "Run #": 3,
-        "Target word": "exist",
-        "Guessed word": "stone",
+        "Target word": "sleep",
+        "Guessed word": "ledge",
         "Number of 'G' in colorised results": 0,
         "Number of 'Y' in colorised results": 3,
-        "Feedback": "Position 1: s - Y\nPosition 2: t - Y\nPosition 3: o - _\nPosition 4: n - _\nPosition 5: e - Y"
-    },
-    {
-        "Global attempt #": 45,
-        "Run #": 1,
-        "Target word": "doing",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - G\nPosition 5: e - _"
-    },
-    {
-        "Global attempt #": 45,
-        "Run #": 2,
-        "Target word": "doing",
-        "Guessed word": "cling",
-        "Number of 'G' in colorised results": 3,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: c - _\nPosition 2: l - _\nPosition 3: i - G\nPosition 4: n - G\nPosition 5: g - G"
-    },
-    {
-        "Global attempt #": 46,
-        "Run #": 1,
-        "Target word": "month",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - Y\nPosition 5: e - _"
-    },
-    {
-        "Global attempt #": 46,
-        "Run #": 3,
-        "Target word": "month",
-        "Guessed word": "canny",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: c - _\nPosition 2: a - _\nPosition 3: n - G\nPosition 4: n - _\nPosition 5: y - _"
-    },
-    {
-        "Global attempt #": 46,
-        "Run #": 4,
-        "Target word": "month",
-        "Guessed word": "nanny",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: n - _\nPosition 2: a - _\nPosition 3: n - G\nPosition 4: n - _\nPosition 5: y - _"
-    },
-    {
-        "Global attempt #": 47,
-        "Run #": 1,
-        "Target word": "focus",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: c - Y\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
-    },
-    {
-        "Global attempt #": 47,
-        "Run #": 2,
-        "Target word": "focus",
-        "Guessed word": "champ",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: c - Y\nPosition 2: h - _\nPosition 3: a - _\nPosition 4: m - _\nPosition 5: p - _"
-    },
-    {
-        "Global attempt #": 47,
-        "Run #": 3,
-        "Target word": "focus",
-        "Guessed word": "candy",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: c - Y\nPosition 2: a - _\nPosition 3: n - _\nPosition 4: d - _\nPosition 5: y - _"
+        "Feedback": "Position 1: l - Y\nPosition 2: e - Y\nPosition 3: d - _\nPosition 4: g - _\nPosition 5: e - Y"
     },
     {
         "Global attempt #": 48,
         "Run #": 1,
-        "Target word": "bleed",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - Y"
-    },
-    {
-        "Global attempt #": 49,
-        "Run #": 1,
-        "Target word": "seedy",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - Y"
-    },
-    {
-        "Global attempt #": 49,
-        "Run #": 2,
-        "Target word": "seedy",
-        "Guessed word": "tease",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: t - _\nPosition 2: e - G\nPosition 3: a - _\nPosition 4: s - Y\nPosition 5: e - Y"
-    },
-    {
-        "Global attempt #": 49,
-        "Run #": 4,
-        "Target word": "seedy",
-        "Guessed word": "seedy",
-        "Number of 'G' in colorised results": 5,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: s - G\nPosition 2: e - G\nPosition 3: e - G\nPosition 4: d - G\nPosition 5: y - G"
-    },
-    {
-        "Global attempt #": 49,
-        "Run #": 5,
-        "Target word": "seedy",
-        "Guessed word": "seedy",
-        "Number of 'G' in colorised results": 5,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: s - G\nPosition 2: e - G\nPosition 3: e - G\nPosition 4: d - G\nPosition 5: y - G"
-    },
-    {
-        "Global attempt #": 49,
-        "Run #": 6,
-        "Target word": "seedy",
-        "Guessed word": "seedy",
-        "Number of 'G' in colorised results": 5,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: s - G\nPosition 2: e - G\nPosition 3: e - G\nPosition 4: d - G\nPosition 5: y - G"
-    },
-    {
-        "Global attempt #": 50,
-        "Run #": 1,
-        "Target word": "rusty",
+        "Target word": "whirl",
         "Guessed word": "crane",
         "Number of 'G' in colorised results": 0,
         "Number of 'Y' in colorised results": 1,
         "Feedback": "Position 1: c - _\nPosition 2: r - Y\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
     },
     {
-        "Global attempt #": 50,
-        "Run #": 4,
-        "Target word": "rusty",
-        "Guessed word": "tryst",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 4,
-        "Feedback": "Position 1: t - Y\nPosition 2: r - Y\nPosition 3: y - Y\nPosition 4: s - Y\nPosition 5: t - _"
-    },
-    {
-        "Global attempt #": 51,
+        "Global attempt #": 49,
         "Run #": 1,
-        "Target word": "piety",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - Y"
-    },
-    {
-        "Global attempt #": 52,
-        "Run #": 1,
-        "Target word": "adobe",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - Y\nPosition 4: n - _\nPosition 5: e - G"
-    },
-    {
-        "Global attempt #": 52,
-        "Run #": 3,
-        "Target word": "adobe",
-        "Guessed word": "glaze",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: g - _\nPosition 2: l - _\nPosition 3: a - Y\nPosition 4: z - _\nPosition 5: e - G"
-    },
-    {
-        "Global attempt #": 52,
-        "Run #": 5,
-        "Target word": "adobe",
-        "Guessed word": "peace",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: p - _\nPosition 2: e - _\nPosition 3: a - Y\nPosition 4: c - _\nPosition 5: e - G"
-    },
-    {
-        "Global attempt #": 53,
-        "Run #": 1,
-        "Target word": "prick",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: c - Y\nPosition 2: r - G\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
-    },
-    {
-        "Global attempt #": 53,
-        "Run #": 3,
-        "Target word": "prick",
-        "Guessed word": "retry",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: r - Y\nPosition 2: e - _\nPosition 3: t - _\nPosition 4: r - _\nPosition 5: y - _"
-    },
-    {
-        "Global attempt #": 53,
-        "Run #": 5,
-        "Target word": "prick",
-        "Guessed word": "croak",
-        "Number of 'G' in colorised results": 2,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: c - Y\nPosition 2: r - G\nPosition 3: o - _\nPosition 4: a - _\nPosition 5: k - G"
-    },
-    {
-        "Global attempt #": 54,
-        "Run #": 1,
-        "Target word": "taken",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 3,
-        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - Y\nPosition 4: n - Y\nPosition 5: e - Y"
-    },
-    {
-        "Global attempt #": 54,
-        "Run #": 2,
-        "Target word": "taken",
-        "Guessed word": "candy",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: c - _\nPosition 2: a - G\nPosition 3: n - Y\nPosition 4: d - _\nPosition 5: y - _"
-    },
-    {
-        "Global attempt #": 54,
-        "Run #": 3,
-        "Target word": "taken",
-        "Guessed word": "angry",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: a - Y\nPosition 2: n - Y\nPosition 3: g - _\nPosition 4: r - _\nPosition 5: y - _"
-    },
-    {
-        "Global attempt #": 54,
-        "Run #": 4,
-        "Target word": "taken",
-        "Guessed word": "manly",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: m - _\nPosition 2: a - G\nPosition 3: n - Y\nPosition 4: l - _\nPosition 5: y - _"
-    },
-    {
-        "Global attempt #": 54,
-        "Run #": 5,
-        "Target word": "taken",
-        "Guessed word": "nasty",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: n - Y\nPosition 2: a - G\nPosition 3: s - _\nPosition 4: t - Y\nPosition 5: y - _"
-    },
-    {
-        "Global attempt #": 54,
-        "Run #": 6,
-        "Target word": "taken",
-        "Guessed word": "tangy",
-        "Number of 'G' in colorised results": 2,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: t - G\nPosition 2: a - G\nPosition 3: n - Y\nPosition 4: g - _\nPosition 5: y - _"
-    },
-    {
-        "Global attempt #": 55,
-        "Run #": 1,
-        "Target word": "birth",
-        "Guessed word": "table",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: t - Y\nPosition 2: a - _\nPosition 3: b - Y\nPosition 4: l - _\nPosition 5: e - _"
-    },
-    {
-        "Global attempt #": 55,
-        "Run #": 3,
-        "Target word": "birth",
-        "Guessed word": "thumb",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 3,
-        "Feedback": "Position 1: t - Y\nPosition 2: h - Y\nPosition 3: u - _\nPosition 4: m - _\nPosition 5: b - Y"
-    },
-    {
-        "Global attempt #": 56,
-        "Run #": 1,
-        "Target word": "snail",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - G\nPosition 4: n - Y\nPosition 5: e - _"
-    },
-    {
-        "Global attempt #": 56,
-        "Run #": 2,
-        "Target word": "snail",
-        "Guessed word": "gloat",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: g - _\nPosition 2: l - Y\nPosition 3: o - _\nPosition 4: a - Y\nPosition 5: t - _"
-    },
-    {
-        "Global attempt #": 56,
-        "Run #": 3,
-        "Target word": "snail",
-        "Guessed word": "larva",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: l - Y\nPosition 2: a - Y\nPosition 3: r - _\nPosition 4: v - _\nPosition 5: a - _"
-    },
-    {
-        "Global attempt #": 57,
-        "Run #": 1,
-        "Target word": "salad",
-        "Guessed word": "query",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: q - _\nPosition 2: u - _\nPosition 3: e - _\nPosition 4: r - _\nPosition 5: y - _"
-    },
-    {
-        "Global attempt #": 58,
-        "Run #": 1,
-        "Target word": "delta",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - Y\nPosition 4: n - _\nPosition 5: e - Y"
-    },
-    {
-        "Global attempt #": 58,
-        "Run #": 2,
-        "Target word": "delta",
-        "Guessed word": "cable",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 3,
-        "Feedback": "Position 1: c - _\nPosition 2: a - Y\nPosition 3: b - _\nPosition 4: l - Y\nPosition 5: e - Y"
-    },
-    {
-        "Global attempt #": 58,
-        "Run #": 4,
-        "Target word": "delta",
-        "Guessed word": "valet",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 3,
-        "Feedback": "Position 1: v - _\nPosition 2: a - Y\nPosition 3: l - G\nPosition 4: e - Y\nPosition 5: t - Y"
-    },
-    {
-        "Global attempt #": 58,
-        "Run #": 5,
-        "Target word": "delta",
-        "Guessed word": "plate",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 3,
-        "Feedback": "Position 1: p - _\nPosition 2: l - Y\nPosition 3: a - Y\nPosition 4: t - G\nPosition 5: e - Y"
-    },
-    {
-        "Global attempt #": 58,
-        "Run #": 6,
-        "Target word": "delta",
-        "Guessed word": "latte",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 3,
-        "Feedback": "Position 1: l - Y\nPosition 2: a - Y\nPosition 3: t - _\nPosition 4: t - G\nPosition 5: e - Y"
-    },
-    {
-        "Global attempt #": 59,
-        "Run #": 1,
-        "Target word": "blurt",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: c - _\nPosition 2: r - Y\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
-    },
-    {
-        "Global attempt #": 59,
-        "Run #": 2,
-        "Target word": "blurt",
-        "Guessed word": "robin",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: r - Y\nPosition 2: o - _\nPosition 3: b - Y\nPosition 4: i - _\nPosition 5: n - _"
-    },
-    {
-        "Global attempt #": 59,
-        "Run #": 3,
-        "Target word": "blurt",
-        "Guessed word": "briar",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: b - G\nPosition 2: r - Y\nPosition 3: i - _\nPosition 4: a - _\nPosition 5: r - _"
-    },
-    {
-        "Global attempt #": 59,
-        "Run #": 4,
-        "Target word": "blurt",
-        "Guessed word": "brink",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: b - G\nPosition 2: r - Y\nPosition 3: i - _\nPosition 4: n - _\nPosition 5: k - _"
-    },
-    {
-        "Global attempt #": 60,
-        "Run #": 1,
-        "Target word": "avail",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - G\nPosition 4: n - _\nPosition 5: e - _"
-    },
-    {
-        "Global attempt #": 60,
-        "Run #": 2,
-        "Target word": "avail",
-        "Guessed word": "champ",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: c - _\nPosition 2: h - _\nPosition 3: a - G\nPosition 4: m - _\nPosition 5: p - _"
-    },
-    {
-        "Global attempt #": 60,
-        "Run #": 4,
-        "Target word": "avail",
-        "Guessed word": "gawky",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: g - _\nPosition 2: a - Y\nPosition 3: w - _\nPosition 4: k - _\nPosition 5: y - _"
-    },
-    {
-        "Global attempt #": 61,
-        "Run #": 1,
-        "Target word": "flank",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 2,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - G\nPosition 4: n - G\nPosition 5: e - _"
-    },
-    {
-        "Global attempt #": 62,
-        "Run #": 1,
-        "Target word": "cinch",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: c - G\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - Y\nPosition 5: e - _"
-    },
-    {
-        "Global attempt #": 62,
-        "Run #": 2,
-        "Target word": "cinch",
-        "Guessed word": "cynic",
-        "Number of 'G' in colorised results": 2,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: c - G\nPosition 2: y - _\nPosition 3: n - G\nPosition 4: i - Y\nPosition 5: c - Y"
-    },
-    {
-        "Global attempt #": 62,
-        "Run #": 3,
-        "Target word": "cinch",
-        "Guessed word": "cynic",
-        "Number of 'G' in colorised results": 2,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: c - G\nPosition 2: y - _\nPosition 3: n - G\nPosition 4: i - Y\nPosition 5: c - Y"
-    },
-    {
-        "Global attempt #": 62,
-        "Run #": 4,
-        "Target word": "cinch",
-        "Guessed word": "cynic",
-        "Number of 'G' in colorised results": 2,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: c - G\nPosition 2: y - _\nPosition 3: n - G\nPosition 4: i - Y\nPosition 5: c - Y"
-    },
-    {
-        "Global attempt #": 63,
-        "Run #": 1,
-        "Target word": "tweak",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - Y\nPosition 4: n - _\nPosition 5: e - Y"
-    },
-    {
-        "Global attempt #": 63,
-        "Run #": 4,
-        "Target word": "tweak",
-        "Guessed word": "cable",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: c - _\nPosition 2: a - Y\nPosition 3: b - _\nPosition 4: l - _\nPosition 5: e - Y"
-    },
-    {
-        "Global attempt #": 64,
-        "Run #": 1,
-        "Target word": "exist",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - Y"
-    },
-    {
-        "Global attempt #": 64,
-        "Run #": 5,
-        "Target word": "exist",
-        "Guessed word": "ferry",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: f - _\nPosition 2: e - Y\nPosition 3: r - _\nPosition 4: r - _\nPosition 5: y - _"
-    },
-    {
-        "Global attempt #": 65,
-        "Run #": 1,
-        "Target word": "tipsy",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
-    },
-    {
-        "Global attempt #": 65,
-        "Run #": 3,
-        "Target word": "tipsy",
-        "Guessed word": "cable",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: c - _\nPosition 2: a - _\nPosition 3: b - _\nPosition 4: l - _\nPosition 5: e - _"
-    },
-    {
-        "Global attempt #": 66,
-        "Run #": 1,
-        "Target word": "trice",
-        "Guessed word": "crate",
-        "Number of 'G' in colorised results": 2,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: c - Y\nPosition 2: r - G\nPosition 3: a - _\nPosition 4: t - Y\nPosition 5: e - G"
-    },
-    {
-        "Global attempt #": 66,
-        "Run #": 2,
-        "Target word": "trice",
-        "Guessed word": "trend",
-        "Number of 'G' in colorised results": 2,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: t - G\nPosition 2: r - G\nPosition 3: e - Y\nPosition 4: n - _\nPosition 5: d - _"
-    },
-    {
-        "Global attempt #": 66,
-        "Run #": 4,
-        "Target word": "trice",
-        "Guessed word": "trice",
-        "Number of 'G' in colorised results": 5,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: t - G\nPosition 2: r - G\nPosition 3: i - G\nPosition 4: c - G\nPosition 5: e - G"
-    },
-    {
-        "Global attempt #": 66,
-        "Run #": 5,
-        "Target word": "trice",
-        "Guessed word": "trice",
-        "Number of 'G' in colorised results": 5,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: t - G\nPosition 2: r - G\nPosition 3: i - G\nPosition 4: c - G\nPosition 5: e - G"
-    },
-    {
-        "Global attempt #": 66,
-        "Run #": 6,
-        "Target word": "trice",
-        "Guessed word": "trice",
-        "Number of 'G' in colorised results": 5,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: t - G\nPosition 2: r - G\nPosition 3: i - G\nPosition 4: c - G\nPosition 5: e - G"
-    },
-    {
-        "Global attempt #": 67,
-        "Run #": 1,
-        "Target word": "gloat",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - Y\nPosition 4: n - _\nPosition 5: e - _"
-    },
-    {
-        "Global attempt #": 67,
-        "Run #": 4,
-        "Target word": "gloat",
-        "Guessed word": "carat",
-        "Number of 'G' in colorised results": 2,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: c - _\nPosition 2: a - _\nPosition 3: r - _\nPosition 4: a - G\nPosition 5: t - G"
-    },
-    {
-        "Global attempt #": 68,
-        "Run #": 1,
-        "Target word": "greet",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: c - _\nPosition 2: r - G\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - Y"
-    },
-    {
-        "Global attempt #": 69,
-        "Run #": 1,
-        "Target word": "conic",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: c - G\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - Y\nPosition 5: e - _"
-    },
-    {
-        "Global attempt #": 69,
-        "Run #": 3,
-        "Target word": "conic",
-        "Guessed word": "clown",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: c - G\nPosition 2: l - _\nPosition 3: o - Y\nPosition 4: w - _\nPosition 5: n - Y"
-    },
-    {
-        "Global attempt #": 69,
-        "Run #": 4,
-        "Target word": "conic",
-        "Guessed word": "colon",
-        "Number of 'G' in colorised results": 2,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: c - G\nPosition 2: o - G\nPosition 3: l - _\nPosition 4: o - _\nPosition 5: n - Y"
-    },
-    {
-        "Global attempt #": 69,
-        "Run #": 5,
-        "Target word": "conic",
-        "Guessed word": "condo",
-        "Number of 'G' in colorised results": 3,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: c - G\nPosition 2: o - G\nPosition 3: n - G\nPosition 4: d - _\nPosition 5: o - _"
-    },
-    {
-        "Global attempt #": 69,
-        "Run #": 6,
-        "Target word": "conic",
-        "Guessed word": "corny",
-        "Number of 'G' in colorised results": 2,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: c - G\nPosition 2: o - G\nPosition 3: r - _\nPosition 4: n - Y\nPosition 5: y - _"
-    },
-    {
-        "Global attempt #": 70,
-        "Run #": 1,
-        "Target word": "arbor",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: c - _\nPosition 2: r - G\nPosition 3: a - Y\nPosition 4: n - _\nPosition 5: e - _"
-    },
-    {
-        "Global attempt #": 70,
-        "Run #": 5,
-        "Target word": "arbor",
-        "Guessed word": "croak",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: c - _\nPosition 2: r - G\nPosition 3: o - Y\nPosition 4: a - Y\nPosition 5: k - _"
-    },
-    {
-        "Global attempt #": 71,
-        "Run #": 1,
-        "Target word": "acute",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: c - Y\nPosition 2: r - _\nPosition 3: a - Y\nPosition 4: n - _\nPosition 5: e - G"
-    },
-    {
-        "Global attempt #": 71,
-        "Run #": 2,
-        "Target word": "acute",
-        "Guessed word": "cache",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: c - Y\nPosition 2: a - Y\nPosition 3: c - _\nPosition 4: h - _\nPosition 5: e - G"
-    },
-    {
-        "Global attempt #": 71,
-        "Run #": 4,
-        "Target word": "acute",
-        "Guessed word": "peace",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: p - _\nPosition 2: e - _\nPosition 3: a - Y\nPosition 4: c - Y\nPosition 5: e - G"
-    },
-    {
-        "Global attempt #": 71,
-        "Run #": 5,
-        "Target word": "acute",
-        "Guessed word": "place",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: p - _\nPosition 2: l - _\nPosition 3: a - Y\nPosition 4: c - Y\nPosition 5: e - G"
-    },
-    {
-        "Global attempt #": 71,
-        "Run #": 6,
-        "Target word": "acute",
-        "Guessed word": "grace",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: g - _\nPosition 2: r - _\nPosition 3: a - Y\nPosition 4: c - Y\nPosition 5: e - G"
-    },
-    {
-        "Global attempt #": 72,
-        "Run #": 1,
-        "Target word": "given",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - Y\nPosition 5: e - Y"
-    },
-    {
-        "Global attempt #": 72,
-        "Run #": 2,
-        "Target word": "given",
-        "Guessed word": "funny",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: f - _\nPosition 2: u - _\nPosition 3: n - Y\nPosition 4: n - _\nPosition 5: y - _"
-    },
-    {
-        "Global attempt #": 72,
-        "Run #": 3,
-        "Target word": "given",
-        "Guessed word": "knock",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: k - _\nPosition 2: n - Y\nPosition 3: o - _\nPosition 4: c - _\nPosition 5: k - _"
-    },
-    {
-        "Global attempt #": 73,
-        "Run #": 1,
-        "Target word": "snake",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 2,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - G\nPosition 4: n - Y\nPosition 5: e - G"
-    },
-    {
-        "Global attempt #": 73,
-        "Run #": 2,
-        "Target word": "snake",
-        "Guessed word": "glean",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 3,
-        "Feedback": "Position 1: g - _\nPosition 2: l - _\nPosition 3: e - Y\nPosition 4: a - Y\nPosition 5: n - Y"
-    },
-    {
-        "Global attempt #": 73,
-        "Run #": 3,
-        "Target word": "snake",
-        "Guessed word": "agent",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 3,
-        "Feedback": "Position 1: a - Y\nPosition 2: g - _\nPosition 3: e - Y\nPosition 4: n - Y\nPosition 5: t - _"
-    },
-    {
-        "Global attempt #": 73,
-        "Run #": 4,
-        "Target word": "snake",
-        "Guessed word": "meant",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: m - _\nPosition 2: e - Y\nPosition 3: a - G\nPosition 4: n - Y\nPosition 5: t - _"
-    },
-    {
-        "Global attempt #": 74,
-        "Run #": 1,
-        "Target word": "cedar",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 3,
-        "Feedback": "Position 1: c - G\nPosition 2: r - Y\nPosition 3: a - Y\nPosition 4: n - _\nPosition 5: e - Y"
-    },
-    {
-        "Global attempt #": 74,
-        "Run #": 2,
-        "Target word": "cedar",
-        "Guessed word": "react",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 3,
-        "Feedback": "Position 1: r - Y\nPosition 2: e - G\nPosition 3: a - Y\nPosition 4: c - Y\nPosition 5: t - _"
-    },
-    {
-        "Global attempt #": 74,
-        "Run #": 3,
-        "Target word": "cedar",
-        "Guessed word": "grace",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 4,
-        "Feedback": "Position 1: g - _\nPosition 2: r - Y\nPosition 3: a - Y\nPosition 4: c - Y\nPosition 5: e - Y"
-    },
-    {
-        "Global attempt #": 74,
-        "Run #": 4,
-        "Target word": "cedar",
-        "Guessed word": "trace",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 4,
-        "Feedback": "Position 1: t - _\nPosition 2: r - Y\nPosition 3: a - Y\nPosition 4: c - Y\nPosition 5: e - Y"
-    },
-    {
-        "Global attempt #": 75,
-        "Run #": 1,
-        "Target word": "flock",
+        "Target word": "flick",
         "Guessed word": "crane",
         "Number of 'G' in colorised results": 0,
         "Number of 'Y' in colorised results": 1,
         "Feedback": "Position 1: c - Y\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
     },
     {
-        "Global attempt #": 75,
+        "Global attempt #": 49,
         "Run #": 3,
-        "Target word": "flock",
+        "Target word": "flick",
         "Guessed word": "champ",
         "Number of 'G' in colorised results": 0,
         "Number of 'Y' in colorised results": 1,
         "Feedback": "Position 1: c - Y\nPosition 2: h - _\nPosition 3: a - _\nPosition 4: m - _\nPosition 5: p - _"
     },
     {
-        "Global attempt #": 75,
+        "Global attempt #": 49,
         "Run #": 4,
-        "Target word": "flock",
+        "Target word": "flick",
         "Guessed word": "catch",
         "Number of 'G' in colorised results": 1,
         "Number of 'Y' in colorised results": 0,
         "Feedback": "Position 1: c - _\nPosition 2: a - _\nPosition 3: t - _\nPosition 4: c - G\nPosition 5: h - _"
     },
     {
-        "Global attempt #": 75,
-        "Run #": 5,
-        "Target word": "flock",
-        "Guessed word": "cynic",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: c - Y\nPosition 2: y - _\nPosition 3: n - _\nPosition 4: i - _\nPosition 5: c - _"
-    },
-    {
-        "Global attempt #": 75,
-        "Run #": 6,
-        "Target word": "flock",
-        "Guessed word": "civic",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: c - Y\nPosition 2: i - _\nPosition 3: v - _\nPosition 4: i - _\nPosition 5: c - _"
-    },
-    {
-        "Global attempt #": 76,
-        "Run #": 1,
-        "Target word": "elude",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - G"
-    },
-    {
-        "Global attempt #": 77,
-        "Run #": 1,
-        "Target word": "atone",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 2,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - Y\nPosition 4: n - G\nPosition 5: e - G"
-    },
-    {
-        "Global attempt #": 77,
-        "Run #": 5,
-        "Target word": "atone",
-        "Guessed word": "angel",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: a - G\nPosition 2: n - Y\nPosition 3: g - _\nPosition 4: e - Y\nPosition 5: l - _"
-    },
-    {
-        "Global attempt #": 77,
-        "Run #": 6,
-        "Target word": "atone",
-        "Guessed word": "range",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: r - _\nPosition 2: a - Y\nPosition 3: n - Y\nPosition 4: g - _\nPosition 5: e - G"
-    },
-    {
-        "Global attempt #": 78,
-        "Run #": 1,
-        "Target word": "trace",
-        "Guessed word": "table",
-        "Number of 'G' in colorised results": 2,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: t - G\nPosition 2: a - Y\nPosition 3: b - _\nPosition 4: l - _\nPosition 5: e - G"
-    },
-    {
-        "Global attempt #": 78,
-        "Run #": 2,
-        "Target word": "trace",
-        "Guessed word": "tease",
-        "Number of 'G' in colorised results": 3,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: t - G\nPosition 2: e - _\nPosition 3: a - G\nPosition 4: s - _\nPosition 5: e - G"
-    },
-    {
-        "Global attempt #": 78,
-        "Run #": 3,
-        "Target word": "trace",
-        "Guessed word": "treat",
-        "Number of 'G' in colorised results": 2,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: t - G\nPosition 2: r - G\nPosition 3: e - Y\nPosition 4: a - Y\nPosition 5: t - _"
-    },
-    {
-        "Global attempt #": 78,
-        "Run #": 4,
-        "Target word": "trace",
-        "Guessed word": "irate",
-        "Number of 'G' in colorised results": 3,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: i - _\nPosition 2: r - G\nPosition 3: a - G\nPosition 4: t - Y\nPosition 5: e - G"
-    },
-    {
-        "Global attempt #": 78,
-        "Run #": 5,
-        "Target word": "trace",
-        "Guessed word": "crate",
-        "Number of 'G' in colorised results": 3,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: c - Y\nPosition 2: r - G\nPosition 3: a - G\nPosition 4: t - Y\nPosition 5: e - G"
-    },
-    {
-        "Global attempt #": 78,
-        "Run #": 6,
-        "Target word": "trace",
-        "Guessed word": "grate",
-        "Number of 'G' in colorised results": 3,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: g - _\nPosition 2: r - G\nPosition 3: a - G\nPosition 4: t - Y\nPosition 5: e - G"
-    },
-    {
-        "Global attempt #": 79,
-        "Run #": 1,
-        "Target word": "rival",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: c - _\nPosition 2: r - Y\nPosition 3: a - Y\nPosition 4: n - _\nPosition 5: e - _"
-    },
-    {
-        "Global attempt #": 79,
-        "Run #": 3,
-        "Target word": "rival",
-        "Guessed word": "crave",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 3,
-        "Feedback": "Position 1: c - _\nPosition 2: r - Y\nPosition 3: a - Y\nPosition 4: v - Y\nPosition 5: e - _"
-    },
-    {
-        "Global attempt #": 80,
-        "Run #": 1,
-        "Target word": "equal",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - Y\nPosition 4: n - _\nPosition 5: e - Y"
-    },
-    {
-        "Global attempt #": 80,
-        "Run #": 2,
-        "Target word": "equal",
-        "Guessed word": "cable",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 3,
-        "Feedback": "Position 1: c - _\nPosition 2: a - Y\nPosition 3: b - _\nPosition 4: l - Y\nPosition 5: e - Y"
-    },
-    {
-        "Global attempt #": 80,
-        "Run #": 3,
-        "Target word": "equal",
-        "Guessed word": "maple",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 3,
-        "Feedback": "Position 1: m - _\nPosition 2: a - Y\nPosition 3: p - _\nPosition 4: l - Y\nPosition 5: e - Y"
-    },
-    {
-        "Global attempt #": 80,
-        "Run #": 4,
-        "Target word": "equal",
-        "Guessed word": "table",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 3,
-        "Feedback": "Position 1: t - _\nPosition 2: a - Y\nPosition 3: b - _\nPosition 4: l - Y\nPosition 5: e - Y"
-    },
-    {
-        "Global attempt #": 81,
-        "Run #": 1,
-        "Target word": "ennui",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - Y\nPosition 5: e - Y"
-    },
-    {
-        "Global attempt #": 81,
-        "Run #": 2,
-        "Target word": "ennui",
-        "Guessed word": "canny",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: c - _\nPosition 2: a - _\nPosition 3: n - G\nPosition 4: n - Y\nPosition 5: y - _"
-    },
-    {
-        "Global attempt #": 81,
-        "Run #": 4,
-        "Target word": "ennui",
-        "Guessed word": "nanny",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: n - Y\nPosition 2: a - _\nPosition 3: n - G\nPosition 4: n - _\nPosition 5: y - _"
-    },
-    {
-        "Global attempt #": 81,
-        "Run #": 5,
-        "Target word": "ennui",
-        "Guessed word": "canny",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: c - _\nPosition 2: a - _\nPosition 3: n - G\nPosition 4: n - Y\nPosition 5: y - _"
-    },
-    {
-        "Global attempt #": 81,
-        "Run #": 6,
-        "Target word": "ennui",
-        "Guessed word": "funny",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: f - _\nPosition 2: u - Y\nPosition 3: n - G\nPosition 4: n - Y\nPosition 5: y - _"
-    },
-    {
-        "Global attempt #": 82,
-        "Run #": 1,
-        "Target word": "truth",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: c - _\nPosition 2: r - G\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
-    },
-    {
-        "Global attempt #": 82,
-        "Run #": 4,
-        "Target word": "truth",
-        "Guessed word": "crazy",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: c - _\nPosition 2: r - G\nPosition 3: a - _\nPosition 4: z - _\nPosition 5: y - _"
-    },
-    {
-        "Global attempt #": 83,
-        "Run #": 1,
-        "Target word": "ninja",
-        "Guessed word": "table",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: t - _\nPosition 2: a - Y\nPosition 3: b - _\nPosition 4: l - _\nPosition 5: e - _"
-    },
-    {
-        "Global attempt #": 83,
-        "Run #": 2,
-        "Target word": "ninja",
-        "Guessed word": "catch",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: c - _\nPosition 2: a - Y\nPosition 3: t - _\nPosition 4: c - _\nPosition 5: h - _"
-    },
-    {
-        "Global attempt #": 84,
+        "Global attempt #": 50,
         "Run #": 1,
         "Target word": "mural",
         "Guessed word": "crane",
@@ -2160,385 +1359,403 @@
         "Feedback": "Position 1: c - _\nPosition 2: r - Y\nPosition 3: a - Y\nPosition 4: n - _\nPosition 5: e - _"
     },
     {
-        "Global attempt #": 85,
+        "Global attempt #": 50,
+        "Run #": 5,
+        "Target word": "mural",
+        "Guessed word": "brave",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: b - _\nPosition 2: r - Y\nPosition 3: a - Y\nPosition 4: v - _\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 50,
+        "Run #": 6,
+        "Target word": "mural",
+        "Guessed word": "grace",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: g - _\nPosition 2: r - Y\nPosition 3: a - Y\nPosition 4: c - _\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 51,
         "Run #": 1,
-        "Target word": "oxide",
+        "Target word": "caper",
         "Guessed word": "crane",
         "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - G"
+        "Number of 'Y' in colorised results": 3,
+        "Feedback": "Position 1: c - G\nPosition 2: r - Y\nPosition 3: a - Y\nPosition 4: n - _\nPosition 5: e - Y"
     },
     {
-        "Global attempt #": 86,
-        "Run #": 1,
-        "Target word": "sloth",
-        "Guessed word": "slate",
-        "Number of 'G' in colorised results": 3,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: s - G\nPosition 2: l - G\nPosition 3: a - _\nPosition 4: t - G\nPosition 5: e - _"
-    },
-    {
-        "Global attempt #": 86,
+        "Global attempt #": 51,
         "Run #": 2,
-        "Target word": "sloth",
-        "Guessed word": "slate",
-        "Number of 'G' in colorised results": 3,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: s - G\nPosition 2: l - G\nPosition 3: a - _\nPosition 4: t - G\nPosition 5: e - _"
+        "Target word": "caper",
+        "Guessed word": "react",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 4,
+        "Feedback": "Position 1: r - Y\nPosition 2: e - Y\nPosition 3: a - Y\nPosition 4: c - Y\nPosition 5: t - _"
     },
     {
-        "Global attempt #": 86,
+        "Global attempt #": 51,
+        "Run #": 3,
+        "Target word": "caper",
+        "Guessed word": "trace",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 4,
+        "Feedback": "Position 1: t - _\nPosition 2: r - Y\nPosition 3: a - Y\nPosition 4: c - Y\nPosition 5: e - Y"
+    },
+    {
+        "Global attempt #": 51,
+        "Run #": 4,
+        "Target word": "caper",
+        "Guessed word": "crate",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 3,
+        "Feedback": "Position 1: c - G\nPosition 2: r - Y\nPosition 3: a - Y\nPosition 4: t - _\nPosition 5: e - Y"
+    },
+    {
+        "Global attempt #": 51,
         "Run #": 5,
-        "Target word": "sloth",
-        "Guessed word": "sloth",
-        "Number of 'G' in colorised results": 5,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: s - G\nPosition 2: l - G\nPosition 3: o - G\nPosition 4: t - G\nPosition 5: h - G"
+        "Target word": "caper",
+        "Guessed word": "clear",
+        "Number of 'G' in colorised results": 2,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: c - G\nPosition 2: l - _\nPosition 3: e - Y\nPosition 4: a - Y\nPosition 5: r - G"
     },
     {
-        "Global attempt #": 86,
+        "Global attempt #": 51,
         "Run #": 6,
-        "Target word": "sloth",
-        "Guessed word": "sloth",
+        "Target word": "caper",
+        "Guessed word": "caper",
         "Number of 'G' in colorised results": 5,
         "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: s - G\nPosition 2: l - G\nPosition 3: o - G\nPosition 4: t - G\nPosition 5: h - G"
+        "Feedback": "Position 1: c - G\nPosition 2: a - G\nPosition 3: p - G\nPosition 4: e - G\nPosition 5: r - G"
     },
     {
-        "Global attempt #": 87,
+        "Global attempt #": 52,
         "Run #": 1,
-        "Target word": "stale",
+        "Target word": "guano",
         "Guessed word": "crane",
         "Number of 'G' in colorised results": 2,
         "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - G\nPosition 4: n - _\nPosition 5: e - G"
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - G\nPosition 4: n - G\nPosition 5: e - _"
     },
     {
-        "Global attempt #": 87,
+        "Global attempt #": 52,
+        "Run #": 5,
+        "Target word": "guano",
+        "Guessed word": "angry",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 3,
+        "Feedback": "Position 1: a - Y\nPosition 2: n - Y\nPosition 3: g - Y\nPosition 4: r - _\nPosition 5: y - _"
+    },
+    {
+        "Global attempt #": 53,
+        "Run #": 1,
+        "Target word": "glory",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: c - _\nPosition 2: r - Y\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 53,
+        "Run #": 3,
+        "Target word": "glory",
+        "Guessed word": "pride",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: p - _\nPosition 2: r - Y\nPosition 3: i - _\nPosition 4: d - _\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 53,
+        "Run #": 4,
+        "Target word": "glory",
+        "Guessed word": "robin",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: r - Y\nPosition 2: o - Y\nPosition 3: b - _\nPosition 4: i - _\nPosition 5: n - _"
+    },
+    {
+        "Global attempt #": 54,
+        "Run #": 1,
+        "Target word": "thumb",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 54,
         "Run #": 2,
-        "Target word": "stale",
-        "Guessed word": "agate",
+        "Target word": "thumb",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 54,
+        "Run #": 5,
+        "Target word": "thumb",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 54,
+        "Run #": 6,
+        "Target word": "thumb",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 55,
+        "Run #": 1,
+        "Target word": "flare",
+        "Guessed word": "crane",
         "Number of 'G' in colorised results": 2,
         "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: a - _\nPosition 2: g - _\nPosition 3: a - G\nPosition 4: t - Y\nPosition 5: e - G"
+        "Feedback": "Position 1: c - _\nPosition 2: r - Y\nPosition 3: a - G\nPosition 4: n - _\nPosition 5: e - G"
     },
     {
-        "Global attempt #": 87,
+        "Global attempt #": 55,
+        "Run #": 4,
+        "Target word": "flare",
+        "Guessed word": "grace",
+        "Number of 'G' in colorised results": 2,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: g - _\nPosition 2: r - Y\nPosition 3: a - G\nPosition 4: c - _\nPosition 5: e - G"
+    },
+    {
+        "Global attempt #": 56,
+        "Run #": 1,
+        "Target word": "flank",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 2,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - G\nPosition 4: n - G\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 57,
+        "Run #": 1,
+        "Target word": "stone",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 2,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - G\nPosition 5: e - G"
+    },
+    {
+        "Global attempt #": 57,
+        "Run #": 2,
+        "Target word": "stone",
+        "Guessed word": "angel",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: a - _\nPosition 2: n - Y\nPosition 3: g - _\nPosition 4: e - Y\nPosition 5: l - _"
+    },
+    {
+        "Global attempt #": 58,
+        "Run #": 1,
+        "Target word": "gloom",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 58,
         "Run #": 3,
-        "Target word": "stale",
-        "Guessed word": "stage",
-        "Number of 'G' in colorised results": 4,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: s - G\nPosition 2: t - G\nPosition 3: a - G\nPosition 4: g - _\nPosition 5: e - G"
-    },
-    {
-        "Global attempt #": 88,
-        "Run #": 1,
-        "Target word": "field",
-        "Guessed word": "table",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: t - _\nPosition 2: a - _\nPosition 3: b - _\nPosition 4: l - G\nPosition 5: e - Y"
-    },
-    {
-        "Global attempt #": 88,
-        "Run #": 2,
-        "Target word": "field",
-        "Guessed word": "light",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: l - Y\nPosition 2: i - G\nPosition 3: g - _\nPosition 4: h - _\nPosition 5: t - _"
-    },
-    {
-        "Global attempt #": 89,
-        "Run #": 1,
-        "Target word": "pilot",
+        "Target word": "gloom",
         "Guessed word": "crane",
         "Number of 'G' in colorised results": 0,
         "Number of 'Y' in colorised results": 0,
         "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
     },
     {
-        "Global attempt #": 89,
-        "Run #": 2,
-        "Target word": "pilot",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
-    },
-    {
-        "Global attempt #": 89,
+        "Global attempt #": 58,
         "Run #": 4,
-        "Target word": "pilot",
-        "Guessed word": "charm",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: c - _\nPosition 2: h - _\nPosition 3: a - _\nPosition 4: r - _\nPosition 5: m - _"
-    },
-    {
-        "Global attempt #": 90,
-        "Run #": 1,
-        "Target word": "noble",
+        "Target word": "gloom",
         "Guessed word": "crane",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - Y\nPosition 5: e - G"
-    },
-    {
-        "Global attempt #": 90,
-        "Run #": 2,
-        "Target word": "noble",
-        "Guessed word": "binge",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: b - Y\nPosition 2: i - _\nPosition 3: n - Y\nPosition 4: g - _\nPosition 5: e - G"
-    },
-    {
-        "Global attempt #": 91,
-        "Run #": 1,
-        "Target word": "onion",
-        "Guessed word": "craze",
         "Number of 'G' in colorised results": 0,
         "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: z - _\nPosition 5: e - _"
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
     },
     {
-        "Global attempt #": 91,
+        "Global attempt #": 59,
+        "Run #": 1,
+        "Target word": "pulpy",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 59,
+        "Run #": 2,
+        "Target word": "pulpy",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 59,
         "Run #": 3,
-        "Target word": "onion",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - Y\nPosition 5: e - _"
-    },
-    {
-        "Global attempt #": 91,
-        "Run #": 5,
-        "Target word": "onion",
-        "Guessed word": "canny",
+        "Target word": "pulpy",
+        "Guessed word": "blush",
         "Number of 'G' in colorised results": 0,
         "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: c - _\nPosition 2: a - _\nPosition 3: n - Y\nPosition 4: n - Y\nPosition 5: y - _"
+        "Feedback": "Position 1: b - _\nPosition 2: l - Y\nPosition 3: u - Y\nPosition 4: s - _\nPosition 5: h - _"
     },
     {
-        "Global attempt #": 91,
-        "Run #": 6,
-        "Target word": "onion",
-        "Guessed word": "canny",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: c - _\nPosition 2: a - _\nPosition 3: n - Y\nPosition 4: n - Y\nPosition 5: y - _"
-    },
-    {
-        "Global attempt #": 92,
+        "Global attempt #": 60,
         "Run #": 1,
-        "Target word": "thorn",
+        "Target word": "shall",
         "Guessed word": "crane",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: c - _\nPosition 2: r - Y\nPosition 3: a - _\nPosition 4: n - Y\nPosition 5: e - _"
-    },
-    {
-        "Global attempt #": 92,
-        "Run #": 4,
-        "Target word": "thorn",
-        "Guessed word": "brink",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: b - _\nPosition 2: r - Y\nPosition 3: i - _\nPosition 4: n - Y\nPosition 5: k - _"
-    },
-    {
-        "Global attempt #": 93,
-        "Run #": 1,
-        "Target word": "flood",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
-    },
-    {
-        "Global attempt #": 93,
-        "Run #": 4,
-        "Target word": "flood",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
-    },
-    {
-        "Global attempt #": 93,
-        "Run #": 5,
-        "Target word": "flood",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
-    },
-    {
-        "Global attempt #": 93,
-        "Run #": 6,
-        "Target word": "flood",
-        "Guessed word": "crane",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
-    },
-    {
-        "Global attempt #": 94,
-        "Run #": 2,
-        "Target word": "grand",
-        "Guessed word": "slate",
         "Number of 'G' in colorised results": 1,
         "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: s - _\nPosition 2: l - _\nPosition 3: a - G\nPosition 4: t - _\nPosition 5: e - _"
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - G\nPosition 4: n - _\nPosition 5: e - _"
     },
     {
-        "Global attempt #": 95,
+        "Global attempt #": 60,
+        "Run #": 2,
+        "Target word": "shall",
+        "Guessed word": "gloat",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: g - _\nPosition 2: l - Y\nPosition 3: o - _\nPosition 4: a - Y\nPosition 5: t - _"
+    },
+    {
+        "Global attempt #": 61,
         "Run #": 1,
-        "Target word": "about",
+        "Target word": "polka",
         "Guessed word": "crane",
         "Number of 'G' in colorised results": 0,
         "Number of 'Y' in colorised results": 1,
         "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - Y\nPosition 4: n - _\nPosition 5: e - _"
     },
     {
-        "Global attempt #": 95,
-        "Run #": 2,
-        "Target word": "about",
-        "Guessed word": "salad",
-        "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: s - _\nPosition 2: a - Y\nPosition 3: l - _\nPosition 4: a - _\nPosition 5: d - _"
-    },
-    {
-        "Global attempt #": 95,
-        "Run #": 3,
-        "Target word": "about",
-        "Guessed word": "await",
-        "Number of 'G' in colorised results": 2,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: a - G\nPosition 2: w - _\nPosition 3: a - _\nPosition 4: i - _\nPosition 5: t - G"
-    },
-    {
-        "Global attempt #": 95,
+        "Global attempt #": 61,
         "Run #": 4,
-        "Target word": "about",
-        "Guessed word": "apart",
-        "Number of 'G' in colorised results": 2,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: a - G\nPosition 2: p - _\nPosition 3: a - _\nPosition 4: r - _\nPosition 5: t - G"
+        "Target word": "polka",
+        "Guessed word": "plant",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: p - G\nPosition 2: l - Y\nPosition 3: a - Y\nPosition 4: n - _\nPosition 5: t - _"
     },
     {
-        "Global attempt #": 95,
+        "Global attempt #": 61,
         "Run #": 5,
-        "Target word": "about",
-        "Guessed word": "agent",
+        "Target word": "polka",
+        "Guessed word": "plaza",
         "Number of 'G' in colorised results": 2,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: a - G\nPosition 2: g - _\nPosition 3: e - _\nPosition 4: n - _\nPosition 5: t - G"
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: p - G\nPosition 2: l - Y\nPosition 3: a - _\nPosition 4: z - _\nPosition 5: a - G"
     },
     {
-        "Global attempt #": 95,
-        "Run #": 6,
-        "Target word": "about",
-        "Guessed word": "admit",
-        "Number of 'G' in colorised results": 2,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: a - G\nPosition 2: d - _\nPosition 3: m - _\nPosition 4: i - _\nPosition 5: t - G"
-    },
-    {
-        "Global attempt #": 96,
+        "Global attempt #": 62,
         "Run #": 1,
-        "Target word": "whale",
+        "Target word": "stash",
         "Guessed word": "crane",
-        "Number of 'G' in colorised results": 2,
+        "Number of 'G' in colorised results": 1,
         "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - G\nPosition 4: n - _\nPosition 5: e - G"
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - G\nPosition 4: n - _\nPosition 5: e - _"
     },
     {
-        "Global attempt #": 96,
+        "Global attempt #": 62,
+        "Run #": 2,
+        "Target word": "stash",
+        "Guessed word": "gloat",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: g - _\nPosition 2: l - _\nPosition 3: o - _\nPosition 4: a - Y\nPosition 5: t - Y"
+    },
+    {
+        "Global attempt #": 62,
         "Run #": 3,
-        "Target word": "whale",
-        "Guessed word": "glean",
+        "Target word": "stash",
+        "Guessed word": "pasta",
         "Number of 'G' in colorised results": 0,
         "Number of 'Y' in colorised results": 3,
-        "Feedback": "Position 1: g - _\nPosition 2: l - Y\nPosition 3: e - Y\nPosition 4: a - Y\nPosition 5: n - _"
+        "Feedback": "Position 1: p - _\nPosition 2: a - Y\nPosition 3: s - Y\nPosition 4: t - Y\nPosition 5: a - _"
     },
     {
-        "Global attempt #": 96,
+        "Global attempt #": 62,
         "Run #": 4,
-        "Target word": "whale",
-        "Guessed word": "cable",
-        "Number of 'G' in colorised results": 2,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: c - _\nPosition 2: a - Y\nPosition 3: b - _\nPosition 4: l - G\nPosition 5: e - G"
+        "Target word": "stash",
+        "Guessed word": "stash",
+        "Number of 'G' in colorised results": 5,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: s - G\nPosition 2: t - G\nPosition 3: a - G\nPosition 4: s - G\nPosition 5: h - G"
     },
     {
-        "Global attempt #": 96,
+        "Global attempt #": 62,
         "Run #": 5,
-        "Target word": "whale",
-        "Guessed word": "table",
-        "Number of 'G' in colorised results": 2,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: t - _\nPosition 2: a - Y\nPosition 3: b - _\nPosition 4: l - G\nPosition 5: e - G"
+        "Target word": "stash",
+        "Guessed word": "stash",
+        "Number of 'G' in colorised results": 5,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: s - G\nPosition 2: t - G\nPosition 3: a - G\nPosition 4: s - G\nPosition 5: h - G"
     },
     {
-        "Global attempt #": 96,
+        "Global attempt #": 62,
         "Run #": 6,
-        "Target word": "whale",
-        "Guessed word": "badge",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: b - _\nPosition 2: a - Y\nPosition 3: d - _\nPosition 4: g - _\nPosition 5: e - G"
+        "Target word": "stash",
+        "Guessed word": "stash",
+        "Number of 'G' in colorised results": 5,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: s - G\nPosition 2: t - G\nPosition 3: a - G\nPosition 4: s - G\nPosition 5: h - G"
     },
     {
-        "Global attempt #": 97,
+        "Global attempt #": 63,
         "Run #": 1,
-        "Target word": "could",
+        "Target word": "snail",
         "Guessed word": "crane",
         "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: c - G\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
-    },
-    {
-        "Global attempt #": 97,
-        "Run #": 3,
-        "Target word": "could",
-        "Guessed word": "clown",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: c - G\nPosition 2: l - Y\nPosition 3: o - Y\nPosition 4: w - _\nPosition 5: n - _"
-    },
-    {
-        "Global attempt #": 97,
-        "Run #": 4,
-        "Target word": "could",
-        "Guessed word": "clock",
-        "Number of 'G' in colorised results": 1,
-        "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: c - G\nPosition 2: l - Y\nPosition 3: o - Y\nPosition 4: c - _\nPosition 5: k - _"
-    },
-    {
-        "Global attempt #": 97,
-        "Run #": 5,
-        "Target word": "could",
-        "Guessed word": "colon",
-        "Number of 'G' in colorised results": 2,
         "Number of 'Y' in colorised results": 1,
-        "Feedback": "Position 1: c - G\nPosition 2: o - G\nPosition 3: l - Y\nPosition 4: o - _\nPosition 5: n - _"
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - G\nPosition 4: n - Y\nPosition 5: e - _"
     },
     {
-        "Global attempt #": 97,
-        "Run #": 6,
-        "Target word": "could",
-        "Guessed word": "covet",
-        "Number of 'G' in colorised results": 2,
-        "Number of 'Y' in colorised results": 0,
-        "Feedback": "Position 1: c - G\nPosition 2: o - G\nPosition 3: v - _\nPosition 4: e - _\nPosition 5: t - _"
+        "Global attempt #": 63,
+        "Run #": 3,
+        "Target word": "snail",
+        "Guessed word": "gloat",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: g - _\nPosition 2: l - Y\nPosition 3: o - _\nPosition 4: a - Y\nPosition 5: t - _"
     },
     {
-        "Global attempt #": 98,
+        "Global attempt #": 64,
+        "Run #": 1,
+        "Target word": "first",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: c - _\nPosition 2: r - Y\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 64,
+        "Run #": 2,
+        "Target word": "first",
+        "Guessed word": "pride",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: p - _\nPosition 2: r - Y\nPosition 3: i - Y\nPosition 4: d - _\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 64,
+        "Run #": 4,
+        "Target word": "first",
+        "Guessed word": "brisk",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: b - _\nPosition 2: r - Y\nPosition 3: i - Y\nPosition 4: s - G\nPosition 5: k - _"
+    },
+    {
+        "Global attempt #": 65,
         "Run #": 1,
         "Target word": "plaza",
         "Guessed word": "crane",
@@ -2547,8 +1764,8 @@
         "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - G\nPosition 4: n - _\nPosition 5: e - _"
     },
     {
-        "Global attempt #": 98,
-        "Run #": 4,
+        "Global attempt #": 65,
+        "Run #": 2,
         "Target word": "plaza",
         "Guessed word": "gloat",
         "Number of 'G' in colorised results": 1,
@@ -2556,48 +1773,813 @@
         "Feedback": "Position 1: g - _\nPosition 2: l - G\nPosition 3: o - _\nPosition 4: a - Y\nPosition 5: t - _"
     },
     {
-        "Global attempt #": 99,
+        "Global attempt #": 66,
         "Run #": 1,
-        "Target word": "tapir",
+        "Target word": "spike",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - G"
+    },
+    {
+        "Global attempt #": 67,
+        "Run #": 1,
+        "Target word": "gawky",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - Y\nPosition 4: n - _\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 67,
+        "Run #": 4,
+        "Target word": "gawky",
+        "Guessed word": "salad",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: s - _\nPosition 2: a - G\nPosition 3: l - _\nPosition 4: a - _\nPosition 5: d - _"
+    },
+    {
+        "Global attempt #": 68,
+        "Run #": 1,
+        "Target word": "rocky",
         "Guessed word": "crane",
         "Number of 'G' in colorised results": 0,
         "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: c - _\nPosition 2: r - Y\nPosition 3: a - Y\nPosition 4: n - _\nPosition 5: e - _"
+        "Feedback": "Position 1: c - Y\nPosition 2: r - Y\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 69,
+        "Run #": 1,
+        "Target word": "ethic",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: c - Y\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - Y"
+    },
+    {
+        "Global attempt #": 69,
+        "Run #": 3,
+        "Target word": "ethic",
+        "Guessed word": "cheek",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 3,
+        "Feedback": "Position 1: c - Y\nPosition 2: h - Y\nPosition 3: e - Y\nPosition 4: e - _\nPosition 5: k - _"
+    },
+    {
+        "Global attempt #": 70,
+        "Run #": 1,
+        "Target word": "rocky",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: c - Y\nPosition 2: r - Y\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 71,
+        "Run #": 1,
+        "Target word": "leaky",
+        "Guessed word": "table",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 3,
+        "Feedback": "Position 1: t - _\nPosition 2: a - Y\nPosition 3: b - _\nPosition 4: l - Y\nPosition 5: e - Y"
+    },
+    {
+        "Global attempt #": 72,
+        "Run #": 1,
+        "Target word": "wrung",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 2,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - _\nPosition 2: r - G\nPosition 3: a - _\nPosition 4: n - G\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 72,
+        "Run #": 2,
+        "Target word": "wrung",
+        "Guessed word": "right",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: r - Y\nPosition 2: i - _\nPosition 3: g - Y\nPosition 4: h - _\nPosition 5: t - _"
+    },
+    {
+        "Global attempt #": 73,
+        "Run #": 1,
+        "Target word": "query",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: c - _\nPosition 2: r - Y\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - Y"
+    },
+    {
+        "Global attempt #": 73,
+        "Run #": 3,
+        "Target word": "query",
+        "Guessed word": "pride",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: p - _\nPosition 2: r - Y\nPosition 3: i - _\nPosition 4: d - _\nPosition 5: e - Y"
+    },
+    {
+        "Global attempt #": 74,
+        "Run #": 1,
+        "Target word": "rhyme",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: c - _\nPosition 2: r - Y\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - G"
+    },
+    {
+        "Global attempt #": 75,
+        "Run #": 1,
+        "Target word": "champ",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 2,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - G\nPosition 2: r - _\nPosition 3: a - G\nPosition 4: n - _\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 75,
+        "Run #": 3,
+        "Target word": "champ",
+        "Guessed word": "candy",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: c - G\nPosition 2: a - Y\nPosition 3: n - _\nPosition 4: d - _\nPosition 5: y - _"
+    },
+    {
+        "Global attempt #": 75,
+        "Run #": 5,
+        "Target word": "champ",
+        "Guessed word": "catch",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: c - G\nPosition 2: a - Y\nPosition 3: t - _\nPosition 4: c - _\nPosition 5: h - Y"
+    },
+    {
+        "Global attempt #": 75,
+        "Run #": 6,
+        "Target word": "champ",
+        "Guessed word": "champ",
+        "Number of 'G' in colorised results": 5,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - G\nPosition 2: h - G\nPosition 3: a - G\nPosition 4: m - G\nPosition 5: p - G"
+    },
+    {
+        "Global attempt #": 76,
+        "Run #": 1,
+        "Target word": "surer",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: c - _\nPosition 2: r - Y\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - Y"
+    },
+    {
+        "Global attempt #": 76,
+        "Run #": 2,
+        "Target word": "surer",
+        "Guessed word": "retry",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 3,
+        "Feedback": "Position 1: r - Y\nPosition 2: e - Y\nPosition 3: t - _\nPosition 4: r - Y\nPosition 5: y - _"
+    },
+    {
+        "Global attempt #": 77,
+        "Run #": 1,
+        "Target word": "still",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 77,
+        "Run #": 2,
+        "Target word": "still",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 77,
+        "Run #": 4,
+        "Target word": "still",
+        "Guessed word": "charm",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - _\nPosition 2: h - _\nPosition 3: a - _\nPosition 4: r - _\nPosition 5: m - _"
+    },
+    {
+        "Global attempt #": 78,
+        "Run #": 1,
+        "Target word": "tacit",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: c - Y\nPosition 2: r - _\nPosition 3: a - Y\nPosition 4: n - _\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 78,
+        "Run #": 4,
+        "Target word": "tacit",
+        "Guessed word": "cacao",
+        "Number of 'G' in colorised results": 2,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - _\nPosition 2: a - G\nPosition 3: c - G\nPosition 4: a - _\nPosition 5: o - _"
+    },
+    {
+        "Global attempt #": 79,
+        "Run #": 1,
+        "Target word": "forgo",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: c - _\nPosition 2: r - Y\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 79,
+        "Run #": 3,
+        "Target word": "forgo",
+        "Guessed word": "retry",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: r - Y\nPosition 2: e - _\nPosition 3: t - _\nPosition 4: r - _\nPosition 5: y - _"
+    },
+    {
+        "Global attempt #": 79,
+        "Run #": 4,
+        "Target word": "forgo",
+        "Guessed word": "robin",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: r - Y\nPosition 2: o - G\nPosition 3: b - _\nPosition 4: i - _\nPosition 5: n - _"
+    },
+    {
+        "Global attempt #": 80,
+        "Run #": 1,
+        "Target word": "frost",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - _\nPosition 2: r - G\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 80,
+        "Run #": 5,
+        "Target word": "frost",
+        "Guessed word": "right",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: r - Y\nPosition 2: i - _\nPosition 3: g - _\nPosition 4: h - _\nPosition 5: t - G"
+    },
+    {
+        "Global attempt #": 81,
+        "Run #": 1,
+        "Target word": "rainy",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: c - _\nPosition 2: r - Y\nPosition 3: a - Y\nPosition 4: n - G\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 81,
+        "Run #": 3,
+        "Target word": "rainy",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: c - _\nPosition 2: r - Y\nPosition 3: a - Y\nPosition 4: n - G\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 82,
+        "Run #": 1,
+        "Target word": "black",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: c - Y\nPosition 2: r - _\nPosition 3: a - G\nPosition 4: n - _\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 82,
+        "Run #": 4,
+        "Target word": "black",
+        "Guessed word": "candy",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: c - Y\nPosition 2: a - Y\nPosition 3: n - _\nPosition 4: d - _\nPosition 5: y - _"
+    },
+    {
+        "Global attempt #": 82,
+        "Run #": 5,
+        "Target word": "black",
+        "Guessed word": "cacao",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: c - Y\nPosition 2: a - Y\nPosition 3: c - _\nPosition 4: a - _\nPosition 5: o - _"
+    },
+    {
+        "Global attempt #": 82,
+        "Run #": 6,
+        "Target word": "black",
+        "Guessed word": "carat",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: c - Y\nPosition 2: a - Y\nPosition 3: r - _\nPosition 4: a - _\nPosition 5: t - _"
+    },
+    {
+        "Global attempt #": 83,
+        "Run #": 1,
+        "Target word": "tough",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 83,
+        "Run #": 2,
+        "Target word": "tough",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 83,
+        "Run #": 5,
+        "Target word": "tough",
+        "Guessed word": "chart",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: c - _\nPosition 2: h - Y\nPosition 3: a - _\nPosition 4: r - _\nPosition 5: t - Y"
+    },
+    {
+        "Global attempt #": 83,
+        "Run #": 6,
+        "Target word": "tough",
+        "Guessed word": "chute",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: c - _\nPosition 2: h - Y\nPosition 3: u - G\nPosition 4: t - Y\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 84,
+        "Run #": 1,
+        "Target word": "sower",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: c - _\nPosition 2: r - Y\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - Y"
+    },
+    {
+        "Global attempt #": 84,
+        "Run #": 2,
+        "Target word": "sower",
+        "Guessed word": "retry",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: r - Y\nPosition 2: e - Y\nPosition 3: t - _\nPosition 4: r - _\nPosition 5: y - _"
+    },
+    {
+        "Global attempt #": 84,
+        "Run #": 3,
+        "Target word": "sower",
+        "Guessed word": "rebus",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 3,
+        "Feedback": "Position 1: r - Y\nPosition 2: e - Y\nPosition 3: b - _\nPosition 4: u - _\nPosition 5: s - Y"
+    },
+    {
+        "Global attempt #": 85,
+        "Run #": 1,
+        "Target word": "hunch",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: c - Y\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - Y\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 85,
+        "Run #": 2,
+        "Target word": "hunch",
+        "Guessed word": "canny",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: c - Y\nPosition 2: a - _\nPosition 3: n - G\nPosition 4: n - _\nPosition 5: y - _"
+    },
+    {
+        "Global attempt #": 85,
+        "Run #": 3,
+        "Target word": "hunch",
+        "Guessed word": "corny",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: c - Y\nPosition 2: o - _\nPosition 3: r - _\nPosition 4: n - Y\nPosition 5: y - _"
+    },
+    {
+        "Global attempt #": 85,
+        "Run #": 4,
+        "Target word": "hunch",
+        "Guessed word": "canny",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: c - Y\nPosition 2: a - _\nPosition 3: n - G\nPosition 4: n - _\nPosition 5: y - _"
+    },
+    {
+        "Global attempt #": 85,
+        "Run #": 5,
+        "Target word": "hunch",
+        "Guessed word": "canny",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: c - Y\nPosition 2: a - _\nPosition 3: n - G\nPosition 4: n - _\nPosition 5: y - _"
+    },
+    {
+        "Global attempt #": 85,
+        "Run #": 6,
+        "Target word": "hunch",
+        "Guessed word": "canny",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: c - Y\nPosition 2: a - _\nPosition 3: n - G\nPosition 4: n - _\nPosition 5: y - _"
+    },
+    {
+        "Global attempt #": 86,
+        "Run #": 1,
+        "Target word": "venom",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - Y\nPosition 5: e - Y"
+    },
+    {
+        "Global attempt #": 86,
+        "Run #": 2,
+        "Target word": "venom",
+        "Guessed word": "funny",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: f - _\nPosition 2: u - _\nPosition 3: n - G\nPosition 4: n - _\nPosition 5: y - _"
+    },
+    {
+        "Global attempt #": 86,
+        "Run #": 3,
+        "Target word": "venom",
+        "Guessed word": "angel",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: a - _\nPosition 2: n - Y\nPosition 3: g - _\nPosition 4: e - Y\nPosition 5: l - _"
+    },
+    {
+        "Global attempt #": 87,
+        "Run #": 1,
+        "Target word": "humor",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: c - _\nPosition 2: r - Y\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 87,
+        "Run #": 2,
+        "Target word": "humor",
+        "Guessed word": "brisk",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: b - _\nPosition 2: r - Y\nPosition 3: i - _\nPosition 4: s - _\nPosition 5: k - _"
+    },
+    {
+        "Global attempt #": 87,
+        "Run #": 3,
+        "Target word": "humor",
+        "Guessed word": "croak",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: c - _\nPosition 2: r - Y\nPosition 3: o - Y\nPosition 4: a - _\nPosition 5: k - _"
+    },
+    {
+        "Global attempt #": 87,
+        "Run #": 4,
+        "Target word": "humor",
+        "Guessed word": "robin",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: r - Y\nPosition 2: o - Y\nPosition 3: b - _\nPosition 4: i - _\nPosition 5: n - _"
+    },
+    {
+        "Global attempt #": 88,
+        "Run #": 1,
+        "Target word": "dozen",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - Y\nPosition 5: e - Y"
+    },
+    {
+        "Global attempt #": 88,
+        "Run #": 2,
+        "Target word": "dozen",
+        "Guessed word": "funny",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: f - _\nPosition 2: u - _\nPosition 3: n - Y\nPosition 4: n - _\nPosition 5: y - _"
+    },
+    {
+        "Global attempt #": 88,
+        "Run #": 3,
+        "Target word": "dozen",
+        "Guessed word": "linen",
+        "Number of 'G' in colorised results": 2,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: l - _\nPosition 2: i - _\nPosition 3: n - _\nPosition 4: e - G\nPosition 5: n - G"
+    },
+    {
+        "Global attempt #": 89,
+        "Run #": 1,
+        "Target word": "knelt",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - Y\nPosition 5: e - Y"
+    },
+    {
+        "Global attempt #": 89,
+        "Run #": 2,
+        "Target word": "knelt",
+        "Guessed word": "funny",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: f - _\nPosition 2: u - _\nPosition 3: n - Y\nPosition 4: n - _\nPosition 5: y - _"
+    },
+    {
+        "Global attempt #": 89,
+        "Run #": 5,
+        "Target word": "knelt",
+        "Guessed word": "mince",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: m - _\nPosition 2: i - _\nPosition 3: n - Y\nPosition 4: c - _\nPosition 5: e - Y"
+    },
+    {
+        "Global attempt #": 90,
+        "Run #": 1,
+        "Target word": "enjoy",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - Y\nPosition 5: e - Y"
+    },
+    {
+        "Global attempt #": 90,
+        "Run #": 2,
+        "Target word": "enjoy",
+        "Guessed word": "funny",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: f - _\nPosition 2: u - _\nPosition 3: n - Y\nPosition 4: n - _\nPosition 5: y - G"
+    },
+    {
+        "Global attempt #": 91,
+        "Run #": 1,
+        "Target word": "flyer",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: c - _\nPosition 2: r - Y\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - Y"
+    },
+    {
+        "Global attempt #": 92,
+        "Run #": 1,
+        "Target word": "flair",
+        "Guessed word": "crate",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: c - _\nPosition 2: r - Y\nPosition 3: a - G\nPosition 4: t - _\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 93,
+        "Run #": 1,
+        "Target word": "ethos",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - Y"
+    },
+    {
+        "Global attempt #": 94,
+        "Run #": 1,
+        "Target word": "debug",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - _\nPosition 5: e - Y"
+    },
+    {
+        "Global attempt #": 94,
+        "Run #": 3,
+        "Target word": "debug",
+        "Guessed word": "cache",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: c - _\nPosition 2: a - _\nPosition 3: c - _\nPosition 4: h - _\nPosition 5: e - Y"
+    },
+    {
+        "Global attempt #": 94,
+        "Run #": 4,
+        "Target word": "debug",
+        "Guessed word": "ledge",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: l - _\nPosition 2: e - G\nPosition 3: d - Y\nPosition 4: g - Y\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 94,
+        "Run #": 5,
+        "Target word": "debug",
+        "Guessed word": "ledge",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: l - _\nPosition 2: e - G\nPosition 3: d - Y\nPosition 4: g - Y\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 95,
+        "Run #": 1,
+        "Target word": "allow",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - Y\nPosition 4: n - _\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 95,
+        "Run #": 4,
+        "Target word": "allow",
+        "Guessed word": "charm",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: c - _\nPosition 2: h - _\nPosition 3: a - Y\nPosition 4: r - _\nPosition 5: m - _"
+    },
+    {
+        "Global attempt #": 95,
+        "Run #": 5,
+        "Target word": "allow",
+        "Guessed word": "pasta",
+        "Number of 'G' in colorised results": 0,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: p - _\nPosition 2: a - Y\nPosition 3: s - _\nPosition 4: t - _\nPosition 5: a - _"
+    },
+    {
+        "Global attempt #": 95,
+        "Run #": 6,
+        "Target word": "allow",
+        "Guessed word": "await",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: a - G\nPosition 2: w - Y\nPosition 3: a - _\nPosition 4: i - _\nPosition 5: t - _"
+    },
+    {
+        "Global attempt #": 96,
+        "Run #": 1,
+        "Target word": "grate",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 3,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - _\nPosition 2: r - G\nPosition 3: a - G\nPosition 4: n - _\nPosition 5: e - G"
+    },
+    {
+        "Global attempt #": 96,
+        "Run #": 2,
+        "Target word": "grate",
+        "Guessed word": "croak",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: c - _\nPosition 2: r - G\nPosition 3: o - _\nPosition 4: a - Y\nPosition 5: k - _"
+    },
+    {
+        "Global attempt #": 96,
+        "Run #": 4,
+        "Target word": "grate",
+        "Guessed word": "crave",
+        "Number of 'G' in colorised results": 3,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - _\nPosition 2: r - G\nPosition 3: a - G\nPosition 4: v - _\nPosition 5: e - G"
+    },
+    {
+        "Global attempt #": 97,
+        "Run #": 1,
+        "Target word": "cinch",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: c - G\nPosition 2: r - _\nPosition 3: a - _\nPosition 4: n - Y\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 97,
+        "Run #": 2,
+        "Target word": "cinch",
+        "Guessed word": "canny",
+        "Number of 'G' in colorised results": 2,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - G\nPosition 2: a - _\nPosition 3: n - G\nPosition 4: n - _\nPosition 5: y - _"
+    },
+    {
+        "Global attempt #": 97,
+        "Run #": 4,
+        "Target word": "cinch",
+        "Guessed word": "canny",
+        "Number of 'G' in colorised results": 2,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - G\nPosition 2: a - _\nPosition 3: n - G\nPosition 4: n - _\nPosition 5: y - _"
+    },
+    {
+        "Global attempt #": 97,
+        "Run #": 5,
+        "Target word": "cinch",
+        "Guessed word": "canny",
+        "Number of 'G' in colorised results": 2,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: c - G\nPosition 2: a - _\nPosition 3: n - G\nPosition 4: n - _\nPosition 5: y - _"
+    },
+    {
+        "Global attempt #": 97,
+        "Run #": 6,
+        "Target word": "cinch",
+        "Guessed word": "chunk",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: c - G\nPosition 2: h - Y\nPosition 3: u - _\nPosition 4: n - Y\nPosition 5: k - _"
+    },
+    {
+        "Global attempt #": 98,
+        "Run #": 1,
+        "Target word": "spray",
+        "Guessed word": "apple",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: a - Y\nPosition 2: p - G\nPosition 3: p - _\nPosition 4: l - _\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 98,
+        "Run #": 2,
+        "Target word": "spray",
+        "Guessed word": "angry",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 2,
+        "Feedback": "Position 1: a - Y\nPosition 2: n - _\nPosition 3: g - _\nPosition 4: r - Y\nPosition 5: y - G"
     },
     {
         "Global attempt #": 99,
-        "Run #": 3,
-        "Target word": "tapir",
-        "Guessed word": "brash",
-        "Number of 'G' in colorised results": 0,
+        "Run #": 1,
+        "Target word": "aging",
+        "Guessed word": "crane",
+        "Number of 'G' in colorised results": 1,
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: c - _\nPosition 2: r - _\nPosition 3: a - Y\nPosition 4: n - G\nPosition 5: e - _"
+    },
+    {
+        "Global attempt #": 99,
+        "Run #": 4,
+        "Target word": "aging",
+        "Guessed word": "angry",
+        "Number of 'G' in colorised results": 1,
         "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: b - _\nPosition 2: r - Y\nPosition 3: a - Y\nPosition 4: s - _\nPosition 5: h - _"
+        "Feedback": "Position 1: a - G\nPosition 2: n - Y\nPosition 3: g - Y\nPosition 4: r - _\nPosition 5: y - _"
     },
     {
         "Global attempt #": 100,
         "Run #": 1,
-        "Target word": "heath",
+        "Target word": "acrid",
         "Guessed word": "table",
         "Number of 'G' in colorised results": 0,
-        "Number of 'Y' in colorised results": 3,
-        "Feedback": "Position 1: t - Y\nPosition 2: a - Y\nPosition 3: b - _\nPosition 4: l - _\nPosition 5: e - Y"
+        "Number of 'Y' in colorised results": 1,
+        "Feedback": "Position 1: t - _\nPosition 2: a - Y\nPosition 3: b - _\nPosition 4: l - _\nPosition 5: e - _"
     },
     {
         "Global attempt #": 100,
         "Run #": 2,
-        "Target word": "heath",
-        "Guessed word": "trace",
+        "Target word": "acrid",
+        "Guessed word": "tacit",
         "Number of 'G' in colorised results": 1,
         "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: t - Y\nPosition 2: r - _\nPosition 3: a - G\nPosition 4: c - _\nPosition 5: e - Y"
+        "Feedback": "Position 1: t - _\nPosition 2: a - Y\nPosition 3: c - Y\nPosition 4: i - G\nPosition 5: t - _"
     },
     {
         "Global attempt #": 100,
-        "Run #": 3,
-        "Target word": "heath",
-        "Guessed word": "taste",
+        "Run #": 5,
+        "Target word": "acrid",
+        "Guessed word": "magic",
         "Number of 'G' in colorised results": 1,
         "Number of 'Y' in colorised results": 2,
-        "Feedback": "Position 1: t - _\nPosition 2: a - Y\nPosition 3: s - _\nPosition 4: t - G\nPosition 5: e - Y"
+        "Feedback": "Position 1: m - _\nPosition 2: a - Y\nPosition 3: g - _\nPosition 4: i - G\nPosition 5: c - Y"
+    },
+    {
+        "Global attempt #": 100,
+        "Run #": 6,
+        "Target word": "acrid",
+        "Guessed word": "acrid",
+        "Number of 'G' in colorised results": 5,
+        "Number of 'Y' in colorised results": 0,
+        "Feedback": "Position 1: a - G\nPosition 2: c - G\nPosition 3: r - G\nPosition 4: i - G\nPosition 5: d - G"
     }
 ]
