@@ -16,7 +16,6 @@ successes = df[df['Guessed word'] == df['Target word']].shape[0]
 
 # Progression Analysis: Prepare data for analyzing trends of 'G' and 'Y' counts over attempts within each run
 # We'll group by 'Run #' and then examine the 'G' and 'Y' trends within those groups
-# g_y_trends = df.groupby('Run #').apply(lambda x: x[['Number of \'G\' in colorised results', 'Number of \'Y\' in colorised results']].values.tolist())
 g_y_trends = df.groupby('Run #').apply(lambda x: x[['Number of \'G\' in colorised results', 'Number of \'Y\' in colorised results']].values.tolist(), include_groups=False)
 # Displaying the total number of successes
 successes, g_y_trends.head()
