@@ -10,16 +10,18 @@ load_dotenv()
 from utils.retry import retry_except
 from tenacity import retry, stop_after_attempt, wait_fixed
 
+system_message = "You are an AI trained to be a brilliant puzzle solver and genius at smart and lateral thinking. You are brilliant and conscientious."
+
 @retry(stop=stop_after_attempt(3), wait=wait_fixed(2))
 @retry_except(exceptions_to_catch=(IndexError, ZeroDivisionError), tries=3, delay=2)
-def llm_call_gpt(input, GPT):
+def llm_call_gpt(input, system_p = system_message, GPT):
     client = OpenAI()
     client.api_key = os.getenv('OPENAI_API_KEY')
 
     response = client.chat.completions.create(
         model=GPT,
         messages=[
-            {"role": "system", "content": """You are an AI designed to solve word puzzles. You are brilliant and clever."""},
+            {"role": "system", "content": system_p},
             {"role": "user", "content": f"{input}"}
         ]
     )
@@ -51,14 +53,14 @@ def llm_call_gpt_assistant(input, INSTRUCTION, GPT):
 
 @retry(stop=stop_after_attempt(3), wait=wait_fixed(2))
 @retry_except(exceptions_to_catch=(IndexError, ZeroDivisionError), tries=3, delay=2)
-def llm_call_gpt_json(input, GPT):
+def llm_call_gpt_json(input, system_p = system_message, GPT):
     client = OpenAI()
     client.api_key = os.getenv('OPENAI_API_KEY')
 
     response = client.chat.completions.create(
         model=GPT,
         messages=[
-            {"role": "system", "content": """You are an AI designed to solve word puzzles. You are brilliant and clever."""},
+            {"role": "system", "content": system_p},
             {"role": "user", "content": f"Respond in JSON. {input}"}
         ],
         response_format={ "type": "json_object" }
@@ -67,7 +69,7 @@ def llm_call_gpt_json(input, GPT):
 
 # @retry(stop=stop_after_attempt(3), wait=wait_fixed(2))
 @retry_except(exceptions_to_catch=(IndexError, ZeroDivisionError), tries=3, delay=2)
-def llm_call_claude(input, LLM):
+def llm_call_claude(input, system_p = system_message, LLM):
     client = Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY"))
 
     response = client.messages.create(
@@ -75,30 +77,10 @@ def llm_call_claude(input, LLM):
         messages=[
             {"role": "user", "content": f"{input}"}
         ],
-        system="You are an AI designed to solve word puzzles. You are brilliant and clever.",
+        system=system_p,
         max_tokens=4096,
     )
     return response.content[0].text
-
-@retry_except(exceptions_to_catch=(IndexError, ZeroDivisionError), tries=3, delay=2)
-def llm_call_ollama(prompt, LLM = "llama3:8b"):
-    r = requests.post('http://0.0.0.0:11434/api/generate',
-                      json={
-                          'model': LLM, #llama2:7b
-                          'prompt': f"{prompt}"
-                      },
-                      stream=False)
-    full_response = ""
-    for line in r.iter_lines():
-        if line:
-            decoded_line = line.decode('utf-8')
-            json_line = json.loads(decoded_line)
-            full_response += json_line.get("response", "")
-            if json_line.get("done"):
-                break
-
-    print(full_response)
-    return full_response
 
 # @retry(stop=stop_after_attempt(3), wait=wait_fixed(2))
 @retry_except(exceptions_to_catch=(IndexError, ZeroDivisionError), tries=3, delay=2)
@@ -123,10 +105,28 @@ def llm_call_ollama_json(prompt, LLM = "llama3:8b"):
     return full_response
 
 @retry_except(exceptions_to_catch=(IndexError, ZeroDivisionError), tries=3, delay=2)
-def llm_call_groq(prompt, model:str="llama3-70b-8192"):
-    system_prompt = '''
-    Your are an exceptional data analyst
-    '''
+def llm_call_ollama(prompt, LLM = "llama3:8b"):
+    r = requests.post('http://0.0.0.0:11434/api/generate',
+                      json={
+                          'model': LLM, #llama2:7b
+                          'prompt': f"{prompt}"
+                      },
+                      stream=False)
+    full_response = ""
+    for line in r.iter_lines():
+        if line:
+            decoded_line = line.decode('utf-8')
+            json_line = json.loads(decoded_line)
+            full_response += json_line.get("response", "")
+            if json_line.get("done"):
+                break
+
+    print(full_response)
+    return full_response
+
+@retry_except(exceptions_to_catch=(IndexError, ZeroDivisionError), tries=3, delay=2)
+def llm_call_groq(prompt, system_p = system_message, model:str="llama3-70b-8192"):
+    system_prompt = system_p
     client = Groq()
     messages = [{
             "role": "system",
@@ -137,7 +137,6 @@ def llm_call_groq(prompt, model:str="llama3-70b-8192"):
             "content": prompt
         }]
     return client.chat.completions.create(messages=messages, model=model)
-
 
 def submit_message_and_create_run(client, assistant_id, prompt):
     """
