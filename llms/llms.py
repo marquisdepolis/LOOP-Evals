@@ -1,3 +1,4 @@
+from groq import Groq
 from openai import OpenAI
 from anthropic import Anthropic
 import os
