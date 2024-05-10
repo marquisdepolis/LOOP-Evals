@@ -2,7 +2,7 @@
 Logical Operations On Problems: The idea is to test simple Iterative Reasoning tests for LLMs, through puzzles which are hard to solve and easy to evaluate.
 
 # Why?
-LLMs are hard to evaluate, as ![I've written multiple times](https://www.strangeloopcanon.com/p/evaluations-are-all-we-need), and their ability to reason is difficult to separate from what they're trained on. So I wanted to find a way to test its ability to iteratively reason and answer questions. 
+LLMs are hard to evaluate, as [I've written multiple times](https://www.strangeloopcanon.com/p/evaluations-are-all-we-need), and their ability to reason is difficult to separate from what they're trained on. So I wanted to find a way to test its ability to iteratively reason and answer questions. 
 
 I started with the simplest version of it I could think of that satisfies the criteria: namely whether it can create wordgrids, successively in 3x3, 4x4 and 5x5 sizes. Why this? Because evaluations should be a) easy to create, AND b) easy to evaluate, while still being hard to do!
 
