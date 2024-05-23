@@ -14,11 +14,11 @@ with open('info.json', 'r') as file:
 
 instructions = data.get('instructions_w')
 objective = data.get('objective_w')
-GPT = data.get('GPT_4')
+GPT = data.get('GPT_MODEL')
 CLAUDE = data.get('CLAUDE')
 OLLAMA = data.get('OLLAMA')
 
-def get_llm_response(input_str, llm_type='ollama'):
+def get_llm_response(input_str, llm_type='openai'):
     if llm_type == 'openai':
         return llm_call_gpt_json(input_str, GPT)
     elif llm_type == 'claude':

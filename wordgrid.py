@@ -15,13 +15,13 @@ with open('info.json', 'r') as file:
 
 instructions = data.get('instructions_wg')
 small_change = data.get('small_change_wg')
-GPT = data.get('GPT_4')
+GPT = data.get('GPT_MODEL')
 ATTEMPTS = 50
 TURNS = 10
 CLAUDE = data.get('CLAUDE')
 OLLAMA = data.get('OLLAMA')
 
-def get_llm_response(input_str, llm_type='ollama'):
+def get_llm_response(input_str, llm_type='openai'):
     if llm_type == 'openai':
         return llm_call_gpt_json(input_str, GPT)
     elif llm_type == 'claude':
@@ -223,6 +223,34 @@ def repeatedly_run_main():
         
         if not successful:
             print(f"Reached maximum attempt limit without success for {objective_key}. Exiting...")
+
+    cleanup()
+
+def cleanup():
+    archive_folder_path = '#Archive/'
+    os.makedirs(archive_folder_path, exist_ok=True)
+    os.makedirs('results', exist_ok=True)
+    file_paths = [
+        'results_objective_3.json',
+        'results_objective_4.json',
+        'results_objective_5.json'
+    ]
+
+    # Initialize a dictionary to hold all results
+    combined_results = {}
+
+    # Loop through each file, load its content, and add it to the combined results
+    for file_path in file_paths:
+        with open(file_path, 'r') as file:
+            data = json.load(file)
+            objective_number = file_path.split('_')[-1].split('.')[0]
+            combined_results[f'matrix_{objective_number}'] = data
+        os.rename(file_path, archive_folder_path + os.path.basename(file_path))
+
+    # Write the combined results to a new file
+    combined_results_path = 'results/results_wg.json'
+    with open(combined_results_path, 'w') as file:
+        json.dump(combined_results, file, indent=4)
 
 if __name__ == "__main__":
     repeatedly_run_main()

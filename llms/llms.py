@@ -14,7 +14,7 @@ system_message = "You are an AI trained to be a brilliant puzzle solver and geni
 
 @retry(stop=stop_after_attempt(3), wait=wait_fixed(2))
 @retry_except(exceptions_to_catch=(IndexError, ZeroDivisionError), tries=3, delay=2)
-def llm_call_gpt(input, system_p = system_message, GPT):
+def llm_call_gpt(input, GPT, system_p = system_message):
     client = OpenAI()
     client.api_key = os.getenv('OPENAI_API_KEY')
 
@@ -53,7 +53,7 @@ def llm_call_gpt_assistant(input, INSTRUCTION, GPT):
 
 @retry(stop=stop_after_attempt(3), wait=wait_fixed(2))
 @retry_except(exceptions_to_catch=(IndexError, ZeroDivisionError), tries=3, delay=2)
-def llm_call_gpt_json(input, system_p = system_message, GPT):
+def llm_call_gpt_json(input, GPT, system_p = system_message):
     client = OpenAI()
     client.api_key = os.getenv('OPENAI_API_KEY')
 
@@ -69,7 +69,7 @@ def llm_call_gpt_json(input, system_p = system_message, GPT):
 
 # @retry(stop=stop_after_attempt(3), wait=wait_fixed(2))
 @retry_except(exceptions_to_catch=(IndexError, ZeroDivisionError), tries=3, delay=2)
-def llm_call_claude(input, system_p = system_message, LLM):
+def llm_call_claude(input, LLM, system_p = system_message):
     client = Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY"))
 
     response = client.messages.create(

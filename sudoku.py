@@ -19,7 +19,7 @@ with open('info.json', 'r') as file:
 instructions = data.get('instructions_wg')
 objective = data.get('objective_s')
 small_change = data.get('small_change_wg')
-GPT = data.get('GPT_4')
+GPT = data.get('GPT_MODEL')
 ATTEMPTS = 10
 THRESHOLD = 10
 

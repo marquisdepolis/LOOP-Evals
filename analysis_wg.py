@@ -9,29 +9,7 @@ import seaborn as sns
 os.makedirs('charts', exist_ok=True)
 archive_folder_path = '#Archive/'
 os.makedirs(archive_folder_path, exist_ok=True)
-os.makedirs('results', exist_ok=True)
-file_paths = [
-    'results_objective_3.json',
-    'results_objective_4.json',
-    'results_objective_5.json'
-]
-
-# Initialize a dictionary to hold all results
-combined_results = {}
-
-# Loop through each file, load its content, and add it to the combined results
-for file_path in file_paths:
-    with open(file_path, 'r') as file:
-        data = json.load(file)
-        objective_number = file_path.split('_')[-1].split('.')[0]
-        combined_results[f'matrix_{objective_number}'] = data
-    os.rename(file_path, archive_folder_path + os.path.basename(file_path))
-
-# Write the combined results to a new file
 combined_results_path = 'results/results_wg.json'
-with open(combined_results_path, 'w') as file:
-    json.dump(combined_results, file, indent=4)
-
 # Load the JSON data from the file
 with open(combined_results_path, 'r') as file:
     data = json.load(file)
