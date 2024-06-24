@@ -122,11 +122,7 @@ def llm_call_gemini(prompt, model="gemini-1.5-pro", system_p=system_message):
         model_name=model,
         generation_config=generation_config,
     )
-    chat_session = model.start_chat(
-        context="",  # Set the context for the chat if needed
-        instructions=system_p  # Set the system message
-    )
-    response = chat_session.send_message(prompt)
+    response = model.generate_content(prompt)
     return response.text
 
 # @retry(stop=stop_after_attempt(3), wait=wait_fixed(2))
