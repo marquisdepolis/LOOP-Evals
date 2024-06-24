@@ -13,8 +13,8 @@ with open('info.json', 'r') as file:
 
 instructions = data.get('instructions_wg')
 small_change = data.get('small_change_wg')
-ATTEMPTS = 5
-TURNS = 2
+ATTEMPTS = 50
+TURNS = 5
 GPT = data.get('GPT_MODEL')
 CLAUDE = data.get('CLAUDE')
 OLLAMA = data.get('OLLAMA')
