@@ -125,6 +125,22 @@ def llm_call_gemini(prompt, model="gemini-1.5-pro", system_p=system_message):
     response = model.generate_content(prompt)
     return response.text
 
+@retry_except(exceptions_to_catch=(IndexError, ZeroDivisionError), tries=3, delay=2)
+def llm_call_gemini_json(prompt, model="gemini-1.5-pro", schema, system_p=system_message):
+    genai.configure(api_key=os.environ["GEMINI_API_KEY"])
+    generation_config = {
+        "temperature": 0.7,
+        "top_p": 0.95,
+        "top_k": 40,
+        "response_mime_type": "application/json"
+    }
+    model = genai.GenerativeModel(
+        model_name=model,
+        generation_config=generation_config,
+    )
+    response = model.generate_content(f"The prompt: {prompt}. Please reply using a JSON schema like this: {schema}")
+    return response.text
+
 # @retry(stop=stop_after_attempt(3), wait=wait_fixed(2))
 @retry_except(exceptions_to_catch=(IndexError, ZeroDivisionError), tries=3, delay=2)
 def llm_call_ollama_json(prompt, LLM = "llama3:8b", temp = 0.7):

@@ -15,7 +15,7 @@ instructions = data.get('instructions_wg')
 small_change = data.get('small_change_wg')
 ATTEMPTS = 50
 TURNS = 5
-GPT = data.get('GPT_MODEL')
+GPT = data.get('GPT_4')
 CLAUDE = data.get('CLAUDE')
 OLLAMA = data.get('OLLAMA')
 

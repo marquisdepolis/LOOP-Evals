@@ -9,7 +9,8 @@ import seaborn as sns
 os.makedirs('charts', exist_ok=True)
 archive_folder_path = '#Archive/'
 os.makedirs(archive_folder_path, exist_ok=True)
-combined_results_path = 'results/results_wg.json'
+combined_results_path = 'results/results_wg.json'  # Updated path to match the uploaded file
+
 # Load the JSON data from the file
 with open(combined_results_path, 'r') as file:
     data = json.load(file)
@@ -17,29 +18,25 @@ with open(combined_results_path, 'r') as file:
 # Define a function to compute metrics
 def compute_metrics(data):
     success_rate, avg_false_counts, all_false_counts = {}, {}, {}
-    for matrix, details in data.items():
-        matrix_successes = sum(1 for attempt in details if attempt['success'])
-        total_attempts = len(details)
+    for matrix, attempts in data.items():
+        matrix_successes = sum(1 for attempt in attempts if 'success' in attempt and attempt['success'])
+        total_attempts = len(attempts)
         success_rate[matrix] = matrix_successes / total_attempts if total_attempts else 0
-        total_false_counts = sum(run['false_count'] for attempt in details for run in attempt['runs'])
-        total_runs = sum(len(attempt['runs']) for attempt in details)
+        total_false_counts = sum(run['false_count'] for attempt in attempts if 'runs' in attempt for run in attempt['runs'] if 'false_count' in run)
+        total_runs = sum(len(attempt['runs']) for attempt in attempts if 'runs' in attempt)
         avg_false_counts[matrix] = total_false_counts / total_runs if total_runs else 0
-        all_false_counts[matrix] = [run['false_count'] for attempt in details for run in attempt['runs']]
+        all_false_counts[matrix] = [run['false_count'] for attempt in attempts if 'runs' in attempt for run in attempt['runs'] if 'false_count' in run]
     return success_rate, avg_false_counts, all_false_counts
 
 # Compute success rates, average false counts, and collect all false counts for histogram
 success_rates, avg_false_counts, all_false_counts = compute_metrics(data)
 
-# Further processing and plotting code goes here, ensuring that all dictionary keys are used consistently
-
-# Example plotting code (Ensure to adjust according to your specific needs and correct keys usage)
+# Plot Success Rate by Matrix Size
 plt.figure(figsize=(10, 5))
 plt.bar(success_rates.keys(), success_rates.values(), color='green', alpha=0.6, label='Success Rate')
 plt.ylabel('Success Rate')
 plt.legend()
 plt.savefig(f'charts/wg_success_rates.png')
-
-# After computing success rates, average false counts, all_false_counts as shown in the previous snippet
 
 # Plot Success Rate and Average False Count by Matrix Size
 plt.figure(figsize=(10, 5))
@@ -55,7 +52,8 @@ plt.savefig('charts/wg_success_and_avg_false_count.png')
 # Plot Distribution of False Counts by Matrix Size
 plt.figure(figsize=(10, 5))
 for matrix, counts in all_false_counts.items():
-    sns.histplot(counts, bins=max(counts)-min(counts)+1, kde=True, label=matrix, alpha=0.5)
+    if counts:  # Ensure counts is not empty
+        sns.histplot(counts, bins=max(counts)-min(counts)+1, kde=True, label=matrix, alpha=0.5)
 plt.title('Distribution of False Counts by Matrix Size')
 plt.xlabel('False Counts')
 plt.ylabel('Frequency')
@@ -63,13 +61,18 @@ plt.legend()
 plt.grid(axis='y', alpha=0.75)
 plt.savefig('charts/wg_distribution_of_false_counts.png')
 
-# Assuming you've correctly calculated 'success_rates' and 'avg_false_counts' and formatted them
 # Normalize for visualization
+max_success_rate = max(success_rates.values()) if success_rates.values() else 1
+max_avg_false_count = max(avg_false_counts.values()) if avg_false_counts.values() else 1
+
 df = pd.DataFrame({
     'Matrix Size': list(avg_false_counts.keys()),
-    'Normalized Success Rate': [rate / max(success_rates.values()) for rate in success_rates.values()],
-    'Normalized Avg False Count': [count / max(avg_false_counts.values()) for count in avg_false_counts.values()]
+    'Normalized Success Rate': [rate / max_success_rate if max_success_rate > 0 else 0 for rate in success_rates.values()],
+    'Normalized Avg False Count': [count / max_avg_false_count if max_avg_false_count > 0 else 0 for count in avg_false_counts.values()]
 })
+
+# Ensure all lists are the same length
+assert len(df['Matrix Size']) == len(df['Normalized Success Rate']) == len(df['Normalized Avg False Count'])
 
 # Visualization of Normalized Success Rate and Avg False Count
 plt.figure(figsize=(12, 8))

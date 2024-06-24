@@ -101,30 +101,29 @@ def check_word_validity(word):
 
 @retry_except(exceptions_to_catch=(IndexError, ZeroDivisionError, ValueError), tries=3, delay=2)
 def extract_word(response):
-    """
-    Parses the response to extract the word.
-    """
-    try:
-        parsed_response = json.loads(response)
-        # If parsed_response is a dictionary, get the value of the first key
-        if isinstance(parsed_response, dict):
-            for key, value in parsed_response.items():
-                # Assuming the value you are interested in is a string
-                if isinstance(value, str):
-                    cleaned_response = value.replace('```', '').replace('\n', '').replace("'''", '').strip()
-                    print(f"\nExtracted value: {cleaned_response}")  # Debugging: Print the extracted value
-                    return cleaned_response
-            raise ValueError("No suitable string value was found in the response.")
-        else:
-            raise ValueError("The JSON response did not contain a dictionary as expected.")
-    except json.JSONDecodeError as e:
-        print(f"Failed to decode JSON from response: {e}")
-        return ''
-    except ValueError as e:
-        print(f"ValueError: {e}")
-        return ''
+    if isinstance(response, dict):
+        parsed_response = response
+    else:
+        try:
+            parsed_response = json.loads(response)
+        except json.JSONDecodeError as e:
+            print(f"Failed to decode JSON from response: {e}")
+            return ''
+        except ValueError as e:
+            print(f"ValueError: {e}")
+            return ''
 
-    return ''  # Return an empty string if no word is extracted
+    if isinstance(parsed_response, dict):
+        for key, value in parsed_response.items():
+            if isinstance(value, str):
+                cleaned_response = value.replace('```', '').replace('\n', '').replace("'''", '').strip()
+                print(f"\nExtracted value: {cleaned_response}")  # Debugging: Print the extracted value
+                return cleaned_response
+        print("No suitable string value was found in the response.")
+        return ''
+    else:
+        print("The JSON response did not contain a dictionary as expected.")
+        return ''
 
 def play_wordle(file_path, run_id, llm_type, results):
     words = load_words(file_path)
@@ -170,13 +169,15 @@ def play_wordle(file_path, run_id, llm_type, results):
 
 def main():
     runs = int(input("Enter the number of runs: "))
+    attempts_per_llm = 10  # Number of attempts per LLM
     results = []
     llm_types = ['claude', 'openai', 'groq']
 
     for run_id in range(1, runs + 1):
         for llm_type in llm_types:
-            print(f"\n\n Starting run #{run_id}")
-            play_wordle('puzzles/wordle.txt', run_id, llm_type, results)
+            print(f"\n\n Starting run #{run_id} using {llm_type}")
+            for attempt in range(attempts_per_llm):
+                play_wordle('puzzles/wordle.txt', run_id, llm_type, results)
 
     # Ensure the results directory exists
     os.makedirs('results', exist_ok=True)
