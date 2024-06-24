@@ -10,8 +10,9 @@ load_dotenv()
 from llms.llms import llm_call_gpt_json, llm_call_claude_json, llm_call_groq
 from utils.retry import retry_except
 
-openai.api_key = os.getenv("OPENAI_API_KEY")
-anthropic = Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
+# openai.api_key = Especieeeeeeeeeeos.getenv("OPENAI_API_KEY")
+# anthropic = Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
+
 with open('info.json', 'r') as file:
     data = json.load(file)
 
@@ -33,11 +34,10 @@ def get_llm_response(input_str, llm_type='openai'):
     
 def create_word_matrix(objective, llm_type):
     """Generate a matrix of words, starting with 'C' and ending with 'N'."""
-    response = get_llm_response(f"""
-                        {instructions}. Objective is: {objective}. The words have to be valid English words when read across the rows and also when read down the columns. This is very important, think quietly first. Reply with only the list of words, as follows. Ensure you reply with the correct number of words and in the correct order. For example:
-                        '''
-                        Word, Word, Word etc
-                        '''
+    response = get_llm_response(f""" {instructions}. Objective is: {objective}. The words have to be valid English words when read across the rows and also when read down the columns. This is very important, think quietly first. Reply with only the list of words, as follows. Ensure you reply with the correct number of words and in the correct order. For example:
+    '''
+    Word, Word, Word etc
+    '''
     """, llm_type)
     return response
 
@@ -51,24 +51,32 @@ def check_word_validity(word):
 def preprocess_json_string(response):
     """
     Preprocesses the response string to fix common JSON formatting issues.
-    This can include removing extra commas, fixing array formatting, etc.
+    This function now checks if the input is a string before processing.
     """
-    # Example fix: Remove trailing commas before closing brackets or braces
-    response = re.sub(r',(?=\s*[}\]])', '', response)
+    if isinstance(response, str):
+        # Remove trailing commas before closing brackets or braces
+        response = re.sub(r',(?=\s*[}\]])', '', response)
     return response
 
-@retry_except(exceptions_to_catch=(IndexError, ZeroDivisionError, ValueError), tries=3, delay=2)
+# @retry_except(exceptions_to_catch=(IndexError, ZeroDivisionError, ValueError), tries=3, delay=2)
 def extract_words_from_matrix(response):
     """
     Enhanced parsing function to extract words from a JSON response that may contain
     various structures or formatting issues.
     """
     print(f"Raw response is: {response}")
-    response = preprocess_json_string(response)  # Preprocess the response string
+    if isinstance(response, dict):
+        response_json = response
+    else:
+        # If it's a string, preprocess and parse JSON
+        response = preprocess_json_string(response)
+        try:
+            response_json = json.loads(response)
+        except json.JSONDecodeError as e:
+            print(f"Failed to decode JSON from response: {e}. Check the response format.")
+            return []
     
     try:
-        response_json = json.loads(response)
-        
         # Dynamically identify and extract the word list from the JSON, handling various cases
         word_list = None
         for value in response_json.values():
@@ -150,7 +158,8 @@ def main(attempt_number, objective, llm_type):
     }
     attempt_count = 0
     max_attempts = TURNS
-    
+    response = None
+
     for attempt_count in range(1, max_attempts + 1):
         attempt_data = {
             'index': attempt_count,
@@ -162,7 +171,10 @@ def main(attempt_number, objective, llm_type):
 
         try:
             response = create_word_matrix(objective, llm_type) if attempt_count == 1 else regenerate_invalid_words(invalid_words_list, original_matrix, objective, llm_type)
+            if not response:
+                raise ValueError("Received empty response from LLM")
 
+            print(f"Response is: {response}")
             words = extract_words_from_matrix(response)
             all_words_validity = check_words_validity(words)
 
@@ -181,14 +193,18 @@ def main(attempt_number, objective, llm_type):
                 original_matrix = response  # Save for regeneration context
         except ValueError as ve:
             print(f"A ValueError occurred: {ve}. Continuing with the next attempt...")
-            words = extract_words_from_matrix(response)
-            all_words_validity = check_words_validity(words)
-            invalid_words_list = [word for word, isValid in all_words_validity.items() if not isValid]
-            
-            attempt_data['error'] = str(ve)  # Log the specific error that occurred
-            attempt_data['matrix'] = words if 'words' in locals() else "Error occurred before matrix formation"
-            attempt_data['word_responses'] = list(all_words_validity.keys()) if 'all_words_validity' in locals() else "Error occurred before validity checking"
-            attempt_data['false_count'] = invalid_words_count if 'invalid_words_count' in locals() else "Error occurred before false count calculation"
+            if response is not None:
+                words = extract_words_from_matrix(response)
+                all_words_validity = check_words_validity(words)
+                invalid_words_list = [word for word, isValid in all_words_validity.items() if not isValid]
+                attempt_data['matrix'] = words if 'words' in locals() else "Error occurred before matrix formation"
+                attempt_data['word_responses'] = list(all_words_validity.keys()) if 'all_words_validity' in locals() else "Error occurred before validity checking"
+                attempt_data['false_count'] = invalid_words_count if 'invalid_words_count' in locals() else "Error occurred before false count calculation"
+            else:
+                attempt_data['error'] = f"ValueError occurred and response is None: {ve}"
+        except Exception as e:
+            print(f"An unexpected error occurred: {e}")
+            attempt_data['error'] = str(e)
 
         results['runs'].append(attempt_data)  # Add attempt data to results regardless of success/failure
 
@@ -201,7 +217,7 @@ def main(attempt_number, objective, llm_type):
     return results
  
 def repeatedly_run_main():
-    objective_keys = ['objective_3', 'objective_4', 'objective_5']
+    objective_keys = ['objective_4', 'objective_5']
     llm_types = ['claude', 'openai', 'groq']
     
     for llm_type in llm_types:
@@ -218,7 +234,7 @@ def repeatedly_run_main():
                 
                 if successful:
                     print(f"Successfully generated a valid matrix for {objective_key} using {llm_type}. Exiting...")
-                    break
+                    # break
                 else:
                     print("Attempt unsuccessful.")
             

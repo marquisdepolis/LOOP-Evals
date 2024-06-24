@@ -5,12 +5,13 @@ import os
 import json
 import time
 import requests
+import google.generativeai as genai
 from dotenv import load_dotenv
 load_dotenv()
 from utils.retry import retry_except
 from tenacity import retry, stop_after_attempt, wait_fixed
 
-system_message = "You are an AI trained to be a brilliant puzzle solver and genius at smart and lateral thinking. You are brilliant and conscientious."
+system_message = "You are an AI trained to be a brilliant puzzle solver and a genius at lateral thinking. You are brilliant and conscientious."
 
 @retry(stop=stop_after_attempt(3), wait=wait_fixed(2))
 @retry_except(exceptions_to_catch=(IndexError, ZeroDivisionError), tries=3, delay=2)
@@ -67,8 +68,8 @@ def llm_call_gpt_json(input, GPT, system_p = system_message, temp = 0.7):
     )
     return response.choices[0].message.content
 
-# @retry(stop=stop_after_attempt(3), wait=wait_fixed(2))
 @retry_except(exceptions_to_catch=(IndexError, ZeroDivisionError), tries=3, delay=2)
+@retry(stop=stop_after_attempt(3), wait=wait_fixed(2))
 def llm_call_claude(input, LLM, system_p = system_message, temp = 0.7):
     client = Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
     response = client.messages.create(
@@ -89,7 +90,15 @@ def llm_call_claude_json(input, LLM, system_p = system_message, temp = 0.7):
         model=LLM,
         system = system_p,
         messages=[
-            {"role": "user", "content": f"{input}. Give me the answer in JSON."},
+            {"role": "user", "content": f"""{input}. 
+             ## Examples
+             {'answer': 'CARE\nAREA\nRACE\nEARN'}
+             {'answer': 'CRAB\nAIDE\nLEAN\nMEAN'}
+             {'answer': 'CARE\nANON\nRIDO\nEDEN'}
+             {'answer': 'CALM\nARIA\nLAID\nMEAN'}
+             {'answer': 'CHEER\nOCEAN\nMEANS\nEARTH\nTRAIN'}
+             {'answer': 'CHAIN\nHEARD\nALONE\nIRONS\nNEEDS'}
+             Give me the answer in JSON."""},
             {"role": "assistant", "content": "Here is the JSON requested:\n{"}
         ],
         temperature=temp,
@@ -98,6 +107,25 @@ def llm_call_claude_json(input, LLM, system_p = system_message, temp = 0.7):
     message = response.content[0].text
     output_json = json.loads("{" + message[:message.rfind("}") + 1])
     return output_json
+
+@retry_except(exceptions_to_catch=(IndexError, ZeroDivisionError), tries=3, delay=2)
+def llm_call_gemini(prompt, model="gemini-1.5-pro", system_p=system_message):
+    genai.configure(api_key=os.environ["GEMINI_API_KEY"])
+    generation_config = {
+        "temperature": 0.7,
+        "top_p": 0.95,
+        "top_k": 40
+    }
+    model = genai.GenerativeModel(
+        model_name=model,
+        generation_config=generation_config,
+    )
+    chat_session = model.start_chat(
+        context="",  # Set the context for the chat if needed
+        instructions=system_p  # Set the system message
+    )
+    response = chat_session.send_message(prompt)
+    return response.text
 
 # @retry(stop=stop_after_attempt(3), wait=wait_fixed(2))
 @retry_except(exceptions_to_catch=(IndexError, ZeroDivisionError), tries=3, delay=2)
@@ -153,7 +181,8 @@ def llm_call_groq(prompt, system_p = system_message, model:str="llama3-70b-8192"
             "role": "user",
             "content": prompt
         }]
-    return client.chat.completions.create(messages=messages, model=model)
+    response = client.chat.completions.create(messages=messages, model=model, temperature = temp)
+    return response.choices[0].message.content
 
 def submit_message_and_create_run(client, assistant_id, prompt):
     """
