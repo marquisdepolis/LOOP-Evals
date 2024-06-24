@@ -5,7 +5,7 @@ import enchant
 import random
 from dotenv import load_dotenv
 load_dotenv()
-from llms.llms import llm_call_gpt_json, llm_call_claude, llm_call_ollama_json
+from llms.llms import llm_call_gpt_json, llm_call_claude_json, llm_call_groq
 from utils.retry import retry_except
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
@@ -14,7 +14,7 @@ with open('info.json', 'r') as file:
 
 instructions = data.get('instructions_w')
 objective = data.get('objective_w')
-GPT = data.get('GPT_MODEL')
+GPT = data.get('GPT_4')
 CLAUDE = data.get('CLAUDE')
 OLLAMA = data.get('OLLAMA')
 
@@ -22,9 +22,9 @@ def get_llm_response(input_str, llm_type='openai'):
     if llm_type == 'openai':
         return llm_call_gpt_json(input_str, GPT)
     elif llm_type == 'claude':
-        return llm_call_claude(input_str, CLAUDE)
-    elif llm_type == 'ollama':
-        return llm_call_ollama_json(input_str, OLLAMA)
+        return llm_call_claude_json(input_str, CLAUDE)
+    elif llm_type == 'groq':
+        return llm_call_groq(input_str)
 
 def load_words(file_path):
     with open(file_path, 'r') as file:
@@ -104,7 +104,6 @@ def extract_word(response):
     """
     Parses the response to extract the word.
     """
-    # print(f"\nRaw response: {response}")  # To debug
     try:
         parsed_response = json.loads(response)
         # If parsed_response is a dictionary, get the value of the first key
@@ -127,7 +126,7 @@ def extract_word(response):
 
     return ''  # Return an empty string if no word is extracted
 
-def play_wordle(file_path, run_id, results):
+def play_wordle(file_path, run_id, llm_type, results):
     words = load_words(file_path)
     target = random.choice(words)
     attempts = 0
@@ -139,7 +138,7 @@ def play_wordle(file_path, run_id, results):
         history_str = " ".join(guess_history)
         input_str = f"{instructions}. {objective}. Based on previous attempts: {history_str}. Only return the word."
 
-        guess_response = get_llm_response(input_str, llm_type='openai')
+        guess_response = get_llm_response(input_str, llm_type=llm_type)
         guess = extract_word(guess_response).strip().lower()
         
         words_validity = check_word_validity(guess)
@@ -161,6 +160,7 @@ def play_wordle(file_path, run_id, results):
         results.append({
             "Global attempt #": run_id,
             "Run #": attempts,
+            "LLM type": llm_type,
             "Target word": target,
             "Guessed word": guess,
             "Number of 'G' in colorised results": GYs.count('G'),
@@ -171,10 +171,12 @@ def play_wordle(file_path, run_id, results):
 def main():
     runs = int(input("Enter the number of runs: "))
     results = []
+    llm_types = ['claude', 'openai', 'groq']
 
     for run_id in range(1, runs + 1):
-        print(f"\n\n Starting run #{run_id}")
-        play_wordle('puzzles/wordle.txt', run_id, results)
+        for llm_type in llm_types:
+            print(f"\n\n Starting run #{run_id}")
+            play_wordle('puzzles/wordle.txt', run_id, llm_type, results)
 
     # Ensure the results directory exists
     os.makedirs('results', exist_ok=True)
