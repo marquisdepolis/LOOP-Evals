@@ -14,7 +14,7 @@ system_message = "You are an AI trained to be a brilliant puzzle solver and geni
 
 @retry(stop=stop_after_attempt(3), wait=wait_fixed(2))
 @retry_except(exceptions_to_catch=(IndexError, ZeroDivisionError), tries=3, delay=2)
-def llm_call_gpt(input, GPT, system_p = system_message):
+def llm_call_gpt(input, GPT, system_p = system_message, temp = 0.7):
     client = OpenAI()
     client.api_key = os.getenv('OPENAI_API_KEY')
 
@@ -29,7 +29,7 @@ def llm_call_gpt(input, GPT, system_p = system_message):
 
 @retry(stop=stop_after_attempt(3), wait=wait_fixed(2))
 @retry_except(exceptions_to_catch=(IndexError, ZeroDivisionError), tries=3, delay=2)
-def llm_call_gpt_assistant(input, INSTRUCTION, GPT):
+def llm_call_gpt_assistant(input, INSTRUCTION, GPT, temp = 0.7):
     client = OpenAI()
     client.api_key = os.getenv('OPENAI_API_KEY')
 
@@ -53,7 +53,7 @@ def llm_call_gpt_assistant(input, INSTRUCTION, GPT):
 
 @retry(stop=stop_after_attempt(3), wait=wait_fixed(2))
 @retry_except(exceptions_to_catch=(IndexError, ZeroDivisionError), tries=3, delay=2)
-def llm_call_gpt_json(input, GPT, system_p = system_message):
+def llm_call_gpt_json(input, GPT, system_p = system_message, temp = 0.7):
     client = OpenAI()
     client.api_key = os.getenv('OPENAI_API_KEY')
 
@@ -69,22 +69,39 @@ def llm_call_gpt_json(input, GPT, system_p = system_message):
 
 # @retry(stop=stop_after_attempt(3), wait=wait_fixed(2))
 @retry_except(exceptions_to_catch=(IndexError, ZeroDivisionError), tries=3, delay=2)
-def llm_call_claude(input, LLM, system_p = system_message):
-    client = Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY"))
-
+def llm_call_claude(input, LLM, system_p = system_message, temp = 0.7):
+    client = Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
     response = client.messages.create(
         model=LLM,
+        system = system_p,
         messages=[
             {"role": "user", "content": f"{input}"}
         ],
-        system=system_p,
+        temperature=temp,
         max_tokens=4096,
     )
     return response.content[0].text
 
+@retry_except(exceptions_to_catch=(IndexError, ZeroDivisionError), tries=3, delay=2)
+def llm_call_claude_json(input, LLM, system_p = system_message, temp = 0.7):
+    client = Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
+    response = client.messages.create(
+        model=LLM,
+        system = system_p,
+        messages=[
+            {"role": "user", "content": f"{input}. Give me the answer in JSON."},
+            {"role": "assistant", "content": "Here is the JSON requested:\n{"}
+        ],
+        temperature=temp,
+        max_tokens=4096,
+    )
+    message = response.content[0].text
+    output_json = json.loads("{" + message[:message.rfind("}") + 1])
+    return output_json
+
 # @retry(stop=stop_after_attempt(3), wait=wait_fixed(2))
 @retry_except(exceptions_to_catch=(IndexError, ZeroDivisionError), tries=3, delay=2)
-def llm_call_ollama_json(prompt, LLM = "llama3:8b"):
+def llm_call_ollama_json(prompt, LLM = "llama3:8b", temp = 0.7):
     r = requests.post('http://0.0.0.0:11434/api/generate',
                       json={
                           'model': LLM, #llama2:7b
@@ -105,10 +122,10 @@ def llm_call_ollama_json(prompt, LLM = "llama3:8b"):
     return full_response
 
 @retry_except(exceptions_to_catch=(IndexError, ZeroDivisionError), tries=3, delay=2)
-def llm_call_ollama(prompt, LLM = "llama3:8b"):
+def llm_call_ollama(prompt, LLM = "llama3:8b", temp = 0.7):
     r = requests.post('http://0.0.0.0:11434/api/generate',
                       json={
-                          'model': LLM, #llama2:7b
+                          'model': LLM,
                           'prompt': f"{prompt}"
                       },
                       stream=False)
@@ -125,7 +142,7 @@ def llm_call_ollama(prompt, LLM = "llama3:8b"):
     return full_response
 
 @retry_except(exceptions_to_catch=(IndexError, ZeroDivisionError), tries=3, delay=2)
-def llm_call_groq(prompt, system_p = system_message, model:str="llama3-70b-8192"):
+def llm_call_groq(prompt, system_p = system_message, model:str="llama3-70b-8192", temp = 0.7):
     system_prompt = system_p
     client = Groq()
     messages = [{
@@ -144,7 +161,7 @@ def submit_message_and_create_run(client, assistant_id, prompt):
     """
     thread = client.beta.threads.create() # If you replace this globally it appends all answers to the one before.
     client.beta.threads.messages.create(thread_id=thread.id, role="user", content=prompt)
-    return client.beta.threads.runs.create(thread_id=thread.id, assistant_id=assistant_id, temperature=0.6), thread
+    return client.beta.threads.runs.create(thread_id=thread.id, assistant_id=assistant_id, temperature=0.7), thread
 
 def wait_on_run_and_get_response(client, run, thread):
     """

@@ -3,21 +3,23 @@ import os
 import re
 import json
 import openai
+from anthropic import Anthropic
 import enchant
 from dotenv import load_dotenv
 load_dotenv()
-from llms.llms import llm_call_gpt_json, llm_call_claude, llm_call_ollama_json
+from llms.llms import llm_call_gpt_json, llm_call_claude_json, llm_call_groq
 from utils.retry import retry_except
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
+anthropic = Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
 with open('info.json', 'r') as file:
     data = json.load(file)
 
 instructions = data.get('instructions_wg')
 small_change = data.get('small_change_wg')
-GPT = data.get('GPT_MODEL')
-ATTEMPTS = 50
+ATTEMPTS = 5
 TURNS = 10
+GPT = data.get('GPT_MODEL')
 CLAUDE = data.get('CLAUDE')
 OLLAMA = data.get('OLLAMA')
 
@@ -25,18 +27,18 @@ def get_llm_response(input_str, llm_type='openai'):
     if llm_type == 'openai':
         return llm_call_gpt_json(input_str, GPT)
     elif llm_type == 'claude':
-        return llm_call_claude(input_str, CLAUDE)
-    elif llm_type == 'ollama':
-        return llm_call_ollama_json(input_str, OLLAMA)
+        return llm_call_claude_json(input_str, CLAUDE)
+    elif llm_type == 'groq':
+        return llm_call_groq(input_str)
     
-def create_word_matrix(objective):
+def create_word_matrix(objective, llm_type):
     """Generate a matrix of words, starting with 'C' and ending with 'N'."""
     response = get_llm_response(f"""
                         {instructions}. Objective is: {objective}. The words have to be valid English words when read across the rows and also when read down the columns. This is very important, think quietly first. Reply with only the list of words, as follows. Ensure you reply with the correct number of words and in the correct order. For example:
                         '''
                         Word, Word, Word etc
                         '''
-    """)
+    """, llm_type)
     return response
 
 def check_word_validity(word):
@@ -125,7 +127,7 @@ def check_words_validity(words):
     return words_validity
 
 @retry_except(exceptions_to_catch=(IndexError, ZeroDivisionError), tries=3, delay=2)
-def regenerate_invalid_words(invalid_words, original_matrix, objective):
+def regenerate_invalid_words(invalid_words, original_matrix, objective, llm_type):
     # Construct a prompt to regenerate only the invalid words, using the original matrix as context
     regeneration_prompt = f"""
     {small_change}. You had generated an original matrix of words:
@@ -135,14 +137,15 @@ def regenerate_invalid_words(invalid_words, original_matrix, objective):
     Word, Word, Word etc.
     '''
     """
-    response = get_llm_response(regeneration_prompt)
+    response = get_llm_response(regeneration_prompt, llm_type)
     return response
 
 @retry_except(exceptions_to_catch=(IndexError, ZeroDivisionError), tries=3, delay=2)
-def main(attempt_number, objective):
+def main(attempt_number, objective, llm_type):
     results = {
-        'attempt_number': attempt_number,  # Log the attempt number
-        'runs': [],  # Changed to 'runs' to store results of each run
+        'attempt_number': attempt_number,
+        'llm_type': llm_type,
+        'runs': [],
         'success': False
     }
     attempt_count = 0
@@ -158,7 +161,7 @@ def main(attempt_number, objective):
         }
 
         try:
-            response = create_word_matrix(objective) if attempt_count == 1 else regenerate_invalid_words(invalid_words_list, original_matrix, objective)
+            response = create_word_matrix(objective, llm_type) if attempt_count == 1 else regenerate_invalid_words(invalid_words_list, original_matrix, objective, llm_type)
 
             words = extract_words_from_matrix(response)
             all_words_validity = check_words_validity(words)
@@ -198,31 +201,33 @@ def main(attempt_number, objective):
     return results
  
 def repeatedly_run_main():
-    objective_keys = ['objective_3', 'objective_4', 'objective_5']  # Directly use the keys
-    for objective_key in objective_keys:
-        objective_description = data.get(objective_key)
-        all_results = []
-        successful = False
-        for attempt in range(1, ATTEMPTS + 1):
-            print(f"Global Attempt {attempt} of {ATTEMPTS} for {objective_key}...")
-            # Now passing both the key and description to main
-            results = main(attempt, objective_description)
+    objective_keys = ['objective_3', 'objective_4', 'objective_5']
+    llm_types = ['claude', 'openai', 'groq']
+    
+    for llm_type in llm_types:
+        for objective_key in objective_keys:
+            objective_description = data.get(objective_key)
+            all_results = []
+            successful = False
+            for attempt in range(1, ATTEMPTS + 1):
+                print(f"Global Attempt {attempt} of {ATTEMPTS} for {objective_key} using {llm_type}...")
+                results = main(attempt, objective_description, llm_type)
+                
+                successful = results.get('success', False)
+                all_results.append(results)
+                
+                if successful:
+                    print(f"Successfully generated a valid matrix for {objective_key} using {llm_type}. Exiting...")
+                    break
+                else:
+                    print("Attempt unsuccessful.")
             
-            successful = results.get('success', False)
-            all_results.append(results)
+            # Write results after all attempts for an objective are completed
+            with open(f'results_{objective_key}_{llm_type}.json', 'w') as file:
+                json.dump(all_results, file, indent=4)
             
-            if successful:
-                print(f"Successfully generated a valid matrix for {objective_key}. Exiting...")
-                break
-            else:
-                print("Attempt unsuccessful.")
-        
-        # Write results after all attempts for an objective are completed
-        with open(f'results_{objective_key}.json', 'w') as file:
-            json.dump(all_results, file, indent=4)
-        
-        if not successful:
-            print(f"Reached maximum attempt limit without success for {objective_key}. Exiting...")
+            if not successful:
+                print(f"Reached maximum attempt limit without success for {objective_key} using {llm_type}. Exiting...")
 
     cleanup()
 
@@ -230,24 +235,22 @@ def cleanup():
     archive_folder_path = '#Archive/'
     os.makedirs(archive_folder_path, exist_ok=True)
     os.makedirs('results', exist_ok=True)
-    file_paths = [
-        'results_objective_3.json',
-        'results_objective_4.json',
-        'results_objective_5.json'
-    ]
-
-    # Initialize a dictionary to hold all results
+    
+    llm_types = ['claude', 'openai', 'groq']
+    objective_keys = ['objective_3', 'objective_4', 'objective_5']
+    
     combined_results = {}
 
-    # Loop through each file, load its content, and add it to the combined results
-    for file_path in file_paths:
-        with open(file_path, 'r') as file:
-            data = json.load(file)
-            objective_number = file_path.split('_')[-1].split('.')[0]
-            combined_results[f'matrix_{objective_number}'] = data
-        os.rename(file_path, archive_folder_path + os.path.basename(file_path))
+    for llm_type in llm_types:
+        for objective_key in objective_keys:
+            file_path = f'results_{objective_key}_{llm_type}.json'
+            with open(file_path, 'r') as file:
+                data = json.load(file)
+                if llm_type not in combined_results:
+                    combined_results[llm_type] = {}
+                combined_results[llm_type][f'matrix_{objective_key}'] = data
+            os.rename(file_path, archive_folder_path + os.path.basename(file_path))
 
-    # Write the combined results to a new file
     combined_results_path = 'results/results_wg.json'
     with open(combined_results_path, 'w') as file:
         json.dump(combined_results, file, indent=4)
