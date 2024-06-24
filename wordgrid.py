@@ -2,16 +2,11 @@
 import os
 import re
 import json
-import openai
-from anthropic import Anthropic
 import enchant
 from dotenv import load_dotenv
 load_dotenv()
 from llms.llms import llm_call_gpt_json, llm_call_claude_json, llm_call_groq
 from utils.retry import retry_except
-
-# openai.api_key = Especieeeeeeeeeeos.getenv("OPENAI_API_KEY")
-# anthropic = Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
 
 with open('info.json', 'r') as file:
     data = json.load(file)
@@ -19,7 +14,7 @@ with open('info.json', 'r') as file:
 instructions = data.get('instructions_wg')
 small_change = data.get('small_change_wg')
 ATTEMPTS = 5
-TURNS = 10
+TURNS = 2
 GPT = data.get('GPT_MODEL')
 CLAUDE = data.get('CLAUDE')
 OLLAMA = data.get('OLLAMA')
@@ -55,7 +50,10 @@ def preprocess_json_string(response):
     """
     if isinstance(response, str):
         # Remove trailing commas before closing brackets or braces
-        response = re.sub(r',(?=\s*[}\]])', '', response)
+        response = re.sub(r',(?=\s*[\]])', '', response)
+        # Replace invalid characters and fix format specifiers
+        response = response.replace("'", '"')
+        response = re.sub(r'\s+', ' ', response).strip()  # Remove excess whitespace
     return response
 
 # @retry_except(exceptions_to_catch=(IndexError, ZeroDivisionError, ValueError), tries=3, delay=2)
@@ -159,6 +157,7 @@ def main(attempt_number, objective, llm_type):
     attempt_count = 0
     max_attempts = TURNS
     response = None
+    invalid_words_list = []
 
     for attempt_count in range(1, max_attempts + 1):
         attempt_data = {
@@ -208,18 +207,15 @@ def main(attempt_number, objective, llm_type):
 
         results['runs'].append(attempt_data)  # Add attempt data to results regardless of success/failure
 
-        if results['success']:
-            break  # Exit the loop if successful
-
     if not results['success']:
         print("Failed to generate a fully valid matrix within the maximum attempt limit.")
 
     return results
  
 def repeatedly_run_main():
-    objective_keys = ['objective_4', 'objective_5']
+    objective_keys = ['objective_3', 'objective_4', 'objective_5']
     llm_types = ['claude', 'openai', 'groq']
-    
+
     for llm_type in llm_types:
         for objective_key in objective_keys:
             objective_description = data.get(objective_key)

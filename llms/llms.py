@@ -83,6 +83,15 @@ def llm_call_claude(input, LLM, system_p = system_message, temp = 0.7):
     )
     return response.content[0].text
 
+            #  <examples>
+            #  {'answer': 'CARE\nAREA\nRACE\nEARN'}
+            #  {'answer': 'CRAB\nAIDE\nLEAN\nMEAN'}
+            #  {'answer': 'CARE\nANON\nRIDO\nEDEN'}
+            #  {'answer': 'CALM\nARIA\nLAID\nMEAN'}
+            #  {'answer': 'CHEER\nOCEAN\nMEANS\nEARTH\nTRAIN'}
+            #  {'answer': 'CHAIN\nHEARD\nALONE\nIRONS\nNEEDS'}
+            #  </examples>
+    
 @retry_except(exceptions_to_catch=(IndexError, ZeroDivisionError), tries=3, delay=2)
 def llm_call_claude_json(input, LLM, system_p = system_message, temp = 0.7):
     client = Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
@@ -90,14 +99,7 @@ def llm_call_claude_json(input, LLM, system_p = system_message, temp = 0.7):
         model=LLM,
         system = system_p,
         messages=[
-            {"role": "user", "content": f"""{input}. 
-             ## Examples
-             {'answer': 'CARE\nAREA\nRACE\nEARN'}
-             {'answer': 'CRAB\nAIDE\nLEAN\nMEAN'}
-             {'answer': 'CARE\nANON\nRIDO\nEDEN'}
-             {'answer': 'CALM\nARIA\nLAID\nMEAN'}
-             {'answer': 'CHEER\nOCEAN\nMEANS\nEARTH\nTRAIN'}
-             {'answer': 'CHAIN\nHEARD\nALONE\nIRONS\nNEEDS'}
+            {"role": "user", "content": f"""{input}.
              Give me the answer in JSON."""},
             {"role": "assistant", "content": "Here is the JSON requested:\n{"}
         ],
