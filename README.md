@@ -1,5 +1,5 @@
 # LOOP-Evals
-Logical Operations On Problems: The idea is to test simple Iterative Reasoning tests for LLMs, through puzzles which are hard to solve and easy to evaluate.
+Logical Operations Or Problems: The idea is to test simple Iterative Reasoning tests for LLMs, through puzzles which are hard to solve and easy to evaluate.
 
 # Why?
 LLMs are hard to evaluate, as [I've written multiple times](https://www.strangeloopcanon.com/p/evaluations-are-all-we-need), and their ability to reason is difficult to separate from what they're trained on. So I wanted to find a way to test its ability to iteratively reason and answer questions. 
