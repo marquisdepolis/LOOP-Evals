@@ -5,7 +5,7 @@ import json
 import enchant
 from dotenv import load_dotenv
 load_dotenv()
-from llms.llms import llm_call_gpt_json, llm_call_claude_json, llm_call_groq
+from llms.llms import llm_call_gpt_json, llm_call_claude_json, llm_call_groq, llm_call_gemini_json
 from utils.retry import retry_except
 
 with open('info.json', 'r') as file:
@@ -18,6 +18,7 @@ TURNS = 5
 GPT = data.get('GPT_4')
 CLAUDE = data.get('CLAUDE')
 OLLAMA = data.get('OLLAMA')
+GEMINI = data.get('GEMINI')
 
 def get_llm_response(input_str, llm_type='openai'):
     if llm_type == 'openai':
@@ -26,6 +27,8 @@ def get_llm_response(input_str, llm_type='openai'):
         return llm_call_claude_json(input_str, CLAUDE)
     elif llm_type == 'groq':
         return llm_call_groq(input_str)
+    elif llm_type == 'gemini':
+        return llm_call_gemini_json(input_str)    
     
 def create_word_matrix(objective, llm_type):
     """Generate a matrix of words, starting with 'C' and ending with 'N'."""

@@ -13,6 +13,8 @@ from tenacity import retry, stop_after_attempt, wait_fixed
 
 system_message = "You are an AI trained to be a brilliant puzzle solver and a genius at lateral thinking. You are brilliant and conscientious."
 
+# Add a schema for gemini to use as an example
+
 @retry(stop=stop_after_attempt(3), wait=wait_fixed(2))
 @retry_except(exceptions_to_catch=(IndexError, ZeroDivisionError), tries=3, delay=2)
 def llm_call_gpt(input, GPT, system_p = system_message, temp = 0.7):

@@ -160,3 +160,5 @@ results_objective_4.json
 results_objective_5.json
 __pycache__
 llms/__pycache__
+dir_structure.py
+directory_structure.txt
