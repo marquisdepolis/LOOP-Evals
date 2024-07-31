@@ -14,7 +14,7 @@ with open('info.json', 'r') as file:
 
 instructions = data.get('instructions_w')
 objective = data.get('objective_w')
-GPT = data.get('GPT_4')
+GPT = data.get('GPT_MODEL')
 CLAUDE = data.get('CLAUDE')
 OLLAMA = data.get('OLLAMA')
 GEMINI = data.get('GEMINI')
@@ -174,7 +174,7 @@ def main():
     runs = int(input("Enter the number of runs: "))
     attempts_per_llm = 10  # Number of attempts per LLM
     results = []
-    llm_types = ['claude', 'openai', 'groq']
+    llm_types = ['openai'] #['claude', 'openai', 'groq']
 
     for run_id in range(1, runs + 1):
         for llm_type in llm_types:

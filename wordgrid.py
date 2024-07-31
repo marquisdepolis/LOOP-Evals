@@ -15,7 +15,7 @@ instructions = data.get('instructions_wg')
 small_change = data.get('small_change_wg')
 ATTEMPTS = 50
 TURNS = 5
-GPT = data.get('GPT_4')
+GPT = data.get('GPT_MODEL')
 CLAUDE = data.get('CLAUDE')
 OLLAMA = data.get('OLLAMA')
 GEMINI = data.get('GEMINI')
@@ -151,6 +151,7 @@ def regenerate_invalid_words(invalid_words, original_matrix, objective, llm_type
 
 @retry_except(exceptions_to_catch=(IndexError, ZeroDivisionError), tries=3, delay=2)
 def main(attempt_number, objective, llm_type):
+    original_matrix = None
     results = {
         'attempt_number': attempt_number,
         'llm_type': llm_type,
@@ -217,7 +218,7 @@ def main(attempt_number, objective, llm_type):
  
 def repeatedly_run_main():
     objective_keys = ['objective_3', 'objective_4', 'objective_5']
-    llm_types = ['claude', 'openai', 'groq']
+    llm_types = ['openai'] #['claude', 'openai', 'groq']
 
     for llm_type in llm_types:
         for objective_key in objective_keys:
@@ -251,7 +252,7 @@ def cleanup():
     os.makedirs(archive_folder_path, exist_ok=True)
     os.makedirs('results', exist_ok=True)
     
-    llm_types = ['claude', 'openai', 'groq']
+    llm_types = ['openai'] #['claude', 'openai', 'groq']
     objective_keys = ['objective_3', 'objective_4', 'objective_5']
     
     combined_results = {}
